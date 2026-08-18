@@ -4,4 +4,7 @@
 .env
 CLAUDE.md
 AGENTS.md
+.DS_Store
+__pycache__/
+*.py[cod]
 /article
