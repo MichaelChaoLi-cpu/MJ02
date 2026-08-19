@@ -627,8 +627,11 @@ def main() -> None:
         / household["Cultivated Crop Area m2"].replace(0, np.nan)
     )
     household["Agricultural Household"] = (
-        household["Total Parcel Area m2"].gt(0) | household["Any Crop Production Record"].fillna(False)
-    )
+        household["Total Parcel Area m2"].fillna(0).gt(0)
+        | household["Any Crop Production Record"].fillna(False).astype(bool)
+    ).astype("boolean")
+    if household["Agricultural Household"].isna().any():
+        raise ValueError("Agricultural Household must be a complete binary indicator")
     household = household.merge(enhanced_climate(processed), on=["Survey Wave", "PSU"], how="left", validate="many_to_one")
     household = add_real_household_values(household, processed)
     household = household.sort_values(["Survey Year", "PSU", "Household ID"]).reset_index(drop=True)
