@@ -1,0 +1,714 @@
+doc_type: actionbrief
+version: "1.0.0"
+
+datasetDictionary:
+  global_flood_database:
+    datasetSourceName: Global Flood Database v1 event archives
+    datasetDescription: Satellite-observed inundation extent and duration for flood events intersecting Cambodia.
+    datasetAttribute: raster
+    datasetProvider: Cloud to Street and Dartmouth Flood Observatory
+    datasetGenerationInfo: Dartmouth flood events mapped from Terra and Aqua MODIS observations, with permanent water and observation-quality layers.
+    datasetPeriod: Global source 2000-2018; Cambodia subset contains 23 events from 2007-2018.
+    datasetScale: 23 Cambodia-intersecting event archives
+    datasetSpatialResolution: 30 metre raster bands aggregated to commune, district, and province geographies
+    datasetTemporalResolution: Event level
+    datasetPreprocessingInfo: Excludes permanent water, weights pixel area by latitude, retains clear-observation quality, and constructs survey-year and preceding-12-month maxima without coding noncoverage as zero.
+  chirps_v2_monthly_cambodia_1981_2021:
+    datasetSourceName: chirps_v2_monthly_cambodia_1981_2021.nc
+    datasetDescription: Cambodia subset of the CHIRPS v2 gridded rainfall record used to construct drought and extreme-wet shocks.
+    datasetAttribute: netcdf
+    datasetProvider: Climate Hazards Center, University of California Santa Barbara; subset accessed through NOAA CoastWatch ERDDAP
+    datasetGenerationInfo: Blends satellite-based infrared precipitation estimates with rain-gauge observations on a 0.05 degree grid.
+    datasetPeriod: January 1981 through December 2021
+    datasetScale: 492 monthly raster slices over Cambodia
+    datasetSpatialResolution: 0.05 degree grid aggregated to audited commune, district, and province geographies
+    datasetTemporalResolution: Monthly, with derived seasonal, annual, and interview-aligned windows
+    datasetPreprocessingInfo: Uses a fixed 1991-2020 normal for rainfall anomalies, SPI estimation, drought thresholds, and extreme-wet thresholds; preserves unavailable interview-month exposure as missing.
+  cses_household_analysis_release:
+    datasetSourceName: direction3_household_conflict_shock_preprocessed.parquet
+    datasetDescription: Harmonized household-wave analysis release combining agriculture, consumption, food-security, conflict, rainfall, price, and satellite exposures.
+    datasetAttribute: table
+    datasetProvider: National Institute of Statistics, Ministry of Planning, Royal Government of Cambodia
+    datasetGenerationInfo: Repeated cross-sectional Cambodia Socio-Economic Survey household modules harmonized across waves and linked to audited local exposure measures.
+    datasetPeriod: Survey waves 2007, 2009, 2011, 2013, 2014, 2016, 2017, 2019, and 2021
+    datasetScale: 62,920 household-wave observations
+    datasetSpatialResolution: Survey PSU linked primarily to commune, with audited district or province fallback
+    datasetTemporalResolution: Survey wave; interview month where available
+    datasetPreprocessingInfo: Harmonizes physical outcomes, creates 2021-price monetary outcomes, retains survey weights, merges shock-specific exposure, and does not impute or winsorize.
+  cses_education_analysis_release:
+    datasetSourceName: direction3_education_conflict_shock_preprocessed.parquet
+    datasetDescription: Harmonized person-wave analysis release combining education outcomes, demographics, weights, and local conflict and shock exposures.
+    datasetAttribute: table
+    datasetProvider: National Institute of Statistics, Ministry of Planning, Royal Government of Cambodia
+    datasetGenerationInfo: Repeated cross-sectional Cambodia Socio-Economic Survey person and education modules harmonized across waves and linked to audited local exposure measures.
+    datasetPeriod: Survey waves 2007, 2009, 2011, 2013, 2014, 2016, 2017, 2019, and 2021
+    datasetScale: 268,485 person-wave observations
+    datasetSpatialResolution: Survey PSU linked primarily to commune, with audited district or province fallback
+    datasetTemporalResolution: Survey wave; interview month where available
+    datasetPreprocessingInfo: Applies documented school-age eligibility, creates 2021-price education expenditure, retains person weights and demographic controls, and preserves missing exposure as missing.
+  wfp_food_prices_khm:
+    datasetSourceName: wfp_food_prices_khm.csv
+    datasetDescription: Market-level food prices used to construct local wholesale rice and broad retail food-price pressure.
+    datasetAttribute: table
+    datasetProvider: World Food Programme, distributed through the Humanitarian Data Exchange
+    datasetGenerationInfo: Market observations report commodity, unit, price type, currency, market, and subnational location; the raw snapshot contains 85,107 records from 86 markets.
+    datasetPeriod: Raw series 2003-2026; analytical exposure restricted to survey support through 2021
+    datasetScale: 85,107 market-commodity-date observations across 25 provinces and 50 commodities
+    datasetSpatialResolution: Market observations aggregated to province-month
+    datasetTemporalResolution: Observation date aggregated to month
+    datasetPreprocessingInfo: Forms province-month medians, removes same-month national price movements, constructs exact 12-month changes, separates narrow wholesale and broad retail series, and leaves absent observations missing.
+  yale_cgeo_us_bombing_sites:
+    datasetSourceName: yale_cgeo_us_bombing_sites.geojson
+    datasetDescription: Georeferenced sites targeted in United States bombing sorties over Cambodia.
+    datasetAttribute: geojson
+    datasetProvider: Yale Cambodian Genocide Program Interactive Geographic Database
+    datasetGenerationInfo: Records released to Cambodian authorities were incorporated into CGEO as spatially referenced bombing-site and sortie information.
+    datasetPeriod: October 1965 through May 1975
+    datasetScale: 115,273 source point records
+    datasetSpatialResolution: Point locations aggregated to commune, district, and province polygons
+    datasetTemporalResolution: Historical event records used as a time-invariant pre-survey exposure
+    datasetPreprocessingInfo: Collapses repeated coordinates on a 10 metre projected grid, counts unique locations, scales by area, applies log one plus, and assigns structural zero only after valid geography linkage.
+  yale_cgeo_khmer_rouge_prisons:
+    datasetSourceName: yale_cgeo_khmer_rouge_prisons.geojson
+    datasetDescription: Georeferenced prison sites operated during Democratic Kampuchea.
+    datasetAttribute: geojson
+    datasetProvider: Yale Cambodian Genocide Program Interactive Geographic Database
+    datasetGenerationInfo: Site inventory compiled by the Cambodian Genocide Program, its University of New South Wales documentation project, and the Documentation Center of Cambodia.
+    datasetPeriod: Prison operation period April 1975 through January 1979; site compilation 1995-2001
+    datasetScale: 158 prison-site points
+    datasetSpatialResolution: Point locations counted within polygons and used for projected nearest-site distance
+    datasetTemporalResolution: Time-invariant historical site inventory
+    datasetPreprocessingInfo: Retains prison counts, presence, and nearest-site distance separately from bombing exposure; no composite conflict index is imposed.
+  yale_cgeo_khmer_rouge_burial_sites:
+    datasetSourceName: yale_cgeo_khmer_rouge_burials.geojson
+    datasetDescription: Georeferenced mass-grave sites associated with Democratic Kampuchea.
+    datasetAttribute: geojson
+    datasetProvider: Yale Cambodian Genocide Program Interactive Geographic Database
+    datasetGenerationInfo: Site inventory compiled by the Cambodian Genocide Program, its University of New South Wales documentation project, and the Documentation Center of Cambodia.
+    datasetPeriod: Khmer Rouge period 1975-1979; site compilation 1995-2001
+    datasetScale: 309 burial-site points
+    datasetSpatialResolution: Point locations counted within polygons and used for projected nearest-site distance
+    datasetTemporalResolution: Time-invariant historical site inventory
+    datasetPreprocessingInfo: Retains burial-site counts, presence, and nearest-site distance separately from bombing exposure; reported grave and body counts are diagnostic rather than primary exposure measures.
+
+variableDictionary:
+  log_bombing_unique_locations_per_100_km2:
+    variableNameInDataset: Log Bombing Unique Locations per 100 km2
+    variableNameInArticle: Log bombing-location density
+    variableAttribute: continuous
+    variableUnit: log one plus unique locations per 100 square kilometres
+    variableDescription: Primary historical-conflict exposure; repeated coordinates are collapsed before area scaling and log transformation.
+    variableSource: yale_cgeo_us_bombing_sites
+    observationNumber: 1633
+  any_us_bombing_record:
+    variableNameInDataset: Any US Bombing Record
+    variableNameInArticle: Any mapped bombing record
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one when at least one bombing record maps to a valid geography and zero only for a valid mapped geography with no record.
+    variableSource: yale_cgeo_us_bombing_sites
+    observationNumber: 1633
+  khmer_rouge_prison_count:
+    variableNameInDataset: Khmer Rouge Prison Count
+    variableNameInArticle: Khmer Rouge prison-site count
+    variableAttribute: count
+    variableUnit: sites
+    variableDescription: Number of mapped Khmer Rouge prison sites within the linked geography.
+    variableSource: yale_cgeo_khmer_rouge_prisons
+    observationNumber: 1633
+  distance_to_nearest_khmer_rouge_prison_km:
+    variableNameInDataset: Distance to Nearest Khmer Rouge Prison km
+    variableNameInArticle: Distance to nearest Khmer Rouge prison site
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: Minimum projected distance from the linked geography to a mapped Khmer Rouge prison site.
+    variableSource: yale_cgeo_khmer_rouge_prisons
+    observationNumber: 1633
+  khmer_rouge_burial_site_count:
+    variableNameInDataset: Khmer Rouge Burial Site Count
+    variableNameInArticle: Khmer Rouge burial-site count
+    variableAttribute: count
+    variableUnit: sites
+    variableDescription: Number of mapped Khmer Rouge burial sites within the linked geography.
+    variableSource: yale_cgeo_khmer_rouge_burial_sites
+    observationNumber: 1633
+  distance_to_nearest_khmer_rouge_burial_site_km:
+    variableNameInDataset: Distance to Nearest Khmer Rouge Burial Site km
+    variableNameInArticle: Distance to nearest Khmer Rouge burial site
+    variableAttribute: continuous
+    variableUnit: kilometres
+    variableDescription: Minimum projected distance from the linked geography to a mapped Khmer Rouge burial site.
+    variableSource: yale_cgeo_khmer_rouge_burial_sites
+    observationNumber: 1633
+  annual_rainfall_anomaly_z_1991_2020:
+    variableNameInDataset: Annual Rainfall Anomaly Z (1991-2020)
+    variableNameInArticle: Annual standardized rainfall anomaly
+    variableAttribute: continuous
+    variableUnit: standard deviations
+    variableDescription: Annual rainfall relative to the linked geography's fixed 1991-2020 mean and standard deviation.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 66953
+  may_october_rainfall_anomaly_z_1991_2020:
+    variableNameInDataset: May October Rainfall Anomaly Z (1991-2020)
+    variableNameInArticle: May-October standardized rainfall anomaly
+    variableAttribute: continuous
+    variableUnit: standard deviations
+    variableDescription: May-October rainfall relative to the linked geography's fixed 1991-2020 seasonal mean and standard deviation.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 66953
+  interview_month_spi_3_month:
+    variableNameInDataset: Interview Month SPI 3 Month
+    variableNameInArticle: Interview-aligned three-month Standardized Precipitation Index
+    variableAttribute: continuous
+    variableUnit: standard-normal index
+    variableDescription: Standard-normal transform of the fitted cumulative probability for three-month rainfall ending in the interview month.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  interview_month_spi_6_month:
+    variableNameInDataset: Interview Month SPI 6 Month
+    variableNameInArticle: Interview-aligned six-month Standardized Precipitation Index
+    variableAttribute: continuous
+    variableUnit: standard-normal index
+    variableDescription: Standard-normal transform of the fitted cumulative probability for six-month rainfall ending in the interview month.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  interview_month_spi_12_month:
+    variableNameInDataset: Interview Month SPI 12 Month
+    variableNameInArticle: Interview-aligned twelve-month Standardized Precipitation Index
+    variableAttribute: continuous
+    variableUnit: standard-normal index
+    variableDescription: Primary drought exposure; lower values denote drier twelve-month conditions ending in the interview month.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  interview_month_drought_shock_spi_3:
+    variableNameInDataset: Interview Month Drought Shock SPI 3
+    variableNameInArticle: Three-month drought indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one when interview-aligned SPI-3 is at or below minus one; missing SPI remains missing.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  interview_month_drought_shock_spi_6:
+    variableNameInDataset: Interview Month Drought Shock SPI 6
+    variableNameInArticle: Six-month drought indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one when interview-aligned SPI-6 is at or below minus one; missing SPI remains missing.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  interview_month_drought_shock_spi_12:
+    variableNameInDataset: Interview Month Drought Shock SPI 12
+    variableNameInArticle: Twelve-month drought indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one when interview-aligned SPI-12 is at or below minus one; missing SPI remains missing.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 226177
+  annual_rainfall_extreme_wet_shock:
+    variableNameInDataset: Annual Rainfall Extreme Wet Shock
+    variableNameInArticle: Annual extreme-wet rainfall indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one when annual rainfall reaches the linked geography's 90th percentile in the 1991-2020 normal.
+    variableSource: chirps_v2_monthly_cambodia_1981_2021
+    observationNumber: 66953
+  local_relative_log_wholesale_rice_price:
+    variableNameInDataset: Local Relative Log Wholesale Rice Price
+    variableNameInArticle: Local wholesale low-quality rice price pressure
+    variableAttribute: continuous
+    variableUnit: log-price difference
+    variableDescription: Province-month median wholesale low-quality rice log price relative to the same-month national median.
+    variableSource: wfp_food_prices_khm
+    observationNumber: 147282
+  12_month_change_in_local_relative_log_wholesale_rice_price:
+    variableNameInDataset: 12 Month Change in Local Relative Log Wholesale Rice Price
+    variableNameInArticle: Twelve-month change in local wholesale rice price pressure
+    variableAttribute: continuous
+    variableUnit: log-point change over twelve months
+    variableDescription: Primary price shock; exact twelve-month change in local relative wholesale rice price, with absent or noncontiguous observations left missing.
+    variableSource: wfp_food_prices_khm
+    observationNumber: 134308
+  broad_retail_food_local_relative_log_price:
+    variableNameInDataset: Broad Retail Food Local Relative Log Price
+    variableNameInArticle: Broad local retail food-price pressure
+    variableAttribute: continuous
+    variableUnit: mean log-price difference
+    variableDescription: Mean province-month local relative retail log price across at least two observed food commodities.
+    variableSource: wfp_food_prices_khm
+    observationNumber: 51482
+  12_month_change_in_broad_retail_food_local_relative_log_price:
+    variableNameInDataset: 12 Month Change in Broad Retail Food Local Relative Log Price
+    variableNameInArticle: Twelve-month change in broad local retail food-price pressure
+    variableAttribute: continuous
+    variableUnit: log-point change over twelve months
+    variableDescription: Exact twelve-month change in broad retail price pressure; used as a later-wave robustness measure.
+    variableSource: wfp_food_prices_khm
+    observationNumber: 46715
+  cultivated_crop_area_m2:
+    variableNameInDataset: Cultivated Crop Area m2
+    variableNameInArticle: Total cultivated crop area
+    variableAttribute: continuous
+    variableUnit: square metres
+    variableDescription: Sum of cultivated crop area within household-wave.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34853
+  harvested_crop_area_m2:
+    variableNameInDataset: Harvested Crop Area m2
+    variableNameInArticle: Total harvested crop area
+    variableAttribute: continuous
+    variableUnit: square metres
+    variableDescription: Sum of harvested crop area within household-wave.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34851
+  crop_production_quantity_kg:
+    variableNameInDataset: Crop Production Quantity kg
+    variableNameInArticle: Total crop production quantity
+    variableAttribute: continuous
+    variableUnit: kilograms
+    variableDescription: Sum of crop production quantity within household-wave.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34855
+  crop_yield_kg_per_ha:
+    variableNameInDataset: Crop Yield kg per ha
+    variableNameInArticle: Crop yield
+    variableAttribute: continuous
+    variableUnit: kilograms per hectare
+    variableDescription: Ten thousand times production kilograms divided by harvested square metres, defined only for positive harvested area.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34508
+  post_harvest_loss_share:
+    variableNameInDataset: Post Harvest Loss Share
+    variableNameInArticle: Share of output lost after harvest
+    variableAttribute: continuous
+    variableUnit: proportion
+    variableDescription: Post-harvest loss kilograms divided by the sum of production and loss kilograms for positive denominators.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34297
+  crop_diversity_count:
+    variableNameInDataset: Crop Diversity Count
+    variableNameInArticle: Number of distinct crops
+    variableAttribute: count
+    variableUnit: crops
+    variableDescription: Count of distinct reported crop codes within household-wave.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34857
+  irrigable_parcel_share:
+    variableNameInDataset: Irrigable Parcel Share
+    variableNameInArticle: Share of observed parcels that can receive irrigation
+    variableAttribute: continuous
+    variableUnit: proportion
+    variableDescription: Irrigable parcel count divided by parcels with observed irrigation status.
+    variableSource: cses_household_analysis_release
+    observationNumber: 15137
+  real_2021_crop_production_value_riels:
+    variableNameInDataset: Real 2021 Crop Production Value Riels
+    variableNameInArticle: Crop production value at 2021 prices
+    variableAttribute: continuous
+    variableUnit: 2021 Cambodian riels
+    variableDescription: Nominal crop production value converted with the annual all-items consumer price index to 2021 prices.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34852
+  real_2021_agricultural_input_cost_riels:
+    variableNameInDataset: Real 2021 Agricultural Input Cost Riels
+    variableNameInArticle: Agricultural input costs at 2021 prices
+    variableAttribute: continuous
+    variableUnit: 2021 Cambodian riels
+    variableDescription: Nominal crop cultivation input cost converted with the annual all-items consumer price index to 2021 prices.
+    variableSource: cses_household_analysis_release
+    observationNumber: 34822
+  real_2021_food_consumption_value_per_household_member_riels:
+    variableNameInDataset: Real 2021 Food Consumption Value per Household Member Riels
+    variableNameInArticle: Food consumption per household member at 2021 prices
+    variableAttribute: continuous
+    variableUnit: 2021 Cambodian riels per household member
+    variableDescription: Food-consumption value converted with the food price index to 2021 prices and divided by household size.
+    variableSource: cses_household_analysis_release
+    observationNumber: 62920
+  food_items_with_positive_consumption_count:
+    variableNameInDataset: Food Items with Positive Consumption Count
+    variableNameInArticle: Number of food items with positive consumption
+    variableAttribute: count
+    variableUnit: food items
+    variableDescription: Count of food items with reported consumption value greater than zero within household-wave.
+    variableSource: cses_household_analysis_release
+    observationNumber: 62920
+  any_severe_food_insecurity_experience:
+    variableNameInDataset: Any Severe Food Insecurity Experience
+    variableNameInArticle: Any severe food insecurity experience
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one for any no-food, sleep-hungry, or whole-day-without-food experience in comparable direct-question waves.
+    variableSource: cses_household_analysis_release
+    observationNumber: 39924
+  food_insecurity_severity_sum:
+    variableNameInDataset: Food Insecurity Severity Sum
+    variableNameInArticle: Ordinal food insecurity severity sum
+    variableAttribute: ordinal
+    variableUnit: summed frequency score
+    variableDescription: Sum of the three severe food-insecurity frequency codings in comparable waves.
+    variableSource: cses_household_analysis_release
+    observationNumber: 27834
+  currently_attending_school:
+    variableNameInDataset: Currently Attending School
+    variableNameInArticle: Current school attendance
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one for a current-attendance response of yes; the main model uses eligible children aged 6-17.
+    variableSource: cses_education_analysis_release
+    observationNumber: 218556
+  years_attended_school:
+    variableNameInDataset: Years Attended School
+    variableNameInArticle: Years attended school
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: Reported completed years attended in school for the person-wave observation.
+    variableSource: cses_education_analysis_release
+    observationNumber: 218533
+  real_2021_education_expenditure_riels:
+    variableNameInDataset: Real 2021 Education Expenditure Riels
+    variableNameInArticle: Education expenditure at 2021 prices
+    variableAttribute: continuous
+    variableUnit: 2021 Cambodian riels
+    variableDescription: Nominal education expenditure converted with the education consumer price index to 2021 prices; comparable from 2009.
+    variableSource: cses_education_analysis_release
+    observationNumber: 139763
+  agricultural_household:
+    variableNameInDataset: Agricultural Household
+    variableNameInArticle: Agricultural-household indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one for positive parcel area or an observed crop-production record.
+    variableSource: cses_household_analysis_release
+    observationNumber: 62920
+  household_size:
+    variableNameInDataset: Household Size
+    variableNameInArticle: Household-member count
+    variableAttribute: count
+    variableUnit: household members
+    variableDescription: Number of member records in the household; used as a household and person-model control.
+    variableSource: cses_education_analysis_release
+    observationNumber: 268482
+  age_years:
+    variableNameInDataset: Age Years
+    variableNameInArticle: Age in completed years
+    variableAttribute: continuous
+    variableUnit: years
+    variableDescription: Reported age in completed years used in person-level models.
+    variableSource: cses_education_analysis_release
+    observationNumber: 268481
+  female:
+    variableNameInDataset: Female
+    variableNameInArticle: Female indicator
+    variableAttribute: boolean
+    variableUnit: indicator
+    variableDescription: Equals one for female and zero for male in person-level models.
+    variableSource: cses_education_analysis_release
+    observationNumber: 268481
+  household_survey_weight:
+    variableNameInDataset: Household Survey Weight
+    variableNameInArticle: Household survey weight
+    variableAttribute: continuous
+    variableUnit: survey weight
+    variableDescription: Wave-specific household survey weight retained without preprocessing rescaling.
+    variableSource: cses_household_analysis_release
+    observationNumber: 62920
+  person_survey_weight:
+    variableNameInDataset: Person Survey Weight
+    variableNameInArticle: Person survey weight
+    variableAttribute: continuous
+    variableUnit: survey weight
+    variableDescription: Wave-specific person survey weight retained without preprocessing rescaling.
+    variableSource: cses_education_analysis_release
+    observationNumber: 268481
+
+tableDictionary:
+  table_shock_specific_analytical_support:
+    tableId: table_shock_specific_analytical_support
+    tablePath: data/results/tables/Table_shock_specific_analytical_support.xlsx
+    tableCaption: Shock-specific analytical support
+    tableAim: Documents unequal exposure coverage before comparing estimates across shock families.
+    tableExplanation: Conflict and annual rainfall cover all released observations, SPI-12 covers about 84 percent, wholesale price change about 50 percent, broad retail price change about 17-18 percent, and satellite inundation only supported survey waves.
+    tableSuitableSection: Methods and data support
+  table_main_historical_conflict_by_shock_interaction_estimates:
+    tableId: table_main_historical_conflict_by_shock_interaction_estimates
+    tablePath: data/results/tables/Table_main_historical_conflict_by_shock_interaction_estimates.xlsx
+    tableCaption: Main conflict-by-shock estimates
+    tableAim: Reports the central interaction estimates across agriculture, consumption, food security, and education.
+    tableExplanation: Most drought, extreme-wet, and price interactions are imprecise. The main exception is an adverse school-attendance response to local rice-price shocks under the primary bombing-density and price definitions.
+    tableSuitableSection: Main results
+  table_survey_wave_sample_and_unweighted_linkage_coverage:
+    tableId: table_survey_wave_sample_and_unweighted_linkage_coverage
+    tablePath: data/results/tables/Table_survey_wave_sample_and_unweighted_linkage_coverage.xlsx
+    tableCaption: Survey-wave sample and unweighted linkage
+    tableAim: Shows released sample size and unweighted exposure availability by survey wave and restricted sample.
+    tableExplanation: Historical conflict is fully linked, SPI-12 is absent in 2019 because interview month is unavailable, wholesale prices have partial province-month support, and satellite coverage stops before 2019 and 2021.
+    tableSuitableSection: Methods appendix
+  table_survey_weighted_linkage_coverage:
+    tableId: table_survey_weighted_linkage_coverage
+    tablePath: data/results/tables/Table_survey_weighted_linkage_coverage.xlsx
+    tableCaption: Survey-weighted linkage coverage
+    tableAim: Tests whether exposure availability changes materially after applying household and person survey weights.
+    tableExplanation: Weighted coverage closely follows unweighted coverage; the main limitation is source support rather than a large reweighting-induced loss of representativeness.
+    tableSuitableSection: Methods appendix
+  table_exposure_definitions_sources_and_interpretation_rules:
+    tableId: table_exposure_definitions_sources_and_interpretation_rules
+    tablePath: data/results/tables/Table_exposure_definitions_sources_and_interpretation_rules.xlsx
+    tableCaption: Exposure definitions and interpretation rules
+    tableAim: Makes construction, source category, missing-data rules, and interpretation boundaries auditable.
+    tableExplanation: The table distinguishes rainfall from direct flooding, preserves unavailable price and satellite exposure as missing, and states that interaction estimates measure differential sensitivity rather than the causal effect of historical conflict.
+    tableSuitableSection: Methods
+  table_descriptive_outcomes_by_historical_conflict_exposure:
+    tableId: table_descriptive_outcomes_by_historical_conflict_exposure
+    tablePath: data/results/tables/Table_descriptive_outcomes_by_historical_conflict_exposure.xlsx
+    tableCaption: Outcomes across historical conflict exposure
+    tableAim: Provides survey-weighted unadjusted profiles across low, middle, and high historical-conflict groups.
+    tableExplanation: Raw differences exist for several outcomes, but these profiles are descriptive and do not substitute for province-by-wave adjusted legacy estimates.
+    tableSuitableSection: Descriptive results
+  table_alternative_conflict_measures_and_shock_definitions:
+    tableId: table_alternative_conflict_measures_and_shock_definitions
+    tablePath: data/results/tables/Table_alternative_conflict_measures_and_shock_definitions.xlsx
+    tableCaption: Alternative conflict and shock definitions
+    tableAim: Tests dependence on conflict measures, climate windows, price constructions, linkage scope, weights, and satellite measures.
+    tableExplanation: The adverse school-attendance result survives the primary construction's broader robustness checks but is not stable across alternative bombing, prison, burial-site, wholesale, and broad-retail definitions.
+    tableSuitableSection: Robustness appendix
+  table_mechanisms_heterogeneity_and_influence_checks:
+    tableId: table_mechanisms_heterogeneity_and_influence_checks
+    tablePath: data/results/tables/Table_mechanisms_heterogeneity_and_influence_checks.xlsx
+    tableCaption: Mechanisms, heterogeneity, and influence checks
+    tableAim: Evaluates adaptation channels, subgroup differences, province and wave influence, and extreme-outcome sensitivity.
+    tableExplanation: Irrigation is directionally consistent with weaker drought resilience, other mechanism and subgroup estimates are imprecise, and every leave-one-province and leave-one-wave attendance estimate remains negative.
+    tableSuitableSection: Mechanisms and robustness appendix
+  table_adjusted_baseline_historical_conflict_legacy_estimates:
+    tableId: table_adjusted_baseline_historical_conflict_legacy_estimates
+    tablePath: data/results/tables/Table_adjusted_baseline_historical_conflict_legacy_estimates.xlsx
+    tableCaption: Adjusted historical conflict legacy estimates
+    tableAim: Reports conditional baseline associations between standardized conflict exposure and current outcomes.
+    tableExplanation: Province-by-wave adjusted estimates are small and mixed, with isolated differences rather than a coherent cross-domain disadvantage gradient; they remain descriptive associations.
+    tableSuitableSection: Baseline results
+  table_inference_and_multiplicity_checks:
+    tableId: table_inference_and_multiplicity_checks
+    tablePath: data/results/tables/Table_inference_and_multiplicity_checks.xlsx
+    tableCaption: Inference and multiplicity checks
+    tableAim: Reports geography clustering, Spatial-HAC, province wild bootstrap, and within-family Holm adjustments.
+    tableExplanation: The primary-definition attendance estimate remains precise under the main inference suite, whereas the irrigation mechanism has a Holm-adjusted p-value of 0.053 and is therefore suggestive rather than conventionally multiplicity robust.
+    tableSuitableSection: Inference appendix
+  table_falsification_and_functional_form_checks:
+    tableId: table_falsification_and_functional_form_checks
+    tablePath: data/results/tables/Table_falsification_and_functional_form_checks.xlsx
+    tableCaption: Falsification and functional-form checks
+    tableAim: Tests future-shock placebos, nonlinear estimators, and alternative fixed-effect structures.
+    tableExplanation: Placebo and functional-form checks do not overturn the primary attendance result, but they do not resolve its instability across alternative conflict and price definitions.
+    tableSuitableSection: Robustness appendix
+
+figureDictionary:
+  fig_historical_conflict_and_contemporary_shock_geography:
+    figureId: fig_historical_conflict_and_contemporary_shock_geography
+    figurePath: data/results/figures/Figure_historical_conflict_and_contemporary_shock_geography.png
+    figureCaption: Geography of conflict and contemporary shocks
+    figureAim: Shows where historical conflict overlaps with drought, local rice-price pressure, and satellite-observed inundation.
+    figureExplanation: Conflict exposure is concentrated in central, southern, and eastern communes; drought is spatially dispersed; price coverage is province-level and incomplete; mapped inundation is concentrated around major river and lake corridors.
+    figureSuitableSection: Data and spatial support
+  fig_exposure_distributions_and_common_support:
+    figureId: fig_exposure_distributions_and_common_support
+    figurePath: data/results/figures/Figure_exposure_distributions_and_common_support.png
+    figureCaption: Exposure distributions and common support
+    figureAim: Assesses distributions, overlap, and usable support for historical conflict and contemporary shocks.
+    figureExplanation: Conflict exposure has a large zero mass but substantial positive variation. Rainfall has complete support, interview-aligned drought about 83 percent support, and local wholesale prices about 54 percent in the mapped diagnostic sample; exposure distributions overlap across conflict terciles.
+    figureSuitableSection: Data and identification diagnostics
+  fig_conflict_conditioned_shock_response_curves:
+    figureId: fig_conflict_conditioned_shock_response_curves
+    figurePath: data/results/figures/Figure_conflict_conditioned_shock_response_curves.png
+    figureCaption: Conflict-conditioned shock response curves
+    figureAim: Compares marginal outcome responses at low, mean, and high historical-conflict exposure.
+    figureExplanation: Agricultural and welfare response curves generally have wide, overlapping intervals and do not show a consistent conflict gradient for drought, extreme-wet rainfall, or rice-price shocks.
+    figureSuitableSection: Main results
+  fig_cross_domain_amplification_effects:
+    figureId: fig_cross_domain_amplification_effects
+    figurePath: data/results/figures/Figure_cross_domain_amplification_effects.png
+    figureCaption: Cross-domain conflict-shock amplification estimates
+    figureAim: Summarizes standardized interaction estimates across agriculture, consumption, food security, and education.
+    figureExplanation: Nearly all confidence intervals cross zero. The prominent exception is a negative school-attendance interaction with the local rice-price shock under the primary exposure definitions, so the evidence is outcome-specific rather than broad cross-domain amplification.
+    figureSuitableSection: Main results
+  fig_adaptation_channels_under_conflict_legacy:
+    figureId: fig_adaptation_channels_under_conflict_legacy
+    figurePath: data/results/figures/Figure_adaptation_channels_under_conflict_legacy.png
+    figureCaption: Adaptation responses across conflict exposure
+    figureAim: Evaluates irrigation, crop diversification, and agricultural investment as possible resilience channels.
+    figureExplanation: Irrigable parcel share responds more negatively to drought severity at high conflict exposure, while crop diversity and input-cost responses are imprecise. The irrigation association is not conventional 5 percent evidence after mechanism-family Holm adjustment.
+    figureSuitableSection: Mechanisms
+  fig_satellite_inundation_validation:
+    figureId: fig_satellite_inundation_validation
+    figurePath: data/results/figures/Figure_satellite_inundation_validation.png
+    figureCaption: Satellite inundation validation
+    figureAim: Compares extreme-wet rainfall with observed inundation and re-estimates agricultural interactions on common coverage.
+    figureExplanation: Rainfall and satellite inundation correspond weakly in the available geography-years, and coverage-matched flood measures do not reproduce a clear conflict-conditioned agricultural amplification pattern.
+    figureSuitableSection: Robustness appendix
+
+analysisStructureBrief:
+  overview: >-
+    The study uses repeated Cambodia Socio-Economic Survey cross-sections linked to predetermined
+    historical-conflict geography and contemporary rainfall, local food-price, and partial-period
+    satellite-inundation exposures. It estimates descriptive baseline legacy gradients and
+    conflict-conditioned shock responses, then evaluates common support, mechanisms, heterogeneity,
+    spatial inference, multiplicity, alternative definitions, placebo timing, influence, and
+    satellite convergence. Results identify differential sensitivity, not the causal effect of
+    historical conflict.
+  levels:
+    - levelName: Exposure support and linkage audit
+      levelAim: Establish whether each conflict and shock measure has adequate spatial and temporal overlap before outcome estimation.
+      inputs:
+        - Log bombing-location density
+        - Interview-aligned twelve-month Standardized Precipitation Index
+        - Annual extreme-wet rainfall indicator
+        - Twelve-month change in local wholesale rice price pressure
+        - Household survey weight
+        - Person survey weight
+      modelOrMethod: >-
+        Unweighted and survey-weighted coverage shares, PSU and province counts, exposure
+        distributions, geography maps, and conflict-tercile overlap diagnostics are calculated
+        separately for each shock-specific analytical support. Missing exposure is never coded as
+        zero.
+      outputs:
+        - Geography of conflict and contemporary shocks
+        - Exposure distributions and common support
+        - Shock-specific analytical support
+        - Survey-wave sample and unweighted linkage
+        - Survey-weighted linkage coverage
+        - Exposure definitions and interpretation rules
+      interpretation: >-
+        Conflict and annual rainfall are fully linked, while drought, price, and satellite samples
+        are narrower. Estimation is feasible with shock-specific denominators, but cross-shock
+        comparisons cannot be treated as a balanced full-period design.
+    - levelName: Adjusted baseline historical legacy
+      levelAim: Test whether conflict-exposed places show persistent conditional disadvantages outside the interaction estimand.
+      inputs:
+        - Log bombing-location density
+        - Agriculture, consumption, food-security, and education outcomes
+        - Household-member count
+        - Age in completed years
+        - Female indicator
+        - Household survey weight
+        - Person survey weight
+      modelOrMethod: >-
+        The descriptive baseline model is Y_igpt = rho C_g + delta_pt + X_igpt' gamma + epsilon_igpt,
+        where province-by-wave fixed effects absorb shared province-time conditions and standard
+        errors are clustered by linked historical geography. Because geography fixed effects would
+        absorb C_g, rho is a conditional association rather than a causal conflict effect.
+      outputs:
+        - Outcomes across historical conflict exposure
+        - Adjusted historical conflict legacy estimates
+      interpretation: >-
+        Adjusted associations are small and mixed rather than a coherent cross-domain disadvantage
+        gradient. Isolated coefficients do not establish a general persistent development legacy.
+    - levelName: Conflict-conditioned contemporary shock responses
+      levelAim: Estimate whether drought, extreme-wet rainfall, and local food-price shocks have different effects at higher historical-conflict exposure.
+      inputs:
+        - Log bombing-location density
+        - Interview-aligned twelve-month Standardized Precipitation Index
+        - Annual extreme-wet rainfall indicator
+        - Twelve-month change in local wholesale rice price pressure
+        - Agriculture, consumption, food-security, and education outcomes
+        - Household and person controls and survey weights
+      modelOrMethod: >-
+        For shock family k, the model is Y_igpt^(k) = alpha_g + delta_pt + theta_k S_gt^(k) +
+        beta_k(C_g x S_gt^(k)) + X_igpt' gamma_k + epsilon_igpt^(k). Historical-geography and
+        province-by-wave fixed effects are absorbed, continuous conflict and shocks are standardized
+        over relevant support, and beta_k measures differential shock sensitivity. Binary outcomes
+        use weighted linear probability models and skewed nonnegative outcomes use inverse
+        hyperbolic sine transformations in the primary specification.
+      outputs:
+        - Conflict-conditioned shock response curves
+        - Cross-domain conflict-shock amplification estimates
+        - Main conflict-by-shock estimates
+      interpretation: >-
+        Drought and extreme-wet interactions are generally imprecise. The adverse attendance-price
+        interaction is precise under the primary definitions, but broad amplification across shocks
+        and outcome domains is not supported and the coefficient is not a causal conflict effect.
+    - levelName: Adaptation mechanisms and heterogeneity
+      levelAim: Assess whether adaptive capacity or agricultural dependence aligns with the proposed resilience pathway.
+      inputs:
+        - Irrigable parcel share
+        - Number of distinct crops
+        - Agricultural input costs at 2021 prices
+        - Agricultural-household indicator
+        - Log bombing-location density
+        - Interview-aligned twelve-month Standardized Precipitation Index
+      modelOrMethod: >-
+        Mechanism outcomes use the main conflict-by-shock specification. Prespecified heterogeneity
+        uses the hierarchical model Y = alpha_g + delta_pt + theta S + mu H + beta(C x S) +
+        eta(S x H) + phi(C x H) + kappa(C x S x H) + X'gamma + epsilon, retaining every lower-order
+        term so kappa is the differential amplification by subgroup.
+      outputs:
+        - Adaptation responses across conflict exposure
+        - Mechanisms, heterogeneity, and influence checks
+      interpretation: >-
+        Irrigation is directionally coherent but its mechanism-family Holm-adjusted p-value is
+        0.053. Crop diversity, input cost, and subgroup differences are imprecise, and none of the
+        estimates identify causal mediation.
+    - levelName: Inference, falsification, and definition robustness
+      levelAim: Determine whether central results depend on spatial correlation, multiplicity, timing, functional form, one region, one wave, or one exposure definition.
+      inputs:
+        - Alternative bombing, prison, and burial-site measures
+        - Alternative rainfall windows and price constructions
+        - Main outcomes and mechanism outcomes
+        - Historical geography and province identifiers
+        - Household and person survey weights
+      modelOrMethod: >-
+        The main interaction model is re-estimated with geography-clustered errors, Spatial-HAC at
+        50, 100, and 200 kilometres, 999-draw province wild-bootstrap inference for price models,
+        within-family Holm adjustment, future-shock placebos, nonlinear binary and count models,
+        alternative fixed effects, commune-only and fallback linkages, weighted and unweighted
+        samples, leave-one-province and leave-one-wave exclusions, and upper-tail influence checks.
+      outputs:
+        - Alternative conflict and shock definitions
+        - Mechanisms, heterogeneity, and influence checks
+        - Inference and multiplicity checks
+        - Falsification and functional-form checks
+      interpretation: >-
+        The attendance-price coefficient survives the primary construction's inference, placebo,
+        nonlinear, fixed-effect, and leave-one-out checks, but not alternative conflict and price
+        definitions. The defensible conclusion is therefore definition-sensitive and narrower than
+        a general resilience effect.
+    - levelName: Satellite inundation convergence
+      levelAim: Test whether direct inundation evidence agrees with extreme-wet rainfall on a common partial-period sample.
+      inputs:
+        - Annual extreme-wet rainfall indicator
+        - Survey-year maximum flooded geography share
+        - Preceding twelve-month maximum flooded geography share
+        - Survey-year maximum flood duration
+        - Log bombing-location density
+        - Crop yield and post-harvest loss
+      modelOrMethod: >-
+        Rainfall-inundation correspondence is summarized at geography-year level, and the main
+        conflict-conditioned interaction model is re-estimated for rainfall and satellite flood
+        measures on common 2009-2017 coverage. Permanent water is excluded and post-2018
+        noncoverage remains missing.
+      outputs:
+        - Satellite inundation validation
+        - Alternative conflict and shock definitions
+      interpretation: >-
+        Correspondence is weak and satellite interactions do not reproduce a clear agricultural
+        amplification pattern. Flooding remains secondary partial-period validation, not a
+        full-period core exposure.
+    - levelName: Cross-domain evidence synthesis
+      levelAim: Evaluate whether sign, magnitude, uncertainty, and robustness jointly support conflict-conditioned shock amplification.
+      inputs:
+        - Natural-unit and standardized interaction estimates
+        - Adjusted baseline legacy estimates
+        - Mechanism-family estimates
+        - Robustness and inference diagnostics
+      modelOrMethod: >-
+        Evidence is synthesized across agriculture, consumption, food security, education, and
+        mechanisms using standardized interaction effects for comparability while retaining
+        natural-unit estimates in tables. Support requires coherent signs, uncertainty excluding
+        substantively null effects, and stability across prespecified robustness checks.
+      outputs:
+        - Cross-domain conflict-shock amplification estimates
+        - Main conflict-by-shock estimates
+        - Adjusted historical conflict legacy estimates
+        - Alternative conflict and shock definitions
+        - Inference and multiplicity checks
+      interpretation: >-
+        The data do not establish broad cross-domain amplification. They support only a
+        primary-definition-specific adverse attendance response to local rice-price shocks and a
+        suggestive, multiplicity-sensitive irrigation channel; all claims remain associational.
