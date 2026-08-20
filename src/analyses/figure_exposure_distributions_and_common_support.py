@@ -23,7 +23,7 @@ INPUT_PATH = (
     ROOT / "data/processed/direction3_household_conflict_shock_preprocessed.parquet"
 )
 OUTPUT_PATH = (
-    ROOT / "data/results/figures/Figure_exposure_distributions_and_common_support.png"
+    ROOT / "data/exp/internal_output_archive/figures/Figure_exposure_distributions_and_common_support.png"
 )
 
 YEAR = "Survey Year"

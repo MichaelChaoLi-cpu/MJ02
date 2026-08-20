@@ -5,14 +5,14 @@ Analysis Standard Operating Procedure
 
 ### Central Research Question
 
-- Research question: Does historical conflict exposure amplify the adverse effects of
-  present-day floods, droughts, and food-price shocks on agricultural livelihoods, household
-  welfare, food security, and children's education in Cambodia?
+- Research question: Does plausibly exogenous exposure to more intense Khmer Rouge repression
+  persistently amplify local sensitivity to contemporary rainfall variation?
 - Why it matters: Conflict can leave persistent damage to infrastructure, institutions, human
-  capital, settlement patterns, and household asset accumulation. These legacies may remain
-  hidden in normal years but become visible when affected communities face a new environmental
-  or market shock. The project therefore studies conflict legacy as a source of differential
-  resilience rather than treating landmines or mine clearance as the exposure of interest.
+  capital, settlement patterns, and productive capacity. These legacies may be hidden in average
+  outcome levels yet become visible when communities face later climate variation. The project
+  therefore tests whether historical repression created a durable climate-resilience penalty,
+  rather than treating landmines, mine clearance, flood exposure, or food prices as co-equal
+  central topics.
 - Data support currently available: Repeated socioeconomic surveys provide agricultural land and
   production, input expenditure, real food consumption, food-security experiences, education,
   migration, household composition, and survey weights. Yale CGEO bombing, Khmer Rouge prison,
@@ -22,78 +22,88 @@ Analysis Standard Operating Procedure
   historical-conflict layers link to all 5,617
   georeferenced CSES PSU-wave rows from 2007-2021 through the audited historical-geography
   crosswalk. A defensible direct flood or river-discharge series covering the full 2007-2021
-  estimation period is still unavailable.
-- Key variables or data scope: Place-based historical conflict intensity; flood, drought,
-  rainfall, and food-price shocks; cultivated and harvested area; crop production and yield;
-  agricultural inputs; real food consumption; food insecurity; school attendance and education
-  expenditure; household and geographic controls.
-- What would verify it: Adverse contemporary shocks produce consistently larger losses in areas
-  with greater historical conflict exposure, with coherent signs across related outcomes and
-  robustness to local-area comparisons, alternative conflict and shock measures, survey weights,
-  migration-related sample restrictions, and influential observations.
-- What would falsify or weaken it: No differential response to contemporary shocks; estimates
-  that are unstable across conflict measures, waves, or regions; effects explained by persistent
-  agroecology, remoteness, or postwar sorting; weak spatial overlap; or price results driven only
-  by national time trends.
-- Current evidence boundary after completed checks: The adverse school-attendance response to
-  local rice-price shocks survives spatial, province-bootstrap, nonlinear, placebo,
-  alternative-fixed-effect, and single-province/single-wave checks under the primary bombing-
-  density definition, but it is not stable across alternative historical-conflict and price
-  definitions. The irrigation association is suggestive but falls just outside the 5% threshold
-  after mechanism-family Holm adjustment. Satellite inundation remains partial-period secondary
-  validation rather than a full-period core flood exposure.
+  estimation period is still unavailable. Open replication materials for the historical boundary
+  between the more repressive Southwest zone and the adjacent West zone in Kampong Speu have been
+  checksum-bound, independently reconstructed, and linked. Annual land NPP for 2001-2021 and
+  observed VIIRS nighttime activity for 2013-2021 have also been linked and estimated within the
+  frozen boundary design. The 2023 socioeconomic survey, 2020-2024 agriculture surveys,
+  independent international and domestic rice-price series, and cropland-specific spatial
+  outcomes remain candidate validation sources rather than current analytical inputs.
+- Key variables or data scope for the converged design: Historical repression-zone assignment,
+  signed distance to the historical boundary, contemporary rainfall anomalies, annual land NPP,
+  observed nighttime activity, and pre-specified equivalence bounds. National bombing, household,
+  flood, food-price, and mechanism results provide supporting breadth, scope, and interpretation
+  rather than additional headline estimands.
+- What would verify it: The historical boundary can be independently reconstructed; treatment
+  assignment and pre-treatment covariates are continuous within a defensible bandwidth; the
+  repression-by-rainfall interaction is precise relative to a pre-specified smallest effect of
+  substantive interest; and the conclusion survives spatial trends, bandwidths, modern-boundary
+  safeguards, influence checks, and at least one independent outcome measurement system.
+- What would falsify or weaken it: The boundary cannot be reproduced, geographic support or power
+  is inadequate, predetermined covariates are discontinuous, the interaction is unstable across
+  design choices, an apparently null result is too imprecise for equivalence, or holdout and
+  independent data fail to reproduce the same estimand.
+- Current evidence boundary after completed checks: Within the frozen local boundary design,
+  both land-NPP and observed-nighttime-activity rainfall interactions are small and have 95%
+  confidence intervals inside the pre-specified +/-0.20 outcome-SD equivalence bounds under the
+  primary and mandatory confirmation models. The completed evidence therefore supports a local
+  bounded-null conclusion for these two rainfall-response outcomes. It does not show that
+  historical repression has no persistent level effect, does not establish resilience outside the
+  historical boundary population, and does not provide a causal conclusion for flood, price,
+  household, or agricultural-survey outcomes. National and mechanism results are retained only to
+  bound generalization and interpretation.
 
 ### Supporting Research Questions
 
-#### Supporting Point 1: Baseline development legacy
+#### Supporting Point 1: Local identification credibility
 
-- Role relative to central point: deepen.
-- Research question: Are historically conflict-exposed places persistently disadvantaged in
-  agricultural capacity, household welfare, food security, or education even outside major
-  contemporary shock periods?
-- Why it matters: A baseline legacy gradient establishes whether the proposed resilience channel
-  is embedded in persistent development constraints rather than appearing only in interaction
-  estimates.
-- Data support currently visible: The harmonized surveys contain outcomes spanning agriculture,
-  food consumption, food security, and education across 2004-2021. Place-based conflict exposure
-  is currently linkable for the georeferenced 2007-2021 sample; CSES 2004 lacks the required
-  geography and remains outside the main place-based design.
-- Key variables or data scope: Historical conflict intensity, land use, crop productivity,
-  agricultural inputs, real food consumption, severe food insecurity, school attendance, and
-  education expenditure.
-- What would verify it: Stable exposure gradients within comparable local areas and survey waves,
-  with results not driven by one province or one survey wave.
-- What would falsify or weaken it: No consistent gradient after geographic adjustment, severe
-  common-support failures, or sensitivity to migration and boundary definitions.
-- Current evidence status: Adjusted baseline associations are small and mixed rather than a
-  coherent cross-domain disadvantage gradient; this supporting point is not broadly supported.
+- Role relative to central point: validate identification.
+- Research question: Can the historical Southwest-West repression boundary support a credible,
+  adequately powered local comparison of contemporary rainfall sensitivity?
+- Why it matters: A bounded-null conclusion is informative only if treatment assignment,
+  geographic continuity, effective sample size, and the smallest substantively meaningful effect
+  were fixed independently of the outcome estimates.
+- Data support currently visible: The public replication frame, independently reconstructed
+  historical boundary, treatment side, signed distance, five boundary segments, predetermined
+  covariates, annual rainfall, and modern-commune crosswalk are all available.
+- Key variables or data scope: Higher-Repression Southwest Zone, Signed Distance to Historical
+  Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support, and
+  May October Rainfall Anomaly Z (1991-2020).
+- What would verify it: Exact boundary reproduction, adequate observations and rainfall variation
+  on both sides, no multiplicity-robust predetermined discontinuity, minimum detectable effects
+  below the 0.20-SD threshold, and compatibility with the mandatory within-modern-commune model.
+- What would falsify or weaken it: Failed reproduction, inadequate effective units, material
+  predetermined discontinuities, coincidence with modern administrative boundaries that cannot
+  be absorbed, or instability across pre-specified bandwidths and boundary segments.
+- Current evidence status: Reproduction, linkage, density, power, and continuity gates pass. The
+  proximity of modern commune boundaries is handled through a frozen mandatory within-commune
+  confirmation model rather than ignored.
 
-#### Supporting Point 2: Shock-specific vulnerability
+#### Supporting Point 2: Independent outcome validation
 
-- Role relative to central point: deepen.
-- Research question: Does the conflict legacy amplify dry shocks, wet or flood shocks, and
-  food-price shocks through distinct outcome pathways?
-- Why it matters: Drought, flood, and price shocks affect production and purchasing power
-  differently; separating them prevents an ambiguous average-shock interpretation.
-- Data support currently visible: Annual and growing-season rainfall anomalies are available, and
-  the 1981-2021 CHIRPS baseline permits more credible dry and extreme-wet standardization. WFP
-  market prices cover 2003-2021, but early years contain only 8-9 markets and a narrow wholesale
-  commodity basket; coverage broadens materially from 2013. Event-level satellite inundation is
-  available only for selected 2000-2018 events and supports a partial 2007-2017 validation sample;
-  a full-period direct flood or river-discharge series remains unavailable.
-- Key variables or data scope: Continuous rainfall anomalies, dry and wet extremes, flood extent,
-  drought indices, food-price changes, agricultural outcomes, real food consumption, and food
-  insecurity.
-- What would verify it: Drought effects appear first in production and yield, flood effects in
-  land access or losses, and food-price effects in purchasing power and food security, with
-  stronger responses in historically exposed places.
-- What would falsify or weaken it: Identical patterns across conceptually different shocks,
-  implausible timing, weak shock variation, or results that disappear with interview-aligned
-  exposure windows.
-- Current evidence status: Drought and excess-rainfall interactions are generally imprecise.
-  Under the primary bombing-density and local rice-price definitions, school attendance declines
-  more in historically exposed places, but the result is not stable across alternative conflict
-  and price definitions.
+- Role relative to central point: validate measurement.
+- Research question: Does the bounded local rainfall-sensitivity conclusion replicate across land
+  productivity and independently observed nighttime economic activity?
+- Why it matters: Agreement across vegetation production and nighttime activity reduces the risk
+  that a bounded-null conclusion is an artifact of one sensor, outcome scale, or economic domain.
+- Data support currently visible: The frozen 5 km annual land-NPP design contains 291 villages and
+  4,398 design-equivalent village-years for 2001-2021; the observed-VIIRS design contains 3,112
+  grid cells and 28,008 cell-years for 2013-2021.
+- Key variables or data scope: Annual Land NPP Anomaly kg C per m2, Annual Land NPP Anomaly Z
+  2001-2020, Asinh Annual Mean Radiance, rainfall anomalies, historical-side assignment, signed
+  distance, and the frozen common-support indicators.
+- What would verify it: Primary and mandatory confirmation estimates are mutually compatible and
+  their standardized confidence intervals lie inside the fixed -0.20 to 0.20 equivalence bounds
+  for both outcome systems.
+- What would falsify or weaken it: Opposite or materially incompatible results across NPP and
+  nighttime activity, confidence intervals crossing both equivalence bounds, or dependence on one
+  outcome definition, quality restriction, rainfall window, or bandwidth.
+- Current evidence status and next feasibility check: Boundary reproduction, support, continuity,
+  blinded power, and the annual land-NPP and VIIRS rainfall-response estimates are complete. Both
+  activated outcomes support a substantively precise local null under the frozen primary and
+  mandatory confirmation specifications. Any local flood, price, household, or independent
+  agricultural analysis still requires source acquisition, compatible shock timing, and a new
+  outcome-blind support and power audit before estimation.
 
 #### Supporting Point 3: Adaptation mechanisms
 
@@ -103,77 +113,105 @@ Analysis Standard Operating Procedure
   depleted assets, restricted mobility, or lower human capital?
 - Why it matters: Mechanisms distinguish a persistent resilience trap from a purely statistical
   interaction between geography and weather.
-- Data support currently visible: The surveys include irrigation, crop diversity, agricultural
-  inputs, livestock, nonfarm activity, migration, liabilities, assets, and education, although
-  cross-wave consistency varies by mechanism.
-- Key variables or data scope: Irrigable land, input expenditure, crop diversity, livestock,
-  nonfarm work, migration, borrowing, durable assets, school participation, and local
-  infrastructure.
+- Data support currently visible: Household modules provide irrigable parcels, crop diversity,
+  agricultural inputs, and agricultural dependence. The audited village module provides 3,005
+  valid in-range irrigated agricultural land shares across six waves and 1,359 permanent-market
+  observations in 2011 and 2021. Conditional all-weather-road fields and 2021-only costly-coping
+  outcomes do not provide defensible interaction support.
+- Key variables or data scope: Village irrigated agricultural land share, two-wave permanent-market
+  access, irrigable parcel share, crop diversity, agricultural input expenditure, and agricultural
+  dependence.
 - What would verify it: Historically exposed places show weaker ex ante adaptive capacity or
   stronger use of costly coping responses when shocks occur, in patterns consistent with the
   outcome results.
 - What would falsify or weaken it: Mechanism variables do not differ, are measured in too few
   waves, or behave in directions inconsistent with the proposed resilience pathway.
-- Current evidence status: Irrigation provides directionally coherent but
-  multiplicity-sensitive channel evidence; crop diversity, agricultural input cost, and the
-  prespecified agricultural-dependence and place subgroups remain imprecise. These results do not
-  identify causal mediation.
+- Current evidence status: The activated six-test family is complete. Village irrigation and
+  two-wave permanent-market gradients are small and imprecise, as is the village
+  irrigation-by-drought estimate. Household parcel irrigation is directionally coherent but has
+  a six-test Holm-adjusted p-value of approximately 0.106; crop diversity and agricultural input
+  estimates are near zero. Roads and costly-coping outcomes remain deferred. All mechanism
+  results are channel-consistent associations rather than causal mediation.
 
-#### Supporting Point 4: Place and cohort heterogeneity
+#### Supporting Point 4: National breadth and transport limits
 
-- Role relative to central point: broaden.
-- Research question: Are resilience losses larger in highly exposed places, among households
-  more dependent on agriculture, or among cohorts exposed to conflict during early life?
-- Why it matters: Place-based persistence and individual early-life exposure are related but
-  distinct channels. Treating the place-based legacy as primary and cohort exposure as a
-  complementary analysis makes the interpretation explicit.
-- Data support currently visible: Current residence, age, household composition, agricultural
-  dependence, and migration modules are available, but birthplace and early-life residence
-  comparability require verification.
-- Key variables or data scope: Conflict intensity, current location, birth cohort, possible
-  birthplace or prior residence, age, agricultural-household status, poverty proxies, and shock
-  exposure.
-- What would verify it: Stronger effects at higher conflict intensity and agricultural
-  dependence, plus coherent cohort gradients where early-life location can be measured.
-- What would falsify or weaken it: Cohort patterns based only on current residence, extensive
-  selective migration, thin cells, or multiple-testing-sensitive heterogeneity.
-- Required next feasibility check: Audit birthplace and migration variables and pre-specify a
-  limited heterogeneity set.
+- Role relative to central point: broaden and validate.
+- Research question: How far can the local rainfall-sensitivity conclusion be reconciled with
+  national observational patterns, and what additional evidence is required before transport to
+  household, agricultural, flood, or price outcomes?
+- Why it matters: A local geographic discontinuity can improve internal validity but cannot alone
+  establish national relevance. Independent outcome and shock measurements are also necessary to
+  distinguish a substantive result from a product-specific artifact.
+- Data support currently visible: The completed national repeated-cross-section release links
+  historical bombing exposure, rainfall, partial inundation, local prices, and socioeconomic
+  outcomes. A 2023 holdout survey, independent agriculture surveys, cropland productivity, and
+  external price sources remain candidate extensions with unaudited access or comparability.
+- Key variables or data scope: National bombing and Khmer Rouge exposure measures, household and
+  person outcomes, rainfall, flood and price measures, holdout indicators, and future independent
+  agricultural or cropland outcomes.
+- What would verify it: At least one independent measurement system supports a compatible effect
+  or a pre-specified equivalence conclusion, and discrepancies across local and national designs
+  are explained by estimand or support rather than selective reporting.
+- What would falsify or weaken it: Validation data cannot be linked, rely on the same underlying
+  source, measure a different population without transport justification, or contradict the main
+  estimate beyond pre-specified compatibility bounds.
+- Current evidence status and next feasibility check: National survey estimates do not support
+  broad cross-domain amplification; the adverse attendance-price pattern is definition-sensitive
+  and therefore remains supplementary discovery evidence. The local result cannot yet be
+  transported to household, flood, price, or agricultural-survey outcomes. Audit access,
+  geography, provenance, temporal support, and outcome comparability for any future extension
+  before promoting it into the central analysis contract.
 
 ### Scope of Analysis
 
 - Topics: Long-run consequences of conflict, climate resilience, food-price vulnerability, rural
   livelihoods, food security, and human capital.
-- Primary exposure concept: Place-based historical conflict legacy measured independently of
-  landmine contamination or clearance activity.
-- Primary contemporary shocks: Flood, drought, and food-price shocks; rainfall anomalies provide
-  the initial climate measure, with direct hazard and price measures added where feasible.
-- Units of analysis: Households and individuals linked to local historical exposure and
-  contemporary shocks; locality-level aggregation where required by geography or confidentiality.
-- Historical exposure period: To be determined by the selected conflict dataset, with primary
-  attention to the civil-war and mass-violence era before the socioeconomic survey period.
+- Primary exposure concept: An activated local intensive-margin contrast in Khmer Rouge repression
+  defined by the independently reproduced historical Southwest-West zone boundary, with a frozen
+  5 km primary bandwidth and mandatory within-modern-commune confirmation. National bombing
+  density and Khmer Rouge site measures provide secondary
+  breadth and generalization evidence. Landmine contamination and clearance remain excluded.
+- Primary contemporary shock: May-October rainfall variation, with annual rainfall as a frozen
+  alternative. Flood and food-price shocks remain supporting national or supplementary analyses
+  and are not part of the central local estimand.
+- Units of analysis: Households, individuals, survey PSUs or villages, annual village panels, and
+  annual VIIRS grid-cell panels linked to historical assignment and contemporary shocks. Future
+  holdout and cropland sources remain candidate units. Inference will respect
+  the effective assignment, shock, and spatial-correlation units rather than individual record
+  counts alone.
+- Historical exposure period: The civil-war and Khmer Rouge mass-violence era before the
+  socioeconomic survey period; the local primary contrast is assignment to the historically more
+  repressive Southwest rather than the adjacent West zone.
 - Outcome period: Socioeconomic survey waves from 2004 through 2021. The georeferenced main
   place-based estimation window is 2007-2021; CSES 2004 remains useful only for analyses that do
   not require local conflict or shock linkage unless its geography can later be recovered.
 - Geographic scope: Cambodia, with national coverage where common support is adequate and
   pre-specified regional restrictions where necessary.
-- Secondary design: Birth-cohort or early-life conflict exposure, conditional on adequate
-  birthplace or historical-residence information.
+- Secondary design: National repeated-cross-section estimates based on broader conflict measures,
+  plus independent holdout and spatial validation. Birth-cohort exposure remains outside the
+  executable plan unless early-life residence can be established.
 
 ### Study Design Declaration
 
 - Research type: applied.
-- Main study design: Repeated cross-sectional observational study combining time-invariant
-  place-based historical conflict exposure with time-varying environmental and market shocks.
-- Main estimand: The differential effect of a contemporary shock associated with greater
-  historical conflict exposure.
-- Main comparison strategy: The most demanding feasible geographic fixed effects, survey-wave
-  effects, survey weights, pre-specified household controls, flexible shock functions, and
-  spatially appropriate uncertainty estimates.
-- Interpretation limit: Historical conflict was not randomly assigned. Contemporary weather
-  variation may be plausibly external conditional on geography and time, but the interaction can
-  still reflect persistent agroecology, postwar reconstruction, migration, or other correlated
-  legacies. Claims will therefore be calibrated to the achieved design and robustness evidence.
+- Main study design: Activated local geographic boundary design around the historical
+  Southwest-West repression boundary, interacted with contemporary shocks after successful
+  reproduction, support, continuity, power, and falsification audits and with a mandatory
+  within-modern-commune confirmation specification.
+- Main estimand: The local Southwest-minus-West difference in rainfall sensitivity caused by
+  assignment to the more repressive historical zone near the boundary, evaluated separately for
+  annual land NPP and observed nighttime activity. National repeated-cross-section interactions
+  remain supporting associational estimands.
+- Main comparison strategy: Local linear spatial RD with side-specific distance functions,
+  boundary-segment and time controls, spatially appropriate inference, placebo boundaries, and
+  pre-specified bandwidth and equivalence analyses; national models retain their existing fixed
+  effects and inference contract.
+- Interpretation limit: The completed result is a local precise-null conclusion for land-NPP and
+  nighttime-activity rainfall sensitivity under the frozen boundary and modern-commune safeguard.
+  Any causal language remains conditional on assignment, continuity, shock exogeneity, common
+  support, and the mandatory confirmation model. It applies only to the local intensive margin of
+  repression and cannot be generalized automatically to all Cambodian conflict exposure or to
+  untested household, flood, price, and agricultural outcomes.
 - Excluded research scope: Landmine exposure and mine clearance are not the central exposure,
   treatment, mechanism, or policy intervention in this project.
 
@@ -184,15 +222,23 @@ Research type: applied
 ### Research Gap
 
 Research on conflict legacies often studies average long-run effects on income, institutions,
-health, or education. Research on climate and food-price shocks often studies average exposure or
-coping capacity. Less is known about whether historical conflict creates a persistent
-vulnerability that is revealed by later, unrelated environmental and market shocks. Cambodia is
-well suited to examine this question because repeated socioeconomic outcomes can be linked to
-subnational historical exposure and contemporary shocks over multiple post-conflict years.
+health, or education. Research on climate shocks often studies average exposure or present-day
+coping capacity. Less is known about whether historically assigned political repression creates a
+durable difference in local sensitivity to later climate variation. Cambodia permits this
+question to be tested around a reproduced historical repression boundary and across two annual
+outcome systems measuring vegetation production and nighttime activity.
 
-The contribution is not a new estimate of landmine contamination or clearance. It is a test of
-whether conflict legacy acts as a long-lived resilience constraint across several shock types and
-development domains.
+The contribution therefore centers identification rather than breadth. The local historical
+repression boundary supplies the central quasi-experimental contrast in the intensive margin of
+state violence; land NPP is the primary outcome and observed nighttime activity is an independent
+measurement validation. Completed national bombing, flood, price, household, and mechanism
+analyses bound generalization but do not define the headline question. The contribution is not a
+new estimate of landmine contamination or clearance.
+
+The Nature Communications standard sought here is not universal statistical significance. It is
+an identified and independently validated answer that can support either a robust adverse effect
+or a precise, substantively bounded null. Definition-sensitive discovery findings cannot serve as
+the causal core.
 
 ### Conceptual Framework
 
@@ -204,12 +250,17 @@ The proposed framework is:
    public services, financial capacity, trust, or accumulated household assets.
 3. These persistent constraints may be difficult to detect in normal periods but limit ex ante
    protection, adjustment, borrowing, diversification, and mobility when a new shock occurs.
-4. Floods and droughts first affect land, production, and agricultural income; food-price shocks
-   affect purchasing power and production incentives.
-5. The resulting losses may propagate into food security, consumption, migration, asset use, and
-   children's education.
+4. Rainfall variation affects vegetation production and may propagate into local economic
+   activity; land NPP and nighttime radiance measure these responses through independent systems.
+5. Flood, food-price, household, education, and mechanism results can show whether the local
+   conclusion is broadly compatible with other domains, but they cannot substitute for the local
+   boundary estimand.
+6. If more intense repression created a persistent human-capital or infrastructure trap, then
+   otherwise comparable places on the high-repression side of the historical boundary should
+   exhibit different responses to later external shocks. If the response difference is precisely
+   absent, persistent average poverty need not imply generalized shock vulnerability.
 
-The main empirical relationship is:
+The supporting national associational relationship is:
 
 \[
 Y_{igt} = \beta(ConflictLegacy_g \times Shock_{gt})
@@ -222,43 +273,55 @@ Here, \(Y_{igt}\) is an outcome for household or individual \(i\), place \(g\), 
 \(Shock_{gt}\) is a contemporary flood, drought, rainfall, or price shock; \(\alpha_g\) denotes
 the most demanding feasible place fixed effects; \(\lambda_t\) denotes survey-wave effects; and
 \(X_{igt}\) contains pre-specified controls. Time-invariant conflict exposure is absorbed by place
-fixed effects. The primary parameter \(\beta\) measures differential shock sensitivity associated
-with historical conflict exposure.
+fixed effects. The parameter \(\beta\) measures differential shock sensitivity associated with
+historical conflict exposure in the supporting national design; it is not the central causal
+estimand.
 
-For a national food-price series, the price main effect is absorbed by survey-wave effects. A
-credible price design therefore requires either sufficient time variation combined with a
-pre-determined local exposure measure or local market-price variation. The preferred extension is
-a commodity-specific price change interacted with a pre-shock local production or consumption
-basket.
+Food-price, flood, and cohort extensions remain supplementary or future analyses. They require
+their own support, timing, and provenance gates and cannot broaden the central local rainfall
+claim after their results are observed.
 
-The complementary cohort design will be specified only if early-life location can be measured
-credibly. It will distinguish place-based institutional and infrastructure persistence from
-individual exposure during sensitive ages.
+The central local quasi-experimental relationship is:
+
+\[
+Y_{igt} = \alpha_t + \tau R_g + \beta S_{gt}
+          + \theta(R_g \times S_{gt}) + f(d_g)
+          + R_g f(d_g) + B_g'\pi + X_{igt}'\gamma + \epsilon_{igt}.
+\]
+
+Here, \(R_g\) indicates assignment to the more repressive Southwest zone, \(d_g\) is signed
+distance to the historical Southwest-West boundary, and \(B_g\) contains pre-specified boundary
+segment or other design terms that do not absorb the assignment contrast. The coefficient
+\(\theta\) is the local difference in shock sensitivity associated with the more intensive
+repression regime. It has a causal interpretation only if the boundary reconstruction,
+continuity, local support, shock exogeneity, and spatial falsification conditions pass.
 
 ### Problem Formulation
 
-The immediate empirical problem is to determine whether historical conflict exposure can be
-measured at a spatial resolution that links reliably to repeated socioeconomic outcomes without
-using landmine records as a proxy. The second problem is to align contemporary shocks to the
-correct outcome reference period. Agricultural outcomes require growing-season or lagged climate
-windows; consumption and food security require interview-aligned environmental and price
-windows; education may respond with a delay.
+The immediate empirical problem is to determine whether the historical Southwest-West repression
+contrast can be reconstructed, linked, and shown to have adequate local support before estimating
+differential rainfall sensitivity. The second problem is to distinguish an uninformative null from
+a substantively bounded null through outcome-blind power calculations, a frozen SESOI, and
+compatible evidence from independent outcome systems.
 
-Identification must address nonrandom conflict geography, persistent agroecology, administrative
-boundary change, post-conflict reconstruction, selective migration, and spatial correlation.
-Minimum diagnostics include exposure maps, within-region common support, balance and overlap,
-alternative conflict definitions, flexible rainfall responses, direct flood and drought measures,
-interview-window sensitivity, placebo shock timing, leave-one-region and leave-one-wave checks,
-and influence diagnostics for extreme agricultural outcomes.
+Identification must address persistent agroecology, modern administrative boundaries, distance
+trends, boundary-segment influence, spatial correlation, and measurement quality. Minimum
+diagnostics include exact boundary reproduction, density and predetermined continuity, common
+support, effective-unit power, a mandatory within-modern-commune confirmation, fixed bandwidths,
+alternative rainfall windows, outcome-quality checks, and independent outcome validation.
 
-Current data make the socioeconomic-outcome, historical-conflict, rainfall, and candidate
-food-price components feasible for variable construction. The conflict layers spatially cover the
-main 2007-2021 CSES sample, while WFP prices require separate full-period narrow-basket and
-post-2013 broader-market specifications because coverage changes sharply. The satellite-event
-measure supplies direct but partial-period inundation evidence; a full-period direct flood or
-river-discharge measure is still missing. The project can support the current associational
-estimation and partial flood validation, subject to explicit coverage boundaries and the
-prespecified robustness checks.
+Current data support the reproduced boundary, annual rainfall, 2001-2021 land NPP, and 2013-2021
+observed VIIRS designs. National socioeconomic, food-price, and partial-period inundation data
+remain useful for supporting breadth and limitations, but their unequal coverage prevents them
+from redefining the local central estimand.
+
+The design is intentionally stage-gated. Historical-boundary replication, geographic linkage,
+predetermined-covariate continuity, effective sample size, minimum detectable effects, and the
+smallest effect of substantive interest were frozen before outcome interactions. Passing these
+gates supports a local rainfall-sensitivity interpretation; replication in VIIRS limits
+measurement-specific explanations. National evidence and future holdout sources determine only
+how far that conclusion may be transported. New validation analyses will remain prospectively
+registered, with all departures reported.
 
 ## 3. Data Overview
 
@@ -266,13 +329,28 @@ prespecified robustness checks.
 
 | data source | provider | generation method | period | unit or spatial scale | analytical role |
 |---|---|---|---|---|---|
-| Cambodia Socio-Economic Survey | National Institute of Statistics, Ministry of Planning, Cambodia | Repeated cross-sectional household, person, agriculture, consumption, food-security, and education modules with survey weights | Georeferenced waves from 2007 to 2021 | Household-wave and person-wave observations linked through survey PSUs | Outcomes, mechanisms, demographic controls, and survey weights |
+| Cambodia Socio-Economic Survey | National Institute of Statistics, Ministry of Planning, Cambodia | Repeated cross-sectional household, person, agriculture, consumption, food-security, education, and village-infrastructure modules with survey weights for household and person records | Georeferenced waves from 2007 to 2021 | Household-wave, person-wave, and village PSU-wave observations | Outcomes, mechanisms, demographic controls, and survey weights |
 | Historical conflict geography | Yale Cambodian Genocide Program Interactive Geographic Database | Georeferenced U.S. bombing targets and Khmer Rouge prison and burial-site inventories | Historical exposure predating the socioeconomic surveys | Point records aggregated to audited commune, district, and province geographies | Primary and alternative historical-conflict exposure measures |
 | CHIRPS rainfall | Climate Hazards Center, University of California Santa Barbara | Satellite-based infrared rainfall estimates blended with rain-gauge observations | Monthly observations from 1981 to 2021; fixed 1991-2020 climate normal | Gridded rainfall aggregated to audited survey geographies | Drought, rainfall-anomaly, and extreme-wet shock measures |
 | Food-price monitoring | World Food Programme | Market-commodity price observations aggregated to province-month | Analytical price support from 2003 to 2021 | Market observations summarized at province-month | Wholesale rice and broad retail food-price shocks |
 | Global Flood Database | Cloud to Street and Dartmouth Flood Observatory | Event-level inundation and duration derived from Terra and Aqua MODIS observations | Cambodia-intersecting events from 2007 to 2018 | Event rasters aggregated to audited survey geographies | Partial-period satellite inundation validation |
 | Consumer price indices | International Monetary Fund series sourced from Cambodian national authorities | Monthly all-items, food, and education price indices rebased to a 2021 annual mean | 2007 to 2021 | National monthly and annual indices | Convert monetary outcomes to constant 2021 riels |
 | Administrative geography references | Cambodian public administrative-data providers | Gazetteer and boundary references harmonized to survey geography codes | Historical survey waves linked to contemporary reference geographies | Village, commune, district, and province | Audited spatial crosswalk and linkage-quality classification |
+
+### Nature Communications Upgrade Sources
+
+The following sources include both activated upgrade inputs and candidates that remain outside the
+active analysis release. A source is described as independent validation only after its provenance,
+geographic support, timing, and overlap with current inputs have been audited.
+
+| candidate source | intended role | current status | promotion requirement |
+|---|---|---|---|
+| Historical Southwest-West repression boundary and open replication materials | Activated geographic-boundary assignment, signed distance, published baseline replication, and placebo geometry | Acquired, checksum-bound, independently reproduced, linked, and activated | Completed: all 1,359 public assignments, signed distances, and five segment assignments reproduce exactly; source and geometry provenance are bound |
+| Cambodia Socio-Economic Survey 2023 | Prospective holdout for household, education, welfare, and coping outcomes | Official report identified; linkable microdata not acquired | Obtain authorized microdata and usable geography; harmonize outcomes without using holdout estimates to choose definitions |
+| Cambodia Agriculture Surveys 2020-2024 | Independent agricultural and irrigation validation | Public catalogue identified; analytical support unaudited | Audit geography, sampling, outcome comparability, and overlap with boundary and national designs |
+| International rice-price and Cambodian market-price systems | External price shock and domestic pass-through validation | Sources identified; provenance relationship to current price data unaudited | Separate international shock from domestic transmission; verify whether domestic systems share underlying records |
+| Annual land-productivity, cropland-productivity, and economic-activity outcomes | High-frequency outcome panels around the historical boundary | Annual land NPP for 2001-2021 and observed VIIRS nighttime activity for 2013-2021 are activated and estimated; cropland productivity remains pending | Completed for NPP and VIIRS under frozen products, support, quality, and spatial inference; a remaining cropland product requires a frozen mask, sensor, temporal composite, and validation target |
+| Independent rainfall, soil-moisture, flood, or discharge products | Shock-measure validation and possible full-period flood extension | Candidate only | Demonstrate temporal and spatial coverage, measurement independence, and outcome-compatible exposure windows |
 
 ### Analytical Units and Coverage
 
@@ -282,6 +360,12 @@ The estimation release contains two repeated-cross-section analysis samples:
   consumption, and food-security outcomes.
 - 268,485 person-wave observations for school attendance, years attended, and real education
   expenditure.
+- 3,740 village PSU-wave observations in the six waves containing comparable village-infrastructure
+  modules; 3,005 have a valid in-range irrigated agricultural land share.
+- 4,398 design-equivalent village-years from 291 villages in the frozen 5 km annual land-NPP
+  primary sample for 2001-2021.
+- 28,008 grid-cell-years from 3,112 cells in the frozen 5 km observed-VIIRS primary sample for
+  2013-2021.
 - Both releases cover the georeferenced 2007, 2009, 2011, 2013, 2014, 2016, 2017, 2019, and 2021
   survey waves. They are not longitudinal household or individual panels.
 - The exposure spine contains 5,617 unique PSU-wave rows. The household and education samples use
@@ -316,7 +400,9 @@ Agricultural physical outcomes and harmonized monetary outcomes are available ac
 constant-price riels. Direct severe food-insecurity indicators are comparable in 2014, 2016,
 2017, 2019, and 2021; the ordinal severity sum is comparable in 2016, 2017, 2019, and 2021.
 School-attendance outcomes are defined for ages 6-17, while the comparable education-expenditure
-measure begins in 2009.
+measure begins in 2009. Village irrigated agricultural land share is comparable in 2007, 2009,
+2011, 2014, 2016, and 2021. Permanent Market Access is comparable only in 2011 and 2021 and is
+restricted to secondary appendix use.
 
 ### Exploratory Screening and Limitations
 
@@ -330,6 +416,13 @@ price coverage, absent interview month in 2019, satellite-inundation coverage en
 possible selective migration, administrative-boundary harmonization, and nonrandom historical
 conflict geography. These limitations require shock-specific samples, transparent coverage
 tables, demanding geographic and survey-wave adjustment, and calibrated associational language.
+
+For future boundary-linked survey analysis, the 85 Kampong Speu PSUs, 3,748 household observations,
+and 4,291 school-age children remain upper bounds before the frozen bandwidth and outcome-specific
+shock support are imposed. Price-linked support is concentrated in three waves. The completed NPP
+and VIIRS analyses use annual spatial panels and effective-unit inference; any new survey, price,
+flood, or agricultural outcome still requires power calculations at the assignment, shock, and
+spatial-correlation levels rather than justification from individual record counts.
 
 ## 4. Variable Construction  /  Key Variables
 
@@ -370,6 +463,43 @@ imposed.
 Bombing record counts, bombing-date counts, reported aircraft counts, reported grave counts, and
 reported body counts are retained for robustness and measurement diagnostics but are not primary
 exposures. Reported bomb load or tonnage is not used as a primary measure.
+
+### Candidate Quasi-Experimental and Validation Variables
+
+The variables below are approved design targets but remain non-final until the corresponding
+source, construction, feasibility, and validation gates are completed. Materializing a candidate
+variable does not activate it for effect estimation or permit a manuscript claim.
+
+| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
+|---|---|---|---|---|---|
+| Higher-Repression Southwest Zone | Assignment to the more repressive historical Southwest zone | treatment | \(R_g=1\) for locations assigned to the Southwest zone and \(R_g=0\) for comparable West-zone locations. | Deterministic point-in-polygon assignment from the checksum-verified public zone geometry. The independent reconstruction matches all 1,359 assignments in the public replication frame. Exact public village-code linkage is primary; one unique exact normalized-name match within the same commune is the only allowed fallback rule, and unresolved links remain missing. | yes |
+| Signed Distance to Historical Repression Boundary km | Signed distance to the Southwest-West historical boundary | running variable | Minimum EPSG 32648 projected distance in kilometres to the shared zone boundary, positive in the Southwest and negative in the West. | The independent construction correlates 1.000000 with the public replication distance and has a mean absolute difference below \(10^{-12}\) km. No distance is imputed for an unresolved village link. | yes |
+| Historical Boundary Segment | Historical boundary segment identifier | design control | Identifier for the nearest of five historical-boundary vertices inside the published Kampong Speu study polygon. | Reconstruct the five public boundary vertices before outcome access and assign the nearest vertex in EPSG 32648. The independent segment assignment matches all 1,359 public replication villages. | yes |
+| Historical-Boundary Common Support | Five-kilometre historical-boundary common support | primary sample | One for an eligible village with absolute signed distance no greater than 5 km; fixed 2, 10, 15, 20, and 30 km indicators define robustness windows. | The 5 km primary bandwidth, alternative fixed bandwidths, and 0.20 standardized-outcome SESOI were approved after outcome-blind support, continuity, administrative-boundary, segment-influence, and power diagnostics. No outcome coefficient was inspected when selecting support. | yes |
+| International Rice Price Shock | Externally measured international rice-price shock | candidate contemporary shock | Pre-specified monthly log change or anomaly in an international rice-price benchmark. | Freeze benchmark, transformation, lag, and interview alignment before linking outcomes. | no |
+| Domestic Rice Price Pass-Through | Domestic transmission of the external rice-price shock | candidate validation or mechanism | Change in Cambodian market rice prices associated with the external benchmark over the same window. | Audit whether domestic sources share records with the current price system before claiming independent validation. | no |
+| Holdout Survey Indicator | Prospective holdout socioeconomic-survey observation | candidate validation sample | One for observations from a survey wave not used in the current discovery analysis. | Assign only after authorized microdata and comparable geography are obtained. | no |
+| Annual Land NPP Mean kg C per m2 | Annual local land net primary production | spatial outcome input | \(NPP_{vt}=n_{vt}^{-1}\sum_{p\in B_v}NPP_{pt}\), where \(B_v\) contains valid 500 metre pixel centres within 1,000 metres of historical village point \(v\). | Use Terra MOD17A3HGF Version 6.1 annual NPP for 2001-2024, retain values in the documented valid range, apply the 0.0001 scale factor, and take an unweighted mean over valid buffer pixels. Missing pixels are not imputed. This is land vegetation production, not crop yield or cropland-only productivity. | yes |
+| Annual Land NPP Anomaly kg C per m2 | Annual local land net primary production anomaly | primary spatial outcome | \(A_{vt}=NPP_{vt}-\overline{NPP}_{v,2001:2020}\). | Subtract each village's fixed 2001-2020 mean and retain the natural unit of kilograms of carbon per square metre. The activated analysis period is 2001-2021 because rainfall is unavailable after 2021. All villages have a complete 2001-2020 NPP baseline. | yes |
+| Annual Land NPP Anomaly Z 2001-2020 | Standardized annual local land net primary production anomaly | outcome-scale robustness | \(Z^{NPP}_{vt}=A_{vt}/s(NPP_{v,2001:2020})\). | Divide the natural-unit anomaly by the village-specific 2001-2020 standard deviation. Use this scale for the approved 0.20-SD SESOI and cross-specification comparison; natural-unit estimates remain primary for interpretation. | yes |
+| Mean NPP QC Filled Growing-Season Days Percent | Mean share of growing-season days using gap-filled NPP inputs | outcome-quality field | \(QC_{vt}=n_{vt}^{-1}\sum_{p\in B_v}QC_{pt}\). | Average the paired valid-pixel quality field within the same 1,000 metre buffer. Higher values indicate more growing-season days whose FPAR or LAI input was filled. Retain it for a prespecified measurement-quality sensitivity analysis; do not tune a threshold using estimated effects. | yes |
+| Annual Climate Link Method | Annual spatial-panel climate-geography linkage method | linkage-quality field | Categorical indicator for the geography rule used to attach commune-year rainfall to village \(v\). | Use exact historical commune code for 1,302 villages. For 17 villages in obsolete commune codes, use a deterministic village-point-within-modern-climate-commune crosswalk; unmatched or ambiguous locations remain missing. Climate linkage is complete for 2001-2021, while 2022-2024 rainfall remains missing rather than zero. | yes |
+| Log One Plus Distance to River m | Log one plus historical distance to the nearest mapped river | robustness control | \(L_v=\log(1+RiverDistance_v)\), with distance measured in metres. | Link the public replication-frame river-distance field by exact historical village code, retain nonnegative distances, apply log one plus, and do not impute. Include its interaction with rainfall and historical side only in the prespecified river-distance robustness model. | yes |
+| Cropland Productivity Anomaly | Annual cropland vegetation-productivity anomaly | candidate spatial outcome not yet materialized | Within-location annual anomaly in a pre-specified, cropland-masked vegetation or productivity measure. | Freeze a defensible cropland mask, sensor product, temporal composite, quality threshold, and validation target. The unmasked annual land NPP variables above cannot substitute for this construct. | no |
+| Annual Mean Radiance | Annual mean nighttime radiance | spatial outcome input | Annual mean VIIRS radiance for each approximately 500 metre grid cell. | Use EOG VIIRS Annual VNL V2.1 for 2013-2021. Retain zero and negative background-corrected values; do not impute or winsorize. | yes |
+| Asinh Annual Mean Radiance | Inverse-hyperbolic-sine annual mean nighttime radiance | primary independent-validation outcome | \(Y_{pt}=\operatorname{asinh}(Radiance^{mean}_{pt})\). | Transform annual mean radiance over all grid cells, including zero and negative values. Grid-cell fixed effects absorb time-invariant light levels in the boundary model. | yes |
+| Asinh Annual Median Radiance | Inverse-hyperbolic-sine annual median nighttime radiance | outcome-construction robustness | \(Y^{median}_{pt}=\operatorname{asinh}(Radiance^{median}_{pt})\). | Apply the same transformation to annual median radiance without imputation or winsorization. | yes |
+| Any Nonzero Annual Mean Radiance | Any detected nonzero annual mean nighttime radiance | extensive-margin robustness | \(1[Radiance^{mean}_{pt}\neq 0]\). | One for nonzero annual mean radiance and zero otherwise; retain negative background-corrected values as nonzero measurements. | yes |
+| Cloud-Free Observations | Annual cloud-free VIIRS observation count | outcome-quality field | Number of cloud-free observations contributing to grid cell \(p\) in year \(t\). | Retain the count continuously. The main model uses all observed pixel-years; the frozen quality robustness requires at least 40 cloud-free observations. | yes |
+| At Least 40 Cloud-Free Observations | VIIRS coverage-robustness sample indicator | quality-restricted sample | \(1[CloudFreeObservations_{pt}\geq 40]\). | Apply only as the pre-specified quality robustness restriction. It excludes 2,283 of 397,980 pixel-years; the 30-observation flag remains diagnostic only. | yes |
+| Village Irrigated Agricultural Land Share | Village agricultural land share reported as irrigated | primary village mechanism | \(IrrigatedLand_{vt}/AgriculturalLand_{vt}\). | Use comparable village-infrastructure waves 2007, 2009, 2011, 2014, 2016, and 2021. Require positive total agricultural land, nonnegative irrigated land, and a ratio in [0,1]; set zero or missing denominators and irrigated area exceeding total area to missing. The final data contain 3,005 valid in-range village-years. | yes |
+| All-Weather Road Access | Village access to an all-weather road | deferred candidate mechanism | Binary access or harmonized distance to the nearest all-weather road. | Do not activate: the item is conditionally routed after motorable-road access, so missing values cannot be coded as no access. | no |
+| Permanent Market Access | Village access to a permanent market | secondary wave-limited appendix mechanism | \(1[Village\ reports\ a\ permanent\ market]\). | Map the verified common source coding in which one denotes yes and two denotes no to 1 and 0 in 2011 and 2021 only. Preserve other waves and the single missing 2011 response as missing. The final data contain 1,359 village-years; do not describe this as a full-period mechanism. | yes |
+| Reduced Essential Education or Health Expenditure | Costly coping through reduced essential nonfood expenditure | deferred candidate mechanism | One when a household reports reducing essential education or health spending as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 53 any-yes versus 16 consistent-yes households among 10,080 households. | no |
+| Child Withdrawn from School as Coping | Costly coping through child school withdrawal | deferred candidate mechanism | One when a household reports withdrawing a child from school as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 20 any-yes versus 4 consistent-yes households among 10,080 households. | no |
+| Formal Lender Borrowing as Coping | Household formal-lender borrowing response to hardship | deferred candidate mechanism | One when a household reports borrowing money or food from a formal lender or bank as a coping response. | Code questionnaire response 3 as yes and 1 or 2 as no, but do not activate for interaction estimation: the comparable item is 2021-only and has 146 any-yes versus 37 consistent-yes households. Do not substitute general liabilities. | no |
+| Productive Asset Sale as Coping | Sale of productive assets in response to hardship | deferred candidate mechanism | One when a household reports selling productive assets or transport as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 5 any-yes and no consistent-yes households among 10,080 households. | no |
+| Adult Work Migration as Coping | Adult household member sent elsewhere for work as a coping response | deferred candidate mechanism | One when a household reports sending an adult member elsewhere to seek work. | Do not activate for interaction estimation: the comparable item is 2021-only and has 18 any-yes versus 4 consistent-yes households among 10,080 households. Do not substitute general migration. | no |
 
 ### Contemporary Climate Shocks
 
@@ -475,13 +605,18 @@ measure substitutes for the missing monthly exposure.
 
 ## 5. Identification Strategy
 
-### 5.1 Design and estimands
+The evidence hierarchy is fixed. Sections 5.3-5.5 define the central local repression-by-rainfall
+design, its activation rules, and its independent outcome validation. Sections 5.1-5.2 and 5.6
+retain completed national and mechanism analyses as supporting evidence on breadth, scope, and
+interpretation; they do not supply co-equal headline estimands.
 
-The empirical design uses repeated household and person cross-sections linked to predetermined historical-conflict exposure and contemporary shocks. The primary estimand is the change in outcome sensitivity to a contemporary shock associated with a one-standard-deviation increase in historical conflict exposure. The preferred conflict measure is Log Bombing Unique Locations per 100 km2. The primary linkage uses commune-level historical exposure; district- and province-linked records are retained for sensitivity analyses when commune linkage is unavailable.
+### 5.1 Supporting national breadth design and estimands
+
+The supporting national design uses repeated household and person cross-sections linked to predetermined historical-conflict exposure and contemporary shocks. Its estimand is the change in outcome sensitivity to a contemporary shock associated with a one-standard-deviation increase in historical conflict exposure. The preferred conflict measure is Log Bombing Unique Locations per 100 km2. The primary linkage uses commune-level historical exposure; district- and province-linked records are retained for sensitivity analyses when commune linkage is unavailable.
 
 The main specifications absorb historical-geography fixed effects and province-by-wave fixed effects. Identification therefore comes from differences in time-varying shock exposure across locations and waves, interacted with predetermined differences in conflict exposure. The key conditional assumption is that, after fixed effects and observed covariates, other time-varying determinants of outcomes are not jointly correlated with the conflict-by-shock interaction. This assumption is more credible for weather shocks than for food prices, so price results will be interpreted more cautiously and subjected to stronger spatial and temporal sensitivity checks.
 
-The shock-specific strategy is:
+The supporting shock-specific strategy is:
 
 - Drought: use 12-month SPI as the common cross-domain measure. Negative values indicate drier conditions. May–October rainfall and 3- and 6-month SPI windows will test seasonal and timing sensitivity.
 - Excess rainfall: use annual extreme-rainfall exposure as the main wet-shock measure, supplemented by seasonal rainfall and alternative threshold definitions. Continuous exposure-response estimates are preferred to a single arbitrary cutoff.
@@ -496,15 +631,117 @@ baseline legacy model. Adjusted Baseline Historical Conflict Legacy Estimates wi
 \(\rho\), its uncertainty, the analytical sample, and the province-by-wave adjustment before
 Supporting Point 1 is treated as evaluated.
 
-The central drought and food-price interaction questions are estimable with the current data. Flood amplification is only partially identified with the current satellite coverage. The proposed early-life cohort comparison is not currently identified because the data do not establish birthplace or childhood residence; age at the interview location must not be used to infer childhood conflict exposure.
+The national drought and food-price interactions are estimable but remain supporting observational
+evidence. Flood amplification is only partially identified with the current satellite coverage.
+The proposed early-life cohort comparison is not identified because the data do not establish
+birthplace or childhood residence; age at the interview location must not be used to infer
+childhood conflict exposure.
 
-### 5.2 Interpretation boundary
+### 5.2 National-design interpretation boundary
 
 The conflict-by-shock coefficient estimates differential contemporary shock sensitivity across places with different historical conflict exposure. It does not, by itself, identify the causal effect of historical conflict. Claims will therefore use terms such as amplification, differential sensitivity, and conflict-conditioned response, while explicitly conditioning causal language on the maintained spatial-linkage and parallel-response assumptions.
 
+### 5.3 Central historical-boundary annual spatial design
+
+The activated causal core is a local geographic regression-discontinuity interaction design around
+the historical boundary between the more repressive Southwest zone and the adjacent West zone. The
+outcome panel contains annual village-level land net primary production from 2001-2021. The design
+asks whether assignment to the Higher-Repression Southwest Zone changes the response of Annual Land
+NPP Anomaly kg C per m2 to May October Rainfall Anomaly Z (1991-2020). Signed Distance to Historical
+Repression Boundary km is the running variable, Historical Boundary Segment identifies locally
+comparable portions of the boundary, and Historical-Boundary Common Support fixes the primary sample
+at 5 km. Annual Rainfall Anomaly Z (1991-2020) is the pre-specified alternative shock. The treatment
+contrast concerns the intensity of Khmer Rouge repression represented by the published boundary;
+it is not a contrast between conflict and no conflict.
+
+The primary specification uses all 291 linked villages within 5 km over 2001-2021 and absorbs
+village fixed effects and Historical Boundary Segment-by-year fixed effects. A mandatory
+confirmation specification restricts the sample to the 138 villages in the nine modern climate
+communes containing villages on both historical sides and additionally absorbs modern climate
+commune-by-year fixed effects. Strong causal language requires directionally coherent, substantively
+compatible estimates across the primary and confirmation specifications. The confirmation model is
+not optional if the primary estimate is favorable.
+
+The primary outcome is annual land vegetation production, not crop yield, crop-specific production,
+or household welfare. The local design therefore identifies a geographically and substantively
+limited effect on rainfall sensitivity of land NPP. The completed national bombing-based design
+remains a broader associational analysis. The two estimands will not be pooled or described as
+replications of the same population effect.
+
+### 5.4 Identification activation and remaining stop rules
+
+The historical assignment and signed distance were independently reproduced for all 1,359 public
+replication villages. The 5 km bandwidth, May-October rainfall shock, 0.20 standardized-outcome
+smallest effect of substantive interest, and dual-specification rule were frozen before outcome
+access. The 5 km strong-dependence power calculation has an 80% minimum detectable effect near 0.16
+outcome standard deviations; the strict within-modern-commune model remains below 0.20. Density,
+road-alignment, and leave-one-segment diagnostics do not independently stop the design.
+
+Predetermined physical covariates show no multiplicity-adjusted material discontinuity at 5 km,
+although river distance exceeds the 0.25-standard-deviation review threshold with wide uncertainty.
+Rainfall-shock-by-river-distance adjustment is therefore a pre-specified robustness check. Four
+1975 settlement proxies differ materially near the boundary, but their timing overlaps the onset of
+Khmer Rouge rule; they are reported as timing-ambiguous diagnostics and are not included as main
+controls. Modern commune-boundary proximity remains a design concern and is handled by the mandatory
+within-commune confirmation model rather than declared absent.
+
+The effect is not promoted to a causal conclusion if the primary and confirmation estimates are
+directionally incompatible, if confidence intervals remain compatible with substantively important
+effects of both signs, if one boundary segment or bandwidth drives the result, or if annual-rainfall,
+quality, distance-trend, and spatial-inference checks reveal instability. Independent crop,
+nighttime-light, or socioeconomic validation is still required for a Nature Communications-level
+broad claim. Failure of validation narrows the result to land NPP in the local Kampong Speu boundary
+population rather than replacing the frozen primary design.
+
+### 5.5 Activated nighttime-activity independent validation
+
+Annual VIIRS nighttime radiance provides an independently measured spatial outcome for 2013-2021.
+The validation retains the historical assignment, signed-distance construction, five boundary
+segments, 5 km primary support, rainfall shocks, and mandatory within-modern-commune safeguard from
+the activated boundary design. The unit is an approximately 500 metre grid cell by year inside the
+Kampong Speu replication frame. The primary outcome is Asinh Annual Mean Radiance over all cells,
+including zero and negative background-corrected values. Asinh Annual Median Radiance and Any
+Nonzero Annual Mean Radiance are outcome-definition checks; at least 40 cloud-free observations is
+the frozen coverage restriction.
+
+This validation tests whether the local repression contrast changes the rainfall sensitivity of
+nighttime activity. It does not test a discontinuity in average nighttime-activity levels, identify
+a household-welfare effect, or establish national transport. It is the central independent-outcome
+validation paired with land NPP; future holdout survey, agriculture, cropland-productivity, and
+external-price evidence may broaden transport but is not required to define the present estimand.
+
+### 5.6 Supporting village-mechanism design
+
+The activated village-mechanism analysis has two complementary associational estimands. First,
+adjusted conflict gradients in Village Irrigated Agricultural Land Share and Permanent Market
+Access test whether historically exposed places exhibit weaker persistent infrastructure. Second,
+the conflict-by-drought interaction in Village Irrigated Agricultural Land Share tests whether
+reported irrigated capacity changes more adversely with drought at higher historical conflict
+exposure. The first estimand uses province-by-wave adjustment without historical-geography fixed
+effects; the second retains the national design's historical-geography and province-by-wave fixed
+effects.
+
+The unit is one village survey PSU-year. The primary specifications are unweighted because the
+village module has no released village sampling weight. A sensitivity specification weights each
+PSU-year by the summed Household Survey Weight of sampled households linked to that PSU; it is
+interpreted as household-population exposure weighting rather than a village sampling weight.
+Inference is clustered by linked historical geography. Permanent Market Access is limited to a
+baseline conflict gradient in 2011 and 2021; its short, sticky two-wave series is not used for a
+conflict-by-drought interaction.
+
+These models cannot identify causal mediation. Village infrastructure may reflect agroecology,
+post-conflict investment, migration, public programs, or measurement differences correlated with
+historical conflict. Their role is to test whether a pre-specified channel is directionally
+coherent with the completed national and local evidence.
+
 ## 6. Main Estimation Framework
 
-### 6.1 Baseline legacy model
+The central models are the outcome-blind feasibility and equivalence framework in Section 6.8,
+the land-NPP boundary model in Section 6.9, and the nighttime-activity validation model in Section
+6.10. Sections 6.1-6.7 retain the completed national analysis as supporting breadth and
+robustness; Section 6.11 retains mechanism evidence as interpretive support.
+
+### 6.1 Supporting baseline legacy model
 
 For descriptive persistence estimates:
 
@@ -518,7 +755,7 @@ The adjusted estimate from this model must be reported separately from unadjuste
 means. The existing descriptive table may remain as a sample profile, but it cannot substitute for
 the conditional estimate \(\rho\).
 
-### 6.2 Main conflict-conditioned shock model
+### 6.2 Supporting national conflict-conditioned shock model
 
 For shock family \(k\):
 
@@ -639,59 +876,241 @@ constructions; and leave-one-province-out and leave-one-wave-out re-estimation. 
 adaptive-capacity outcomes must be treated as one mechanism family for Holm adjustment before the
 irrigation association is used as channel evidence.
 
+### 6.8 Central blinded feasibility, power, and equivalence
+
+The boundary, Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary
+km, Historical Boundary Segment, Historical-Boundary Common Support, and annual rainfall design
+were constructed and audited before an NPP interaction was inspected. The 5 km primary bandwidth,
+May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) as the alternative,
+and a 0.20 standardized-outcome effect per one-standard-deviation shock as the smallest effect of
+substantive interest were frozen under outcome blinding. No numerical threshold was chosen from an
+observed NPP interaction estimate.
+
+Simulation-based power preserved the observed assignment, rainfall, year, village serial
+correlation, climate-commune-by-year dependence, and district-by-year dependence. The 5 km model
+has an 80% minimum detectable effect near 0.16 standardized outcome units. The mandatory
+within-modern-commune confirmation model remains powered below the 0.20 threshold after absorbing
+modern climate commune-by-year fixed effects. Leave-one-segment-out minimum detectable effects also
+remain below 0.20.
+
+Confidence intervals for Annual Land NPP Anomaly Z 2001-2020 are compared with the fixed
+equivalence bounds of -0.20 and 0.20. An interval contained within those bounds supports a
+substantively precise null; an interval crossing both bounds is inconclusive; and an interval that
+excludes zero but remains inside one bound is statistically detectable but substantively small.
+Natural-unit estimates remain primary for interpretation.
+
+### 6.9 Central historical-boundary rainfall-response model
+
+For village \(v\) and year \(t\), the frozen primary annual spatial model is:
+
+\[
+A_{vt} = \alpha_v + \lambda_{s(v)t} + \beta S_{c(v)t}
++ \theta \left(R_v \times S_{c(v)t}\right)
++ \eta_0 \left(d_v \times S_{c(v)t}\right)
++ \eta_1 \left(R_v \times d_v \times S_{c(v)t}\right)
++ \epsilon_{vt}.
+\]
+
+Here, \(A_{vt}\) is Annual Land NPP Anomaly kg C per m2; \(\alpha_v\) is a village fixed effect;
+\(\lambda_{s(v)t}\) is a Historical Boundary Segment-by-year fixed effect; \(R_v\) is
+Higher-Repression Southwest Zone; \(S_{c(v)t}\) is May October Rainfall Anomaly Z (1991-2020) for
+the linked climate commune \(c(v)\); \(\beta\) is shock sensitivity at the boundary on the West
+side; \(\theta\) is the Southwest-minus-West difference in shock sensitivity at the boundary and
+the primary parameter; \(d_v\) is Signed Distance to Historical Repression Boundary km; \(\eta_0\)
+and \(\eta_1\) allow the rainfall response to vary linearly with distance and separately by side;
+and \(\epsilon_{vt}\) is the error term. Village fixed effects absorb all time-invariant level
+differences, including the treatment and running-variable main effects.
+
+The primary sample contains all eligible villages within 5 km from 2001-2021 and applies equal
+village-year weights. The mandatory confirmation model restricts to modern climate communes that
+contain villages on both sides and adds \(\mu_{c(v)t}\), a modern climate commune-by-year fixed
+effect, to the equation. In that model the shock main effect is absorbed by \(\mu_{c(v)t}\), and
+\(\theta\) is identified only from within-commune, within-year cross-side differences. Strong
+causal interpretation requires compatible direction and magnitude across the two models.
+
+Annual Rainfall Anomaly Z (1991-2020), fixed 2, 10, 15, 20, and 30 km windows, triangular distance
+weights, and Annual Land NPP Anomaly Z 2001-2020 are pre-specified robustness analyses. A river
+robustness model adds the complete lower-order and three-way interactions among rainfall,
+Higher-Repression Southwest Zone, and centered Log One Plus Distance to River m. A measurement-
+quality model analogously adjusts for centered Mean NPP QC Filled Growing-Season Days Percent and
+its hierarchical interactions; no quality threshold is tuned from the estimated effect.
+
+Primary uncertainty uses two-way clustering by village and district-by-year to allow serial
+dependence within villages and contemporaneous dependence across villages in the same district.
+Village-plus-climate-commune-by-year clustering, leave-one-boundary-segment-out estimates, and the
+pre-specified strong-dependence design variance are reported as sensitivity analyses. With only
+five boundary segments and nine cross-side modern communes, segment- or commune-level bootstrap
+statistics are labelled diagnostic rather than definitive.
+
+### 6.10 Independent validation and transport
+
+Annual Land NPP Anomaly kg C per m2 is the first activated boundary outcome and is not counted as
+independent validation of itself. The validation contract will identify one untouched socioeconomic
+holdout using Holdout Survey Indicator, one independent agricultural measurement system where
+linkage is feasible, and additional annual spatial validation through Cropland Productivity Anomaly
+and Nighttime Economic Activity Anomaly.
+Independent rainfall, flood or river-discharge, and international or domestic rice-price products
+will be selected by provenance and coverage before comparison with results, not by which product
+reproduces the preferred sign.
+
+Validation requires the same treatment assignment and a compatible shock-response estimand.
+Results will report differences in population, timing, geography, outcome construction, and
+identifying variation. A validation estimate is considered compatible when its pre-specified
+confidence interval or equivalence region is consistent with the main natural-unit estimand after
+documented scale conversion. Directional similarity alone is insufficient, and failure to link or
+measure the same population is a transport limitation rather than a null replication.
+
+For VIIRS grid cell \(p\) and year \(t\), the activated nighttime-activity validation model is:
+
+\[
+Y_{pt} = \alpha_p + \lambda_{s(p)t} + \beta S_{c(p)t}
++ \theta \left(R_p \times S_{c(p)t}\right)
++ \eta_0 \left(d_p \times S_{c(p)t}\right)
++ \eta_1 \left(R_p \times d_p \times S_{c(p)t}\right)
++ \epsilon_{pt}.
+\]
+
+Here, \(Y_{pt}\) is Asinh Annual Mean Radiance, \(\alpha_p\) is a grid-cell fixed effect,
+\(R_p\) is historical-side assignment, and \(d_p\) is signed distance to the boundary. The other
+terms retain their Section 6.9 meanings at grid-cell rather than village support. The primary model
+uses 5 km support and boundary-segment-by-year fixed effects. The mandatory confirmation restricts
+to modern climate communes containing grid cells on both sides and adds climate-commune-by-year
+fixed effects. Outcome-definition, annual-rainfall, at-least-40-cloud-free-observation, triangular-
+weight, and fixed 2, 10, 15, 20, and 30 km specifications are frozen robustness checks.
+
+For equivalence reporting, natural-unit coefficients are divided by the pooled within-grid-cell
+standard deviation of Asinh Annual Mean Radiance in the frozen 5 km sample. This scale matches the
+within-cell identifying variation after grid-cell fixed effects. Confidence intervals are compared
+with the pre-specified -0.20 and 0.20 bounds. The overall radiance standard deviation remains a
+secondary scale diagnostic and is not used to strengthen the equivalence conclusion.
+
+### 6.11 Mechanism families and multiplicity
+
+For village infrastructure outcome \(j\), the adjusted persistence model is:
+
+\[
+100 M_{vgpt}^{(j)} = \rho_j C_g + \delta_{pt} + \epsilon_{vgpt}^{(j)}.
+\]
+
+Here, \(M_{vgpt}^{(j)}\) is Village Irrigated Agricultural Land Share or Permanent Market Access
+for village survey PSU \(v\), linked historical geography \(g\), province \(p\), and survey wave
+\(t\); \(\rho_j\) is the adjusted association with standardized Log Bombing Unique Locations per
+100 km2; and the remaining terms retain their Section 6.1 meanings at village PSU-year support.
+Both outcomes are expressed in percentage points. Because historical-geography fixed effects
+would absorb \(C_g\), this is a descriptive persistence model with province-by-wave fixed effects.
+
+The drought-sensitive village-irrigation model is:
+
+\[
+100 I_{vgpt} = \alpha_g + \delta_{pt} + \theta D_{gt}
++ \beta_I \left(C_g \times D_{gt}\right) + \epsilon_{vgpt}^{I}.
+\]
+
+Here, \(I_{vgpt}\) is Village Irrigated Agricultural Land Share; \(D_{gt}\) is drought severity,
+defined as the negative of standardized Interview Month SPI 12 Month; and \(\beta_I\) is the
+conflict-conditioned drought association in percentage points. Both \(C_g\) and \(D_{gt}\) are
+standardized within the complete analytical sample. The model absorbs linked historical-geography
+and province-by-wave fixed effects. Primary estimation is unweighted; the pre-specified
+household-population exposure-weighted sensitivity uses the summed Household Survey Weight within
+each PSU-year. Standard errors are clustered by linked historical geography.
+
+The expanded infrastructure and agricultural-capacity family contains six primary tests: the two
+village persistence gradients, the village irrigation conflict-by-drought interaction, and the
+previously estimated conflict-by-drought interactions for Irrigable Parcel Share, Crop Diversity
+Count, and Real 2021 Agricultural Input Cost Riels. Holm adjustment is recomputed over all six so
+that adding the village outcomes cannot strengthen the earlier parcel-irrigation claim through
+selective family definition. Weighted village sensitivities are not additional family members.
+All-Weather Road Access and the five costly-coping candidates are listed as unavailable or deferred,
+not silently omitted. Mechanism evidence remains channel-consistent rather than causal mediation.
+
+### 6.12 Nature Communications evidence gate
+
+The strongest paper configuration requires all of the following: a reproduced historical
+assignment contrast; adequate local support and effective power; continuity and modern-boundary
+checks; a stable repression-by-shock estimate or a precise equivalence result; independent
+validation; and a coherent, multiplicity-aware mechanism pattern. Passing only the local design
+supports a geographically limited causal claim. Passing only the national design supports a
+calibrated associational or precise-null claim. A large discovery coefficient that fails the
+pre-specified design or validation checks will not be promoted to the central conclusion.
+
 ## 7. Analytical Workflow
+
+The manuscript-facing evidence sequence is narrower than the full analytical inventory below:
+
+1. Reproduce the historical repression boundary and establish local identification, power, and
+   the mandatory modern-commune safeguard.
+2. Estimate the frozen land-NPP rainfall-sensitivity contrast and evaluate it against the
+   pre-specified equivalence bounds.
+3. Test the same local estimand in observed nighttime activity as an independent outcome system.
+4. Use the completed national survey and six-test mechanism families to bound generalization and
+   interpretation, not to create additional headline claims.
+5. Reserve flood, food-price, broader household, and future holdout analyses for supplementary
+   evidence or prospectively gated extensions.
+
+The table retains every completed and pending analytical step for reproducibility. Its row order
+does not imply equal narrative weight.
 
 | step | variables used | formula/model used | generated figure/table title | theory or claim evaluated | support status |
 |---|---|---|---|---|---|
-| Audit sample, linkage, and common support | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; Annual Rainfall Extreme Wet Shock; 12 Month Change in Local Relative Log Wholesale Rice Price; Survey Year Maximum Flooded Geography Share; Household Survey Weight; Person Survey Weight | Unweighted counts, survey-weighted coverage shares, linkage-level counts, and common-support diagnostics before outcome-specific estimation | Historical Conflict and Contemporary Shock Geography; Exposure Distributions and Common Support; Shock-Specific Analytical Support; Survey-Wave Sample and Unweighted Linkage Coverage; Survey-Weighted Linkage Coverage; Exposure Definitions Sources and Interpretation Rules | Whether exposure overlap and sample support are adequate for the central amplification design | Supported for estimation with shock-specific denominators; price and satellite analyses retain narrower support |
-| Describe baseline conflict legacy | Log Bombing Unique Locations per 100 km2 and confirmed agriculture, consumption, food-security, education, mechanism, and control variables | Unadjusted conflict-tercile profiles plus the Section 6.1 adjusted baseline legacy model | Descriptive Outcomes by Historical Conflict Exposure; Adjusted Baseline Historical Conflict Legacy Estimates | Persistent development legacy outside the interaction estimand | Not broadly supported: adjusted associations are small and mixed, with isolated differences in post-harvest loss, food-item count, and age rather than a coherent disadvantage gradient |
-| Estimate drought amplification | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; agricultural, consumption, food-security, and education outcomes | Main conflict-conditioned shock model in Section 6.2 and marginal response function over common conflict support | Conflict-Conditioned Shock Response Curves; Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether historical conflict is associated with greater sensitivity to drought | Inconclusive: central estimates are generally imprecise and do not establish consistent amplification |
-| Estimate excess-rainfall amplification | Log Bombing Unique Locations per 100 km2; Annual Rainfall Extreme Wet Shock; Annual Rainfall Anomaly Z (1991-2020); agricultural and welfare outcomes | Main conflict-conditioned shock model in Section 6.2 with continuous rainfall sensitivity and threshold alternatives | Conflict-Conditioned Shock Response Curves; Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether historical conflict is associated with greater sensitivity to unusually wet conditions | Inconclusive: estimates are generally imprecise and direct inundation does not reproduce a clear pattern |
-| Estimate food-price amplification | Log Bombing Unique Locations per 100 km2; 12 Month Change in Local Relative Log Wholesale Rice Price; 12 Month Change in Broad Retail Food Local Relative Log Price; consumption, food-security, and education outcomes | Main conflict-conditioned shock model in Section 6.2 with province-clustered wild-bootstrap sensitivity | Conflict-Conditioned Shock Response Curves; Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether conflict legacy amplifies purchasing-power, food-security, and education responses to local price shocks | Partially supported but definition-sensitive: the school-attendance interaction is adverse and precise under the primary bombing-density and local rice-price definitions and survives spatial, province-bootstrap, nonlinear, placebo, alternative-fixed-effect, and leave-one-out checks, but welfare estimates are near zero and the attendance result is not stable across alternative conflict and price definitions |
-| Evaluate adaptive capacity and agricultural dependence | Irrigable Parcel Share; Crop Diversity Count; Real 2021 Agricultural Input Cost Riels; Agricultural Household; Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month | Mechanism outcomes and the hierarchical three-way heterogeneity model in Section 6.4 | Adaptation Channels Under Conflict Legacy; Mechanisms Heterogeneity and Influence Checks | Whether adaptive-capacity constraints and agricultural dependence align with the proposed resilience pathway | Suggestive but not multiplicity-robust: irrigation aligns directionally with the proposed channel, but its mechanism-family Holm-adjusted p-value is 0.053; other mechanisms and subgroup differences are imprecise and none identify causal mediation |
-| Test alternative definitions, inference, and influence | Alternative conflict measures; 3-, 6-, and 12-month SPI; seasonal rainfall; wholesale and broad retail price shocks; linkage levels; weights | Section 6.6 inference plan and Section 6.7 robustness, placebo, multiplicity, nonlinear-model, and leave-one-out checks | Alternative Conflict Measures and Shock Definitions; Mechanisms Heterogeneity and Influence Checks; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether central conclusions depend on one exposure definition, shock window, region, wave, or influential observation | Completed: the full prespecified suite is reported; it supports the attendance result under the primary exposure construction but reveals instability across alternative conflict and price definitions, while mechanism-family adjustment weakens the irrigation evidence |
-| Validate with satellite-observed inundation | Annual Rainfall Extreme Wet Shock; Survey Year Maximum Flooded Geography Share; Preceding 12 Month Maximum Flooded Geography Share; Survey Year Maximum Flood Duration Days; Log Bombing Unique Locations per 100 km2; agricultural outcomes | Coverage-matched secondary interaction models and overlap diagnostics | Satellite Inundation Validation; Alternative Conflict Measures and Shock Definitions | Whether direct inundation evidence converges with the extreme-wet rainfall pattern | Not supported as convergence evidence in the current coverage: rainfall-inundation correspondence is weak and interaction estimates do not reproduce a clear amplification pattern |
-| Synthesize evidence across domains | Natural-unit and standardized interaction estimates from agriculture, consumption, food security, education, and mechanisms | Cross-domain standardized-effect synthesis with natural-unit estimates retained in tables | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates; Alternative Conflict Measures and Shock Definitions; Mechanisms Heterogeneity and Influence Checks; Adjusted Baseline Historical Conflict Legacy Estimates; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether sign, magnitude, uncertainty, and robustness jointly support conflict-conditioned shock amplification | Limited and outcome-specific support: the evidence does not establish broad cross-domain amplification; it identifies a primary-definition-specific adverse attendance response to local rice-price shocks and a suggestive, multiplicity-sensitive irrigation channel |
+| Audit sample, linkage, and common support | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; Annual Rainfall Extreme Wet Shock; 12 Month Change in Local Relative Log Wholesale Rice Price; Survey Year Maximum Flooded Geography Share; Household Survey Weight; Person Survey Weight | Unweighted counts, survey-weighted coverage shares, linkage-level counts, and common-support diagnostics before outcome-specific estimation | Shock-Specific Analytical Support | Whether exposure overlap and sample support are adequate for the supporting national analyses | Supported for estimation with shock-specific denominators; detailed maps, distributions, and linkage workbooks are retained only in the internal output archive |
+| Describe baseline conflict legacy | Log Bombing Unique Locations per 100 km2 and confirmed agriculture, consumption, food-security, education, mechanism, and control variables | Unadjusted conflict-tercile profiles plus the Section 6.1 adjusted baseline legacy model | Mechanism Pathways and National Generalization | Persistent development legacy outside the interaction estimand | Not broadly supported: adjusted associations are small and mixed; detailed baseline tables are retained only in the internal output archive |
+| Estimate drought amplification | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; agricultural, consumption, food-security, and education outcomes | Supporting national conflict-conditioned shock model in Section 6.2 and marginal response function over common conflict support | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether national observational evidence shows greater drought sensitivity at higher historical conflict exposure | Inconclusive: national estimates are generally imprecise and do not establish consistent amplification |
+| Estimate excess-rainfall amplification | Log Bombing Unique Locations per 100 km2; Annual Rainfall Extreme Wet Shock; Annual Rainfall Anomaly Z (1991-2020); agricultural and welfare outcomes | Main conflict-conditioned shock model in Section 6.2 with continuous rainfall sensitivity and threshold alternatives | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether historical conflict is associated with greater sensitivity to unusually wet conditions | Inconclusive: estimates are generally imprecise and direct inundation does not reproduce a clear pattern |
+| Estimate food-price amplification | Log Bombing Unique Locations per 100 km2; 12 Month Change in Local Relative Log Wholesale Rice Price; 12 Month Change in Broad Retail Food Local Relative Log Price; consumption, food-security, and education outcomes | Main conflict-conditioned shock model in Section 6.2 with province-clustered wild-bootstrap sensitivity | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether conflict legacy amplifies purchasing-power, food-security, and education responses to local price shocks | Partially supported but definition-sensitive: the school-attendance interaction is adverse and precise under the primary definitions but not stable across alternative conflict and price definitions |
+| Evaluate adaptive capacity and agricultural dependence | Irrigable Parcel Share; Crop Diversity Count; Real 2021 Agricultural Input Cost Riels; Agricultural Household; Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month | Mechanism outcomes and the hierarchical three-way heterogeneity model in Section 6.4 | Mechanism Pathways and National Generalization; Mechanism Families and Multiplicity Checks | Whether adaptive-capacity constraints and agricultural dependence align with the proposed resilience pathway | Suggestive but not multiplicity-robust: parcel irrigation is directionally coherent, but no activated mechanism survives the six-test Holm adjustment |
+| Test alternative definitions, inference, and influence | Alternative conflict measures; 3-, 6-, and 12-month SPI; seasonal rainfall; wholesale and broad retail price shocks; linkage levels; weights | Section 6.6 inference plan and Section 6.7 robustness, placebo, multiplicity, nonlinear-model, and leave-one-out checks | Alternative Conflict Measures and Shock Definitions; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether central conclusions depend on one exposure definition, shock window, region, wave, or influential observation | Completed: the retained formal suite reports definition, inference, multiplicity, placebo, and functional-form checks; detailed influence diagnostics remain archived internally |
+| Validate with satellite-observed inundation | Annual Rainfall Extreme Wet Shock; Survey Year Maximum Flooded Geography Share; Preceding 12 Month Maximum Flooded Geography Share; Survey Year Maximum Flood Duration Days; Log Bombing Unique Locations per 100 km2; agricultural outcomes | Coverage-matched secondary interaction models and overlap diagnostics | Alternative Conflict Measures and Shock Definitions | Whether direct inundation evidence converges with the extreme-wet rainfall pattern | Not supported as convergence evidence; the detailed satellite diagnostic figure is retained only in the internal output archive |
+| Synthesize evidence across domains | Natural-unit and standardized interaction estimates from agriculture, consumption, food security, education, and mechanisms | Cross-domain standardized-effect synthesis with natural-unit estimates retained in tables | Mechanism Pathways and National Generalization; Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates; Alternative Conflict Measures and Shock Definitions; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether sign, magnitude, uncertainty, and robustness jointly support conflict-conditioned shock amplification | Limited and outcome-specific support: the evidence does not establish broad cross-domain amplification |
+| Freeze the upgraded analysis contract | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Land NPP Anomaly kg C per m2 | Prospective decision log, 5 km primary support, 0.20 standardized-outcome SESOI, dual-specification rule, and interpretation limits frozen before outcome access | Prospective Analysis Decisions and Deviations | Whether the upgraded design separates design decisions from first outcome access | Supported: the annual spatial contract and mandatory confirmation model were human-approved after outcome-blind diagnostics |
+| Reproduce and link the historical boundary | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support | Independent reproduction of treatment assignment, deterministic spatial linkage, and blinded linkage audit | Historical Repression Boundary Design; Historical Boundary Linkage and Power Feasibility | Whether the published geographic assignment contrast can be reconstructed and linked without using contemporary outcomes | Supported: all 1,359 public assignments, signed distances, and five segment assignments reproduce exactly; annual panel linkage is complete for 2001-2021 |
+| Audit support, continuity, power, and equivalence | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020) | Covariate continuity, density, modern-boundary coincidence, effective-unit simulation, minimum detectable effects, 0.20 SESOI, and segment influence | Boundary Support Power and Continuity Diagnostics; Historical Boundary Linkage and Power Feasibility; Geographic RD Identification and Falsification Checks | Whether the local estimand is adequately powered and whether modern boundaries require a design safeguard | Partially supported with a frozen safeguard: power, density, and segment checks pass; modern commune proximity requires the mandatory within-commune confirmation model; 1975 settlement proxies remain timing-ambiguous |
+| Estimate annual land-productivity rainfall sensitivity | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020); Annual Land NPP Anomaly kg C per m2; Annual Land NPP Anomaly Z 2001-2020; Mean NPP QC Filled Growing-Season Days Percent; Log One Plus Distance to River m | Section 6.9 primary and within-modern-commune confirmation models, followed by bandwidth, annual-rainfall, standardized-outcome, river-distance, and quality sensitivities | Historical Repression and Contemporary Shock Sensitivity; Historical Boundary Shock-Response Estimates | Whether more intense historical repression changes land-NPP sensitivity to contemporary rainfall near the boundary | Supported as a substantively precise local null: the primary and mandatory confirmation estimates are small, mutually compatible, and inside the pre-specified equivalence bounds across the frozen sensitivity set |
+| Estimate local price-shock sensitivity | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical-Boundary Common Support; International Rice Price Shock; Domestic Rice Price Pass-Through; Real 2021 Food Consumption Value per Household Member Riels; Any Severe Food Insecurity Experience; Currently Attending School | Section 6.9 model with externally defined price innovation and separately estimated domestic pass-through | Historical Repression and Contemporary Shock Sensitivity; Historical Boundary Shock-Response Estimates | Whether more intense historical repression causally changes contemporary price-shock sensitivity near the boundary | Pending and conditional on adequate temporal support, pass-through evidence, and effective-unit power |
+| Validate nighttime activity independently | Asinh Annual Mean Radiance; Asinh Annual Median Radiance; Any Nonzero Annual Mean Radiance; Cloud-Free Observations; At Least 40 Cloud-Free Observations; Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020) | Section 6.10 primary and within-modern-commune grid-cell models, pooled within-cell outcome-SD conversion, equivalence bounds, and frozen outcome, coverage, weighting, rainfall, and bandwidth checks | Nighttime Activity Independent Validation; Nighttime Activity Independent Validation Estimates | Whether the local land-NPP conclusion is compatible with an independently measured nighttime-activity response | Supported as precise-null independent spatial validation: the primary estimate is 0.041 outcome SD with a 95% confidence interval from -0.033 to 0.115, and the mandatory confirmation estimate is 0.003 with a 95% confidence interval from -0.065 to 0.071; both remain inside the pre-specified equivalence bounds and do not imply absence of a level legacy |
+| Complete remaining untouched-survey and spatial validation | Holdout Survey Indicator; Cropland Productivity Anomaly; Higher-Repression Southwest Zone; Interview Month SPI 12 Month; International Rice Price Shock | Frozen compatible estimands, natural-unit scale conversion, confidence-region compatibility, and equivalence checks | Independent Validation Across Survey and Spatial Outcomes; Independent Validation and Transport Checks | Whether the local conclusion survives additional independent outcome and shock measurement and whether its population scope is transportable | Pending access, provenance, geography, and comparability audit |
+| Evaluate the activated mechanism family | Village Irrigated Agricultural Land Share; Permanent Market Access; Irrigable Parcel Share; Crop Diversity Count; Real 2021 Agricultural Input Cost Riels; Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; Household Survey Weight | Section 6.11 village persistence and conflict-conditioned drought models, household-population exposure-weighted sensitivity, and six-test Holm adjustment | Mechanism Pathways and National Generalization; Mechanism Families and Multiplicity Checks | Whether persistent village infrastructure and drought-sensitive agricultural capacity align with the proposed resilience pathway | Completed but weak: village irrigation, market access, crop diversity, and input estimates are small or imprecise; parcel irrigation is directionally coherent but has an expanded-family Holm-adjusted p-value of approximately 0.106; no result identifies causal mediation |
+| Integrate local identification and national breadth | Historical Boundary Shock-Response Estimates; Main Historical Conflict by Shock Interaction Estimates; Nighttime Activity Independent Validation Estimates; Mechanism Families and Multiplicity Checks | Structured comparison of local boundary, national associational, independent spatial-validation, mechanism, and equivalence conclusions without coefficient pooling | Mechanism Pathways and National Generalization | Whether stronger internal validity, national relevance, independent validation, and mechanisms jointly meet the evidence gate | Partially completed: the synthesis separates national discovery evidence, local land-NPP and VIIRS precise-null results, and weak mechanism evidence; the full multi-source validation and transport gate remains pending |
 
-All planned outputs are complete. The current data do not support a general claim that historical
-conflict amplifies drought, excess-rainfall, and food-price shocks across development domains.
-They support a narrower, definition-sensitive education finding under the primary bombing-density
-and local rice-price construction, together with suggestive but multiplicity-sensitive irrigation
-evidence. The flood question remains a secondary partial validation until exposure coverage is
-extended or a defensible full-period flood measure is built. The early-life cohort question cannot
-be answered with the current variables and remains outside the executable analysis plan.
+The central Nature Communications sequence has passed boundary reproduction, linkage, blinded
+power, conditional identification activation, land-NPP estimation, and independent observed-VIIRS
+validation. Both outcome systems support a substantively precise local bounded null for rainfall
+sensitivity under the frozen 5 km primary and mandatory within-modern-commune confirmation models.
+Completed national breadth analyses do not support broad cross-domain amplification; the narrower
+education-price finding remains definition-sensitive, and the six-test mechanism family contains
+no multiplicity-robust channel result. These findings bound interpretation rather than compete
+with the local central claim. Additional holdout, agriculture, cropland, price, and direct-flood
+sources remain prospectively gated extensions, while early-life cohort analysis remains outside
+scope.
 
 ## 8. Figure and Table Plan
 
 ### Figures
 
-| title | what it expresses | figure type | subpanels | key variables | status |
-|---|---|---|---:|---|---|
-| Historical Conflict and Contemporary Shock Geography | Establishes where historical conflict overlaps with drought, local food-price pressure, and satellite-observed inundation across Cambodia. | map | 4 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Local Relative Log Wholesale Rice Price, Survey Year Maximum Flooded Geography Share | done |
-| Exposure Distributions and Common Support | Tests whether the analysis has usable within-region variation and overlap in historical conflict and contemporary shocks. | histogram and boxplot | 4 | Log Bombing Unique Locations per 100 km2, Annual Rainfall Anomaly Z (1991-2020), Interview Month SPI 12 Month, Local Relative Log Wholesale Rice Price | done |
-| Conflict-Conditioned Shock Response Curves | Shows how agricultural and welfare outcomes respond to drought, extreme-wet rainfall, and food-price shocks at low, medium, and high historical conflict exposure. | line | 6 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Rainfall Extreme Wet Shock, 12 Month Change in Local Relative Log Wholesale Rice Price, Crop Yield kg per ha, Post Harvest Loss Share, Real 2021 Food Consumption Value per Household Member Riels, Any Severe Food Insecurity Experience | done |
-| Cross-Domain Amplification Effects | Summarizes the central historical-conflict-by-shock estimates across agriculture, consumption, food security, and education. | forest | 4 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Rainfall Extreme Wet Shock, 12 Month Change in Local Relative Log Wholesale Rice Price, Crop Yield kg per ha, Real 2021 Crop Production Value Riels, Real 2021 Food Consumption Value per Household Member Riels, Any Severe Food Insecurity Experience, Currently Attending School, Real 2021 Education Expenditure Riels | done |
-| Adaptation Channels Under Conflict Legacy | Evaluates whether irrigation, crop diversification, and agricultural investment explain weaker resilience in historically exposed places. | forest | 3 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Irrigable Parcel Share, Crop Diversity Count, Real 2021 Agricultural Input Cost Riels, Agricultural Household | done |
-| Satellite Inundation Validation | Compares extreme-wet rainfall with observed inundation and tests whether the central amplification pattern is reproduced in the coverage-matched satellite-event sample. | scatter and forest | 2 | Annual Rainfall Extreme Wet Shock, Survey Year Maximum Flooded Geography Share, Preceding 12 Month Maximum Flooded Geography Share, Survey Year Maximum Flood Duration Days, Log Bombing Unique Locations per 100 km2, Crop Yield kg per ha, Post Harvest Loss Share | done |
+| title | what it expresses | figure type | subpanels | key variables | placement | status |
+|---|---|---|---:|---|---|---|
+| Cross-Domain Amplification Effects | Summarizes supporting national interaction estimates across agriculture, consumption, food security, and education. | forest | 4 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Rainfall Extreme Wet Shock, 12 Month Change in Local Relative Log Wholesale Rice Price, Crop Yield kg per ha, Real 2021 Crop Production Value Riels, Real 2021 Food Consumption Value per Household Member Riels, Any Severe Food Insecurity Experience, Currently Attending School, Real 2021 Education Expenditure Riels | appendix | done |
+| Historical Repression Boundary Design | Establishes the historical assignment contrast, boundary geometry, segments, and frozen local support. | map | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support | main text | done |
+| Boundary Support Power and Continuity Diagnostics | Documents full support, continuity, power, modern-boundary, and SESOI diagnostics behind the central design. | coefficient and line | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) | appendix | done |
+| Historical Repression and Contemporary Shock Sensitivity | Presents the primary land-NPP rainfall-response result, mandatory confirmation, bandwidths, and outcome-quality sensitivity. | line and forest | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020), Annual Land NPP Anomaly kg C per m2, Annual Land NPP Anomaly Z 2001-2020, Mean NPP QC Filled Growing-Season Days Percent | main text | done |
+| Nighttime Activity Independent Validation | Tests the same local rainfall-response estimand in independently measured nighttime activity. | forest | 2 | Asinh Annual Mean Radiance, Asinh Annual Median Radiance, Any Nonzero Annual Mean Radiance, Cloud-Free Observations, At Least 40 Cloud-Free Observations, Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) | main text | done |
+| Mechanism Pathways and National Generalization | Synthesizes the local bounded-null results with supporting national breadth and multiplicity-aware mechanism evidence without pooling distinct estimands. | forest | 4 | Village Irrigated Agricultural Land Share, Permanent Market Access, Irrigable Parcel Share, Crop Diversity Count, Real 2021 Agricultural Input Cost Riels, Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Land NPP Anomaly Z 2001-2020, Asinh Annual Mean Radiance, Higher-Repression Southwest Zone | main text | done |
 
 ### Tables
 
 | title | what it expresses | rows | columns | row meaning | column meaning | placement | status |
 |---|---|---:|---:|---|---|---|---|
-| Shock-Specific Analytical Support | Makes unequal support across conflict, drought, extreme-wet rainfall, food-price, and satellite-inundation exposures transparent before comparing estimates. | 7 | 9 | One historical exposure or contemporary shock definition | Analytical role, household and person counts and coverage, PSU count, province count, and supported survey waves | main text | done |
-| Main Historical Conflict by Shock Interaction Estimates | Reports the central interaction estimates for drought, extreme-wet rainfall, and local food-price shocks across outcome domains, with uncertainty labels restricted to procedures actually reported in the table. | 24 | 10 | Outcome-by-shock estimands | Interaction estimate, confidence interval, sample size, fixed effects, controls, weights, and implemented primary uncertainty specification | main text | done |
-| Survey-Wave Sample and Unweighted Linkage Coverage | Documents released sample size and unweighted exposure linkage separately for each survey wave and the principal restricted samples. | 12 | 9 | Survey waves plus total and coverage-restricted samples | Household and person observations, PSU count, province count, and unweighted linkage coverage for conflict, drought, wholesale prices, and satellite inundation | appendix | done |
-| Survey-Weighted Linkage Coverage | Tests whether exposure availability differs materially after applying household and person survey weights. | 12 | 9 | Survey waves plus total and coverage-restricted samples | Weighted linkage coverage for conflict, drought, wholesale prices, and satellite inundation in household and person samples | appendix | done |
-| Exposure Definitions Sources and Interpretation Rules | Documents the construction, source category, missing-data rule, and interpretation boundary used in the coverage audit. | 13 | 2 | One exposure, sample definition, source category, or interpretation rule | Item and auditable definition or rule | appendix | done |
-| Descriptive Outcomes by Historical Conflict Exposure | Compares baseline livelihoods, welfare, food security, and education across low, medium, and high historical conflict exposure. | 18 | 8 | Confirmed outcome, mechanism, and control variables | Full sample and three conflict-exposure groups with means, standard deviations, and standardized differences | appendix | done |
+| Shock-Specific Analytical Support | Makes unequal support across conflict, drought, extreme-wet rainfall, food-price, and satellite-inundation exposures transparent before comparing supporting national estimates. | 7 | 9 | One historical exposure or contemporary shock definition | Analytical role, household and person counts and coverage, PSU count, province count, and supported survey waves | appendix | done |
+| Main Historical Conflict by Shock Interaction Estimates | Reports supporting national interaction estimates across drought, extreme-wet rainfall, and local food-price shocks. | 24 | 10 | Outcome-by-shock estimands | Interaction estimate, confidence interval, sample size, fixed effects, controls, weights, and implemented primary uncertainty specification | appendix | done |
 | Alternative Conflict Measures and Shock Definitions | Tests whether results survive alternative historical conflict measures, climate windows, and price constructions, including targeted alternatives for the school-attendance response to local rice-price shocks. | 29 | 10 | Alternative exposure and shock specifications | Core estimate, alternative estimate, confidence interval, sample, and specification indicators | appendix | done |
-| Mechanisms Heterogeneity and Influence Checks | Evaluates adaptation channels, agricultural dependence, regional heterogeneity, leave-one-region and leave-one-wave sensitivity, and influential observations using complete hierarchical interaction specifications, including targeted influence checks for school attendance under local price shocks. | 20 | 10 | Mechanism, subgroup, or influence diagnostic | Interaction estimate, confidence interval, sample size, subgroup definition, and diagnostic result | appendix | done |
-| Adjusted Baseline Historical Conflict Legacy Estimates | Reports conditional associations between historical conflict exposure and current outcomes after province-by-wave adjustment, separately from unadjusted conflict-tercile profiles. | 18 | 9 | One confirmed agriculture, consumption, food-security, education, mechanism, or control outcome | Domain, outcome scale, adjusted conflict coefficient, confidence interval, sample size, fixed effects, controls, weights, and interpretation boundary | appendix | done |
 | Inference and Multiplicity Checks | Tests whether central conflict-by-shock and adaptive-capacity-mechanism inference is robust to residual spatial dependence, coarse price clustering, and within-family multiple testing. | 27 | 12 | One central outcome-by-shock or mechanism estimand | Estimate, geography-clustered inference, Spatial-HAC inference at 50, 100, and 200 km, province wild-bootstrap inference for price models, multiplicity-adjusted inference, sample size, and estimability status | appendix | done |
 | Falsification and Functional Form Checks | Tests future-shock placebos, nonlinear binary and count models, and alternative fixed-effect structures for representative central outcomes. | 20 | 10 | One outcome-by-shock falsification, estimator, or fixed-effect comparison | Check family, outcome and shock, core estimate, alternative estimate, confidence interval or p-value, sample size, estimator, fixed effects, comparison rule, and diagnostic conclusion | appendix | done |
+| Historical Boundary Linkage and Power Feasibility | Audits reproduction, spatial linkage, observations and shocks on each side, candidate bandwidths, effective independent units, minimum detectable effects, and equivalence feasibility before outcome estimation. | to be determined after acquisition | 12 | One reproduction, linkage, support, bandwidth, shock, or outcome-family power diagnostic | Diagnostic definition, side-specific counts, waves, segments, bandwidth, effective units, smallest substantive effect, minimum detectable effect, equivalence bound, pass rule, and status | main text | done |
+| Geographic RD Identification and Falsification Checks | Reports the full predetermined continuity, density, distance-trend, bandwidth, placebo, road-alignment, and segment-influence suite. | to be determined after feasibility | 12 | One identification or falsification check | Check family, variable or estimand, specification, bandwidth, estimate, confidence interval, spatial inference, effective units, multiplicity status, pre-specified pass rule, result, and interpretation | appendix | done |
+| Historical Boundary Shock-Response Estimates | Reports the frozen annual land-NPP repression-by-rainfall effects under the primary, within-modern-commune confirmation, bandwidth, annual-rainfall, standardized-outcome, and quality-sensitivity specifications. | 12 | 12 | One outcome-by-shock specification within activated historical-boundary support | Outcome, shock, sample, bandwidth, interaction estimate, natural-unit or standardized scale, confidence interval, SESOI comparison, effective units, fixed effects, inference, and interpretation | main text | done |
+| Nighttime Activity Independent Validation Estimates | Reports the compatible VIIRS repression-by-rainfall estimate under the frozen primary, within-modern-commune, outcome-definition, coverage, weighting, rainfall, and bandwidth specifications. | 12 | 12 | One nighttime-activity outcome-by-rainfall specification within activated historical-boundary support | Outcome, shock, sample, bandwidth, interaction estimate, standardized scale, confidence interval, SESOI comparison, effective units, fixed effects, inference, and interpretation | appendix | done |
+| Mechanism Families and Multiplicity Checks | Reports the six activated infrastructure and agricultural-capacity tests, two village-weighting sensitivities, and transparent deferral of conditionally routed or sparse candidates. | 9 | 11 | One primary mechanism estimand, weighting sensitivity, or deferred candidate group | Family, variable, waves, timing, model, estimate, confidence interval, raw p-value, Holm p-value, availability, and channel interpretation | appendix | done |
+| Prospective Analysis Decisions and Deviations | Preserves the frozen outcome hierarchy, source selection, bandwidth rules, smallest effects, equivalence bounds, gates, and any dated deviations from the confirmatory contract. | to be determined prospectively | 8 | One pre-specified decision or dated deviation | Date, stage, decision, rationale, evidence unavailable at decision, gate affected, deviation status, and consequence | appendix | done |
 
-⚠️ 警告：以下变量在 AnaSOP Section 4 中未标记为最终分析变量，建议在将卫星洪水结果提升为主分析前返回 data-preprocessing 补充确认：
+卫星洪水变量及其详细诊断目前仅属于内部归档分析，不构成正式图表计划。若未来将其重新提升为正式结果，需要先返回 data-preprocessing 完成最终变量确认。
 
-- Survey Year Maximum Flooded Geography Share（用于 Historical Conflict and Contemporary Shock Geography、Satellite Inundation Validation、Shock-Specific Analytical Support、Survey-Wave Sample and Unweighted Linkage Coverage、Survey-Weighted Linkage Coverage）
-- Preceding 12 Month Maximum Flooded Geography Share（用于 Satellite Inundation Validation）
-- Survey Year Maximum Flood Duration Days（用于 Satellite Inundation Validation）
+⚠️ 警告：历史边界设计、年度土地NPP、年度降雨、5 km支持变量、观察期VIIRS变量和已激活的村级机制变量已经通过人工确认，其对应图表均已完成。未来留出调查、独立农业、耕地生产力和外部价格扩展不属于当前 Figure and Table Plan；只有在相应数据完成 acquisition、data-briefing、data-preprocessing 和 feasibility-check，并由人工确认最终变量后，才能重新加入计划。

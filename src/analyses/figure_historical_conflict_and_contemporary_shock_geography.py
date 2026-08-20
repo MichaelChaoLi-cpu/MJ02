@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from matplotlib.patches import Patch
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -26,7 +27,7 @@ HOUSEHOLD_PATH = (
 CONFLICT_PATH = ROOT / "data/processed/historical_conflict_commune_preprocessed.parquet"
 OUTPUT_PATH = (
     ROOT
-    / "data/results/figures/Figure_historical_conflict_and_contemporary_shock_geography.png"
+    / "data/exp/internal_output_archive/figures/Figure_historical_conflict_and_contemporary_shock_geography.png"
 )
 
 YEAR = "Survey Year"
@@ -39,6 +40,7 @@ CONFLICT = "Log Bombing Unique Locations per 100 km2"
 SPI12 = "Interview Month SPI 12 Month"
 PRICE = "Local Relative Log Wholesale Rice Price"
 FLOOD = "Survey Year Maximum Flooded Geography Share"
+MISSING_COVERAGE_COLOR = "#E5E7EB"
 
 
 def read_map_data() -> tuple[gpd.GeoDataFrame, gpd.GeoDataFrame, gpd.GeoDataFrame, gpd.GeoDataFrame]:
@@ -144,7 +146,7 @@ def plot_panel(
         vmax=vmax,
         linewidth=0.12,
         edgecolor="#FFFFFF",
-        missing_kwds={"color": "#E5E7EB", "edgecolor": "#FFFFFF"},
+        missing_kwds={"color": MISSING_COVERAGE_COLOR, "edgecolor": "#FFFFFF"},
     )
     outline.boundary.plot(ax=ax, color="#4B5563", linewidth=0.45)
     min_x, min_y, max_x, max_y = outline.total_bounds
@@ -197,12 +199,35 @@ def plot_panel(
         color="#111827",
         bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.88, "pad": 2.5},
     )
+    if data[column].isna().any():
+        legend = ax.legend(
+            handles=[
+                Patch(
+                    facecolor=MISSING_COVERAGE_COLOR,
+                    edgecolor="#9CA3AF",
+                    linewidth=0.45,
+                    label="No linked coverage",
+                )
+            ],
+            loc="upper right",
+            bbox_to_anchor=(0.99, 0.94),
+            frameon=True,
+            framealpha=0.92,
+            facecolor="white",
+            edgecolor="#D1D5DB",
+            fontsize=7.5,
+            borderpad=0.35,
+            handlelength=1.1,
+            handleheight=0.8,
+            labelspacing=0.3,
+        )
+        legend.set_zorder(10)
     scalar = mpl.cm.ScalarMappable(
         norm=mpl.colors.Normalize(vmin=vmin, vmax=vmax), cmap=cmap
     )
     scalar.set_array([])
     colorbar = ax.figure.colorbar(
-        scalar, ax=ax, orientation="horizontal", fraction=0.038, pad=0.018
+        scalar, ax=ax, orientation="horizontal", fraction=0.032, pad=0.060
     )
     colorbar.set_label(colorbar_label, fontsize=8.5, color="#374151")
     colorbar.ax.tick_params(labelsize=8, colors="#374151", length=2)
@@ -221,7 +246,7 @@ def main() -> None:
             "figure.facecolor": "white",
         }
     )
-    figure, axes = plt.subplots(2, 2, figsize=(12.6, 11.0))
+    figure, axes = plt.subplots(2, 2, figsize=(12.6, 11.4))
     plot_panel(
         axes[0, 0],
         conflict,
@@ -273,7 +298,7 @@ def main() -> None:
         top=0.985,
         bottom=0.025,
         wspace=0.08,
-        hspace=0.12,
+        hspace=0.20,
     )
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)

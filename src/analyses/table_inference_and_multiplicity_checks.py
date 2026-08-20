@@ -4,8 +4,9 @@
 Plan: Re-estimate the 24 central outcome-by-shock interactions and report
 geography-clustered inference, Spatial-HAC inference at 50/100/200 km,
 province-clustered restricted wild-bootstrap inference for price models, and
-Holm-adjusted inference within outcome families.
-Framework: AnaSOP Sections 5.1-5.2, 6.2-6.7, and the inference workflow step
+Holm-adjusted inference within outcome families. The three household mechanism
+rows use the expanded six-test mechanism family frozen in Section 6.11.
+Framework: AnaSOP Sections 5.1-5.2, 6.2-6.7, 6.11, and the inference workflow step
 in Section 7. Spatial-HAC combines serial clustering within historical
 geography with Bartlett-weighted same-wave covariance across commune
 centroids. Price wild-bootstrap p-values use 999 Rademacher draws.
@@ -26,6 +27,14 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 from scipy import sparse
 from scipy.spatial import cKDTree
 from scipy.stats import norm
+
+from table_mechanism_families_and_multiplicity_checks import (
+    MARKET as VILLAGE_MARKET,
+    PSU,
+    VILLAGE_IRRIGATION,
+    VILLAGE_PATH,
+    build_table as build_expanded_mechanism_table,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -531,10 +540,34 @@ def build_table(
             f"{spec.outcome.label} × {SHOCK_LABELS[spec.shock]}"
         )
 
+    village_columns = [YEAR, PSU, VILLAGE_IRRIGATION, VILLAGE_MARKET]
+    villages = pd.read_parquet(VILLAGE_PATH, columns=village_columns)
+    expanded_frame, _ = build_expanded_mechanism_table(villages, households)
+    expanded_household = expanded_frame.loc[
+        expanded_frame["Variable"].isin([IRRIGATION, DIVERSITY, INPUT_COST])
+    ].copy()
+    expanded_raw = expanded_household.set_index("Variable")["Raw p-value"].to_dict()
+    expanded_holm = expanded_household.set_index("Variable")["Holm p-value"].to_dict()
+    if set(expanded_holm) != {IRRIGATION, DIVERSITY, INPUT_COST}:
+        raise ValueError("Expanded six-test mechanism family is incomplete")
+
     adjusted = [np.nan] * len(SPECS)
     families = [multiplicity_family(spec.outcome.domain) for spec in SPECS]
     for family in sorted(set(families)):
         positions = [index for index, value in enumerate(families) if value == family]
+        if family == "Mechanism":
+            for position in positions:
+                variable = SPECS[position].outcome.outcome
+                if not np.isclose(
+                    fitted_results[position].primary_p,
+                    expanded_raw[variable],
+                    atol=1e-10,
+                ):
+                    raise ValueError(
+                        f"Mechanism raw p-value does not reconcile for {variable}"
+                    )
+                adjusted[position] = expanded_holm[variable]
+            continue
         corrected = holm_adjust([fitted_results[index].primary_p for index in positions])
         for position, value in zip(positions, corrected):
             adjusted[position] = value
@@ -545,6 +578,11 @@ def build_table(
             status = (
                 f"All estimable; {result.geography_clusters} geography and "
                 f"{result.province_clusters} province clusters"
+            )
+        elif spec.outcome.domain == "Mechanism":
+            status = (
+                "Expanded six-test mechanism family; wild bootstrap not applicable; "
+                f"{result.geography_clusters} geography clusters"
             )
         else:
             status = (
@@ -724,6 +762,7 @@ def main() -> None:
             HOUSEHOLD_WEIGHT,
             HOUSEHOLD_SIZE,
             AGRICULTURAL_HOUSEHOLD,
+            PSU,
             CONFLICT,
             SPI12,
             EXTREME_WET,

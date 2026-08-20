@@ -27,7 +27,7 @@ HOUSEHOLD_PATH = (
 EDUCATION_PATH = (
     ROOT / "data/processed/direction3_education_conflict_shock_preprocessed.parquet"
 )
-OUTPUT_PATH = ROOT / "data/results/tables/Table_survey_weighted_linkage_coverage.xlsx"
+OUTPUT_PATH = ROOT / "data/exp/internal_output_archive/tables/Table_survey_weighted_linkage_coverage.xlsx"
 
 YEAR = "Survey Year"
 HOUSEHOLD_WEIGHT = "Household Survey Weight"

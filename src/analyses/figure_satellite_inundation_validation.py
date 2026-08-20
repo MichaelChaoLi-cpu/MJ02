@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUT_PATH = (
     ROOT / "data/processed/direction3_household_conflict_shock_preprocessed.parquet"
 )
-OUTPUT_PATH = ROOT / "data/results/figures/Figure_satellite_inundation_validation.png"
+OUTPUT_PATH = ROOT / "data/exp/internal_output_archive/figures/Figure_satellite_inundation_validation.png"
 
 YEAR = "Survey Year"
 RESOLUTION = "Climate Geography Resolution"

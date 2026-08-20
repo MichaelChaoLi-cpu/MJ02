@@ -31,7 +31,7 @@ EDUCATION_PATH = (
 )
 OUTPUT_PATH = (
     ROOT
-    / "data/results/tables/Table_adjusted_baseline_historical_conflict_legacy_estimates.xlsx"
+    / "data/exp/internal_output_archive/tables/Table_adjusted_baseline_historical_conflict_legacy_estimates.xlsx"
 )
 
 YEAR = "Survey Year"

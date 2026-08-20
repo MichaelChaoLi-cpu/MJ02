@@ -4,8 +4,10 @@
 Plan: Evaluate whether irrigation capacity, crop diversification, and
 agricultural investment respond differently to drought across historical
 conflict exposure.
-Framework: AnaSOP Sections 5.1-5.2, 6.2-6.5, and the adaptive-capacity step
-in Section 7. Results are supporting mechanism evidence, not causal mediation.
+Framework: AnaSOP Sections 5.1-5.2, 6.2-6.5, 6.11, and the adaptive-capacity
+step in Section 7. The three household interactions belong to the expanded
+six-test Holm family. Results are supporting mechanism evidence, not causal
+mediation.
 """
 from __future__ import annotations
 
@@ -19,13 +21,21 @@ import pandas as pd
 import seaborn as sns
 from linearmodels.iv import AbsorbingLS
 
+from table_mechanism_families_and_multiplicity_checks import (
+    MARKET as VILLAGE_MARKET,
+    PSU,
+    VILLAGE_IRRIGATION,
+    VILLAGE_PATH,
+    build_table as build_expanded_mechanism_table,
+)
+
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT_PATH = (
     ROOT / "data/processed/direction3_household_conflict_shock_preprocessed.parquet"
 )
 OUTPUT_PATH = (
-    ROOT / "data/results/figures/Figure_adaptation_channels_under_conflict_legacy.png"
+    ROOT / "data/exp/internal_output_archive/figures/Figure_adaptation_channels_under_conflict_legacy.png"
 )
 
 YEAR = "Survey Year"
@@ -201,7 +211,7 @@ def marginal_response(result: ModelResult, conflict_level: float) -> tuple[float
     return estimate, float(np.sqrt(max(variance, 0.0)))
 
 
-def plot_panel(ax: plt.Axes, result: ModelResult) -> None:
+def plot_panel(ax: plt.Axes, result: ModelResult, holm_p: float) -> None:
     positions = np.arange(len(CONFLICT_LEVELS))[::-1]
     for position, (label, conflict_level, color) in zip(
         positions, CONFLICT_LEVELS, strict=True
@@ -246,12 +256,18 @@ def plot_panel(ax: plt.Axes, result: ModelResult) -> None:
     ax.text(
         0.98,
         0.97,
-        f"N = {result.sample_size:,} · clusters = {result.cluster_count:,}",
+        (
+            f"N = {result.sample_size:,} · clusters = {result.cluster_count:,}\n"
+            f"Interaction: six-test Holm p = {holm_p:.3f}"
+        ),
         transform=ax.transAxes,
         ha="right",
         va="top",
         fontsize=7.6,
         color="#4B5563",
+        linespacing=1.35,
+        bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.92, "pad": 1.8},
+        zorder=5,
     )
     ax.spines[["top", "right", "left"]].set_visible(False)
     ax.spines["bottom"].set_color("#9CA3AF")
@@ -274,16 +290,30 @@ def main() -> None:
         IRRIGATION,
         DIVERSITY,
         INPUT_COST,
+        PSU,
     ]
     data = pd.read_parquet(INPUT_PATH, columns=columns)
     assert len(data) == 62_920
     results = [fit_model(data, spec) for spec in PANEL_SPECS]
 
+    villages = pd.read_parquet(
+        VILLAGE_PATH,
+        columns=[YEAR, PSU, VILLAGE_IRRIGATION, VILLAGE_MARKET],
+    )
+    expanded_frame, _ = build_expanded_mechanism_table(villages, data)
+    expanded_household = expanded_frame.loc[
+        expanded_frame["Variable"].isin([IRRIGATION, DIVERSITY, INPUT_COST])
+    ]
+    expanded_holm = expanded_household.set_index("Variable")["Holm p-value"].to_dict()
+    if set(expanded_holm) != {IRRIGATION, DIVERSITY, INPUT_COST}:
+        raise ValueError("Expanded six-test mechanism family is incomplete")
+    assert round(float(expanded_holm[IRRIGATION]), 3) == 0.106
+
     sns.set_theme(style="whitegrid", context="paper")
     mpl.rcParams.update({"font.family": "DejaVu Sans", "figure.facecolor": "white"})
     figure, axes = plt.subplots(1, 3, figsize=(14.0, 4.7))
     for ax, result in zip(axes, results, strict=True):
-        plot_panel(ax, result)
+        plot_panel(ax, result, float(expanded_holm[result.spec.outcome]))
     figure.subplots_adjust(left=0.12, right=0.985, top=0.93, bottom=0.17, wspace=0.48)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -298,7 +328,8 @@ def main() -> None:
             f"{result.spec.letter} {result.spec.descriptor}: "
             f"N={result.sample_size:,}, clusters={result.cluster_count:,}, "
             f"conflict×drought={result.interaction_coefficient:.6f}, "
-            f"SE={interaction_se:.6f}"
+            f"SE={interaction_se:.6f}, "
+            f"six-test Holm p={expanded_holm[result.spec.outcome]:.6f}"
         )
         for label, conflict_level, _ in CONFLICT_LEVELS:
             estimate, standard_error = marginal_response(result, conflict_level)

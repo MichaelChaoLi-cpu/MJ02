@@ -12,7 +12,7 @@ from openpyxl.worksheet.page import PageMargins
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = (
     ROOT
-    / "data/results/tables/Table_exposure_definitions_sources_and_interpretation_rules.xlsx"
+    / "data/exp/internal_output_archive/tables/Table_exposure_definitions_sources_and_interpretation_rules.xlsx"
 )
 
 

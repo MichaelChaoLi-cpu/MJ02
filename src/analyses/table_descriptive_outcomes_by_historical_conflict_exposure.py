@@ -30,7 +30,7 @@ EDUCATION_PATH = (
 )
 OUTPUT_PATH = (
     ROOT
-    / "data/results/tables/Table_descriptive_outcomes_by_historical_conflict_exposure.xlsx"
+    / "data/exp/internal_output_archive/tables/Table_descriptive_outcomes_by_historical_conflict_exposure.xlsx"
 )
 
 RESOLUTION = "Climate Geography Resolution"

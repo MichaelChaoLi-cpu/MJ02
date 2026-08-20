@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Mechanisms Heterogeneity and Influence Checks.
 
-Plan: Report 18 mechanism, subgroup, leave-one-province, leave-one-wave, and
+Plan: Report 20 mechanism, subgroup, leave-one-province, leave-one-wave, and
 outlier-influence diagnostics for the conflict-conditioned shock design.
-Framework: AnaSOP Sections 5.1-5.2, 6.2-6.7, and the mechanism and influence
-workflow steps in Section 7. Mechanism estimates are supporting associations,
-not causal mediation effects; outlier exclusions are sensitivity checks only.
+Framework: AnaSOP Sections 5.1-5.2, 6.2-6.7, 6.11, and the mechanism and
+influence workflow steps in Section 7. Mechanism estimates use the expanded
+six-test Holm family and remain supporting associations, not causal mediation
+effects; outlier exclusions are sensitivity checks only.
 """
 from __future__ import annotations
 
@@ -20,6 +21,14 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
+from table_mechanism_families_and_multiplicity_checks import (
+    MARKET as VILLAGE_MARKET,
+    PSU,
+    VILLAGE_IRRIGATION,
+    VILLAGE_PATH,
+    build_table as build_expanded_mechanism_table,
+)
+
 
 ROOT = Path(__file__).resolve().parents[2]
 INPUT_PATH = (
@@ -30,7 +39,7 @@ EDUCATION_PATH = (
 )
 OUTPUT_PATH = (
     ROOT
-    / "data/results/tables/Table_mechanisms_heterogeneity_and_influence_checks.xlsx"
+    / "data/exp/internal_output_archive/tables/Table_mechanisms_heterogeneity_and_influence_checks.xlsx"
 )
 
 YEAR = "Survey Year"
@@ -422,11 +431,20 @@ def base_row(
     }
 
 
-def mechanism_rows(data: pd.DataFrame) -> list[dict[str, object]]:
+def mechanism_rows(
+    data: pd.DataFrame,
+    expanded_holm: dict[str, float],
+) -> list[dict[str, object]]:
     rows = []
     for outcome in MECHANISMS:
         sample = build_model_sample(data, outcome, "drought", [AGRICULTURAL_HOUSEHOLD])
         result = fit_interaction(sample)
+        holm_p = expanded_holm[outcome.variable]
+        interpretation = (
+            "Directionally coherent but not multiplicity-robust; not causal mediation"
+            if outcome.variable == IRRIGATION
+            else "No multiplicity-robust channel evidence; not causal mediation"
+        )
         rows.append(
             base_row(
                 "Adaptive-capacity mechanism",
@@ -435,8 +453,8 @@ def mechanism_rows(data: pd.DataFrame) -> list[dict[str, object]]:
                 "Conflict × drought",
                 result,
                 "Agricultural households",
-                precision_text(result),
-                "Supporting channel association; not causal mediation",
+                f"{precision_text(result)} nominally; six-test Holm p={holm_p:.3f}",
+                interpretation,
             )
         )
     return rows
@@ -579,8 +597,12 @@ def outlier_row(data: pd.DataFrame, spec: CoreSpec) -> dict[str, object]:
     )
 
 
-def build_table(data: pd.DataFrame, education: pd.DataFrame) -> pd.DataFrame:
-    rows = mechanism_rows(data)
+def build_table(
+    data: pd.DataFrame,
+    education: pd.DataFrame,
+    expanded_holm: dict[str, float],
+) -> pd.DataFrame:
+    rows = mechanism_rows(data, expanded_holm)
     rows.extend(heterogeneity_rows(data))
     rows.extend(
         leave_one_out_row(data, spec, PROVINCE, "Leave-one-province-out")
@@ -716,6 +738,13 @@ def validate_output(frame: pd.DataFrame) -> None:
         "Leave-one-wave-out": 5,
         "Place heterogeneity": 2,
     }
+    mechanism = frame.loc[frame["Diagnostic family"].eq("Adaptive-capacity mechanism")]
+    assert mechanism["Diagnostic result"].str.contains("six-test Holm p=").all()
+    irrigation = mechanism.loc[
+        mechanism["Outcome or mechanism (model scale)"].str.startswith("Irrigable")
+    ].iloc[0]
+    assert "six-test Holm p=0.106" in irrigation["Diagnostic result"]
+    assert "not multiplicity-robust" in irrigation["Interpretation"]
 
     workbook = load_workbook(OUTPUT_PATH, data_only=False)
     assert workbook.sheetnames == ["Mechanisms and Influence"]
@@ -746,6 +775,7 @@ def main() -> None:
             EXTREME_WET,
             PRICE_12M,
             AGRICULTURAL_HOUSEHOLD,
+            PSU,
             URBAN_RURAL,
             *[spec.variable for spec in MECHANISMS],
             *[spec.variable for spec in AGRICULTURAL_HETEROGENEITY],
@@ -780,7 +810,19 @@ def main() -> None:
     ]
     education = pd.read_parquet(EDUCATION_PATH, columns=education_columns)
 
-    table = build_table(data, education)
+    villages = pd.read_parquet(
+        VILLAGE_PATH,
+        columns=[YEAR, PSU, VILLAGE_IRRIGATION, VILLAGE_MARKET],
+    )
+    expanded_frame, _ = build_expanded_mechanism_table(villages, data)
+    expanded_household = expanded_frame.loc[
+        expanded_frame["Variable"].isin([IRRIGATION, DIVERSITY, INPUT_COST])
+    ]
+    expanded_holm = expanded_household.set_index("Variable")["Holm p-value"].to_dict()
+    if set(expanded_holm) != {IRRIGATION, DIVERSITY, INPUT_COST}:
+        raise ValueError("Expanded six-test mechanism family is incomplete")
+
+    table = build_table(data, education, expanded_holm)
     write_workbook(table)
     validate_output(table)
     print(f"Saved: {OUTPUT_PATH.relative_to(ROOT)}")

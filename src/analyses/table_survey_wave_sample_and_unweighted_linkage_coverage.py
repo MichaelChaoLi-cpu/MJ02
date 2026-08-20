@@ -29,7 +29,7 @@ EDUCATION_PATH = (
 )
 OUTPUT_PATH = (
     ROOT
-    / "data/results/tables/Table_survey_wave_sample_and_unweighted_linkage_coverage.xlsx"
+    / "data/exp/internal_output_archive/tables/Table_survey_wave_sample_and_unweighted_linkage_coverage.xlsx"
 )
 
 YEAR = "Survey Year"
