@@ -26,8 +26,8 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 ROOT = Path(__file__).resolve().parents[2]
 VILLAGE_PATH = ROOT / "data/processed/direction3_village_mechanisms_preprocessed.parquet"
 HOUSEHOLD_PATH = ROOT / "data/processed/direction3_household_conflict_shock_preprocessed.parquet"
-PRIOR_INFERENCE_PATH = ROOT / "data/results/tables/Table_inference_and_multiplicity_checks.xlsx"
-OUTPUT_PATH = ROOT / "data/results/tables/Table_mechanism_families_and_multiplicity_checks.xlsx"
+PRIOR_INFERENCE_PATH = ROOT / "data/exp/legacy-results/tables/Table_inference_and_multiplicity_checks.xlsx"
+OUTPUT_PATH = ROOT / "data/exp/legacy-results/tables/Table_mechanism_families_and_multiplicity_checks.xlsx"
 
 YEAR = "Survey Year"
 PSU = "PSU"

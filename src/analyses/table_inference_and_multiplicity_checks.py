@@ -45,7 +45,7 @@ EDUCATION_PATH = (
     ROOT / "data/processed/direction3_education_conflict_shock_preprocessed.parquet"
 )
 BOUNDARY_PATH = ROOT / "data/raw/geography/odc_cambodia_communes_2014.gpkg"
-OUTPUT_PATH = ROOT / "data/results/tables/Table_inference_and_multiplicity_checks.xlsx"
+OUTPUT_PATH = ROOT / "data/exp/legacy-results/tables/Table_inference_and_multiplicity_checks.xlsx"
 
 YEAR = "Survey Year"
 RESOLUTION = "Climate Geography Resolution"

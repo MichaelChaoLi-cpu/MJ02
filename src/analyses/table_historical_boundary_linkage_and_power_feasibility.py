@@ -37,7 +37,7 @@ IDENTIFICATION_DIAGNOSTICS = (
 )
 OUTPUT = (
     ROOT
-    / "data/results/tables/Table_historical_boundary_linkage_and_power_feasibility.xlsx"
+    / "data/exp/legacy-results/tables/Table_historical_boundary_linkage_and_power_feasibility.xlsx"
 )
 
 SESOI = 0.20

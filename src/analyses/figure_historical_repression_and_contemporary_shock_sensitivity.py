@@ -28,7 +28,7 @@ PANEL = (
 )
 OUTPUT = (
     ROOT
-    / "data/results/figures/Figure_historical_repression_and_contemporary_shock_sensitivity.png"
+    / "data/exp/legacy-results/figures/Figure_historical_repression_and_contemporary_shock_sensitivity.png"
 )
 
 PRIMARY_OUTCOME = "Annual Land NPP Anomaly kg C per m2"

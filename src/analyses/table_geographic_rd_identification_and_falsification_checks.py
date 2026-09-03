@@ -32,7 +32,7 @@ DIAGNOSTICS = ROOT / "data/exp/feasibility-check/historical-boundary-identificat
 PUBLIC_SOURCE = ROOT / "data/exp/data-preprocessing/historical-boundary-source"
 OUTPUT = (
     ROOT
-    / "data/results/tables/Table_geographic_rd_identification_and_falsification_checks.xlsx"
+    / "data/exp/legacy-results/tables/Table_geographic_rd_identification_and_falsification_checks.xlsx"
 )
 
 OUTCOME = "Annual Land NPP Anomaly Z 2001-2020"

@@ -1,7 +1,7 @@
 """Construct long-baseline CHIRPS drought and extreme-wet shock measures.
 
 Rainfall is extracted at commune, district, and province levels from the
-1981-2021 Cambodia subset. SPI-3, SPI-6, and SPI-12 use gamma distributions fit
+1981-2024 Cambodia subset. SPI-3, SPI-6, and SPI-12 use gamma distributions fit
 separately by geography and ending calendar month over the 1991-2020 climate
 normal. Annual and May-October extremes use the same fixed baseline.
 """
@@ -303,6 +303,11 @@ def attach_to_psu(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
+    parser.add_argument(
+        "--input",
+        type=Path,
+        default=Path("data/raw/climate/chirps_v2_monthly_cambodia_1981_2024.nc"),
+    )
     args = parser.parse_args()
     root = args.root.resolve()
     raw = root / "data" / "raw"
@@ -314,15 +319,52 @@ def main() -> None:
     boundary = gpd.read_file(
         raw / "geography" / "cambodia_commune_boundaries_2018_2024.geojson"
     ).to_crs(4326)
-    with xr.open_dataset(
-        raw / "climate" / "chirps_v2_monthly_cambodia_1981_2021.nc"
-    ) as dataset:
+    input_path = args.input if args.input.is_absolute() else root / args.input
+    with xr.open_dataset(input_path) as dataset:
         times = pd.DatetimeIndex(dataset["time"].values)
         latitudes = dataset["latitude"].values.astype(float)
         longitudes = dataset["longitude"].values.astype(float)
         precip_flat = dataset["precip"].values.astype(float).reshape(len(times), -1)
-    if times.min() != pd.Timestamp("1981-01-01") or times.max() != pd.Timestamp("2021-12-01"):
+    if times.min() != pd.Timestamp("1981-01-01") or times.max() != pd.Timestamp("2024-12-01"):
         raise ValueError("Unexpected CHIRPS time coverage")
+
+    legacy_path = raw / "climate" / "chirps_v2_monthly_cambodia_1981_2021.nc"
+    if legacy_path.exists():
+        with xr.open_dataset(legacy_path) as legacy:
+            legacy_times = pd.DatetimeIndex(legacy["time"].values)
+            overlap = precip_flat[: len(legacy_times)].reshape(legacy["precip"].shape)
+            legacy_values = legacy["precip"].values.astype(float)
+            difference = np.abs(overlap - legacy_values)
+            overlap_validation = pd.DataFrame(
+                [
+                    {
+                        "Legacy Start": legacy_times.min(),
+                        "Legacy End": legacy_times.max(),
+                        "Legacy Months": len(legacy_times),
+                        "Latitude Coordinates Exact": np.array_equal(
+                            latitudes, legacy["latitude"].values.astype(float)
+                        ),
+                        "Longitude Coordinates Exact": np.array_equal(
+                            longitudes, legacy["longitude"].values.astype(float)
+                        ),
+                        "Time Coordinates Exact": np.array_equal(
+                            times[: len(legacy_times)].values, legacy_times.values
+                        ),
+                        "Finite Cell Months Compared": int(np.isfinite(difference).sum()),
+                        "Maximum Absolute Rainfall Difference mm": float(
+                            np.nanmax(difference)
+                        ),
+                        "Nonzero Cell-Month Differences": int(
+                            np.count_nonzero(np.nan_to_num(difference))
+                        ),
+                    }
+                ]
+            )
+        overlap_validation.to_csv(
+            exp / "chirps_1981_2021_source_overlap_validation.csv", index=False
+        )
+        if overlap_validation.loc[0, "Nonzero Cell-Month Differences"] != 0:
+            raise RuntimeError("The extended CHIRPS source differs from the frozen overlap")
 
     monthly_by_resolution: dict[str, pd.DataFrame] = {}
     annual_by_resolution: dict[str, pd.DataFrame] = {}

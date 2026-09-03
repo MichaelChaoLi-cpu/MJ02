@@ -40,7 +40,7 @@ POWER = (
 )
 OUTPUT = (
     ROOT
-    / "data/results/tables/Table_historical_boundary_shock_response_estimates.xlsx"
+    / "data/exp/legacy-results/tables/Table_historical_boundary_shock_response_estimates.xlsx"
 )
 
 SESOI = 0.20

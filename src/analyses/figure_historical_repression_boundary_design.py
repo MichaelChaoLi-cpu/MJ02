@@ -35,7 +35,7 @@ SEGMENTS = (
     ROOT
     / "data/exp/data-preprocessing/historical-boundary-source/boundary_segment_points.csv"
 )
-OUTPUT = ROOT / "data/results/figures/Figure_historical_repression_boundary_design.png"
+OUTPUT = ROOT / "data/exp/legacy-results/figures/Figure_historical_repression_boundary_design.png"
 
 DESIGN_COLUMNS = [
     "Village Code",

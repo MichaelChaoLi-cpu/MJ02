@@ -25,7 +25,7 @@ HOUSEHOLD_PATH = (
 EDUCATION_PATH = (
     ROOT / "data/processed/direction3_education_conflict_shock_preprocessed.parquet"
 )
-OUTPUT_PATH = ROOT / "data/results/tables/Table_shock_specific_analytical_support.xlsx"
+OUTPUT_PATH = ROOT / "data/exp/legacy-results/tables/Table_shock_specific_analytical_support.xlsx"
 
 YEAR = "Survey Year"
 PSU = "PSU"

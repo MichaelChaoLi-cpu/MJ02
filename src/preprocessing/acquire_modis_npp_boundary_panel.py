@@ -46,6 +46,13 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--start-year", type=int, default=2001)
     parser.add_argument("--end-year", type=int, default=2024)
+    parser.add_argument(
+        "--bbox",
+        type=float,
+        nargs=4,
+        default=DEFAULT_BBOX,
+        metavar=("WEST", "SOUTH", "EAST", "NORTH"),
+    )
     parser.add_argument("--retries", type=int, default=4)
     return parser.parse_args()
 
@@ -244,6 +251,7 @@ def main() -> None:
     output_dir = args.output_dir if args.output_dir.is_absolute() else root / args.output_dir
     clips_dir = output_dir / "clips"
     output_dir.mkdir(parents=True, exist_ok=True)
+    bbox = tuple(args.bbox)
     session = requests.Session()
     session.headers.update({"User-Agent": "MJ02-research-preprocessing/1.0"})
 
@@ -259,7 +267,7 @@ def main() -> None:
     all_items: list[dict[str, object]] = []
     manifest_rows: list[dict[str, object]] = []
     for year in range(args.start_year, args.end_year + 1):
-        items = query_year(session, year, DEFAULT_BBOX, args.retries)
+        items = query_year(session, year, bbox, args.retries)
         all_items.extend(items)
         for item in items:
             tile = (
@@ -272,7 +280,7 @@ def main() -> None:
                     session,
                     item,
                     asset_name,
-                    DEFAULT_BBOX,
+                    bbox,
                     destination,
                     args.retries,
                 )
@@ -296,7 +304,7 @@ def main() -> None:
         "upstream_provider": "NASA LP DAAC at USGS EROS Center",
         "cloud_host": "Microsoft Planetary Computer",
         "years": [args.start_year, args.end_year],
-        "bbox_epsg4326": list(DEFAULT_BBOX),
+        "bbox_epsg4326": list(bbox),
         "assets": list(ASSETS),
         "n_files": len(manifest),
         "temporary_credentials_persisted": False,

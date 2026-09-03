@@ -201,7 +201,7 @@ def main() -> None:
     if panel.duplicated(["Village Code", "Year"]).any():
         raise RuntimeError("Duplicate village-years after CHIRPS linkage")
 
-    expected = panel["Year"].between(2001, 2021)
+    expected = panel["Year"].between(2001, 2024)
     expected_coverage = panel.loc[expected, "Annual Climate Shock Available"].mean()
     if expected_coverage != 1:
         unresolved = panel.loc[
@@ -210,11 +210,8 @@ def main() -> None:
         ]
         unresolved.to_csv(audit_output / "unresolved_npp_chirps_links.csv", index=False)
         raise RuntimeError(
-            f"CHIRPS linkage is incomplete in 2001-2021: {expected_coverage:.3%}"
+            f"CHIRPS linkage is incomplete in 2001-2024: {expected_coverage:.3%}"
         )
-    after_source_end = panel["Year"].gt(2021)
-    if panel.loc[after_source_end, "Annual Climate Shock Available"].any():
-        raise RuntimeError("Unexpected CHIRPS values after the documented 2021 source end")
 
     panel.to_parquet(output, index=False)
     crosswalk.sort_values("Village Code").to_csv(
@@ -237,7 +234,7 @@ def main() -> None:
         "rows": len(panel),
         "unique_villages": panel["Village Code"].nunique(),
         "outcome_years": [int(panel["Year"].min()), int(panel["Year"].max())],
-        "shock_years": [2001, 2021],
+        "shock_years": [2001, 2024],
         "complete_outcome_shock_village_years": int(
             (
                 panel["Annual Land NPP Mean kg C per m2"].notna()
@@ -247,7 +244,7 @@ def main() -> None:
         "linkage": "first six digits of the eight-digit public historical village code to audited CHIRPS commune-year geography",
         "linkage_fallback": "deterministic village-point-in-modern-commune assignment for otherwise unresolved legacy commune codes; ambiguous or unmatched points remain missing",
         "link_methods": crosswalk["Annual Climate Link Method"].value_counts().to_dict(),
-        "missing_rule": "CHIRPS years after 2021 remain missing and are never coded as zero",
+        "missing_rule": "No missing annual CHIRPS shock years in the 2001-2024 outcome panel",
         "effect_estimation_performed": False,
         "historical_river_distance_coverage": float(
             panel["Log One Plus Distance to River m"].notna().mean()
@@ -260,7 +257,7 @@ def main() -> None:
     print(f"wrote {len(panel):,} village-years to {output}")
     print(
         f"complete NPP-shock rows={summary['complete_outcome_shock_village_years']:,}; "
-        f"2001-2021 climate linkage={expected_coverage:.3%}"
+        f"2001-2024 climate linkage={expected_coverage:.3%}"
     )
 
 

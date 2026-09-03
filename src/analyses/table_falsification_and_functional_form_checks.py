@@ -39,7 +39,7 @@ PRICE_PATH = (
     ROOT / "data/processed/wfp_wholesale_rice_province_month_preprocessed.parquet"
 )
 OUTPUT_PATH = (
-    ROOT / "data/results/tables/Table_falsification_and_functional_form_checks.xlsx"
+    ROOT / "data/exp/legacy-results/tables/Table_falsification_and_functional_form_checks.xlsx"
 )
 
 YEAR = "Survey Year"

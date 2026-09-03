@@ -27,7 +27,7 @@ from experiment_viirs_historical_boundary_shock_response import (
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = (
     ROOT
-    / "data/results/figures/Figure_nighttime_activity_independent_validation.png"
+    / "data/exp/legacy-results/figures/Figure_nighttime_activity_independent_validation.png"
 )
 SESOI = 0.20
 

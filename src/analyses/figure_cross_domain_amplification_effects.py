@@ -28,7 +28,7 @@ HOUSEHOLD_PATH = (
 EDUCATION_PATH = (
     ROOT / "data/processed/direction3_education_conflict_shock_preprocessed.parquet"
 )
-OUTPUT_PATH = ROOT / "data/results/figures/Figure_cross_domain_amplification_effects.png"
+OUTPUT_PATH = ROOT / "data/exp/legacy-results/figures/Figure_cross_domain_amplification_effects.png"
 
 YEAR = "Survey Year"
 RESOLUTION = "Climate Geography Resolution"

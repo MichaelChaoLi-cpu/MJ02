@@ -31,7 +31,7 @@ IDENTIFICATION_DIAGNOSTICS = (
 )
 OUTPUT = (
     ROOT
-    / "data/results/figures/Figure_boundary_support_power_and_continuity_diagnostics.png"
+    / "data/exp/legacy-results/figures/Figure_boundary_support_power_and_continuity_diagnostics.png"
 )
 
 BANDWIDTHS = [2, 5, 10, 15, 20, 30]

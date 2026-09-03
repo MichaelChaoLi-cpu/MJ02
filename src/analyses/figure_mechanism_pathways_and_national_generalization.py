@@ -27,9 +27,9 @@ ROOT = Path(__file__).resolve().parents[2]
 VILLAGE_PATH = ROOT / "data/processed/direction3_village_mechanisms_preprocessed.parquet"
 HOUSEHOLD_PATH = ROOT / "data/processed/direction3_household_conflict_shock_preprocessed.parquet"
 EDUCATION_PATH = ROOT / "data/processed/direction3_education_conflict_shock_preprocessed.parquet"
-NPP_TABLE = ROOT / "data/results/tables/Table_historical_boundary_shock_response_estimates.xlsx"
-VIIRS_TABLE = ROOT / "data/results/tables/Table_nighttime_activity_independent_validation_estimates.xlsx"
-OUTPUT_PATH = ROOT / "data/results/figures/Figure_mechanism_pathways_and_national_generalization.png"
+NPP_TABLE = ROOT / "data/exp/legacy-results/tables/Table_historical_boundary_shock_response_estimates.xlsx"
+VIIRS_TABLE = ROOT / "data/exp/legacy-results/tables/Table_nighttime_activity_independent_validation_estimates.xlsx"
+OUTPUT_PATH = ROOT / "data/exp/legacy-results/figures/Figure_mechanism_pathways_and_national_generalization.png"
 ESTIMATE_PATH = ROOT / "data/exp/mechanism-pathways-and-national-generalization/figure_estimates.csv"
 
 YEAR = "Survey Year"

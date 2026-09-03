@@ -23,7 +23,7 @@ ANASOP = ROOT / "docs/AnaSOP.md"
 FRAMELOG = ROOT / "docs/framelog/mili.md"
 OUTPUT = (
     ROOT
-    / "data/results/tables/Table_prospective_analysis_decisions_and_deviations.xlsx"
+    / "data/exp/legacy-results/tables/Table_prospective_analysis_decisions_and_deviations.xlsx"
 )
 
 COLUMNS = [
