@@ -3,1114 +3,822 @@ Analysis Standard Operating Procedure
 
 ## 1. Research Objective
 
+### Working Title
+
+Regional concentration of dry-spell sensitivity and household economic relevance in Cambodia
+
 ### Central Research Question
 
-- Research question: Does plausibly exogenous exposure to more intense Khmer Rouge repression
-  persistently amplify local sensitivity to contemporary rainfall variation?
-- Why it matters: Conflict can leave persistent damage to infrastructure, institutions, human
-  capital, settlement patterns, and productive capacity. These legacies may be hidden in average
-  outcome levels yet become visible when communities face later climate variation. The project
-  therefore tests whether historical repression created a durable climate-resilience penalty,
-  rather than treating landmines, mine clearance, flood exposure, or food prices as co-equal
-  central topics.
-- Data support currently available: Repeated socioeconomic surveys provide agricultural land and
-  production, input expenditure, real food consumption, food-security experiences, education,
-  migration, household composition, and survey weights. Yale CGEO bombing, Khmer Rouge prison,
-  burial-site, and historical-village layers; WFP market-level food prices; and a 1981-2021
-  CHIRPS rainfall baseline have been acquired. Global Flood Database event-level inundation has
-  also been linked as a secondary measure for supported 2007-2017 survey waves. The
-  historical-conflict layers link to all 5,617
-  georeferenced CSES PSU-wave rows from 2007-2021 through the audited historical-geography
-  crosswalk. A defensible direct flood or river-discharge series covering the full 2007-2021
-  estimation period is still unavailable. Open replication materials for the historical boundary
-  between the more repressive Southwest zone and the adjacent West zone in Kampong Speu have been
-  checksum-bound, independently reconstructed, and linked. Annual land NPP for 2001-2021 and
-  observed VIIRS nighttime activity for 2013-2021 have also been linked and estimated within the
-  frozen boundary design. The 2023 socioeconomic survey, 2020-2024 agriculture surveys,
-  independent international and domestic rice-price series, and cropland-specific spatial
-  outcomes remain candidate validation sources rather than current analytical inputs.
-- Key variables or data scope for the converged design: Historical repression-zone assignment,
-  signed distance to the historical boundary, contemporary rainfall anomalies, annual land NPP,
-  observed nighttime activity, and pre-specified equivalence bounds. National bombing, household,
-  flood, food-price, and mechanism results provide supporting breadth, scope, and interpretation
-  rather than additional headline estimands.
-- What would verify it: The historical boundary can be independently reconstructed; treatment
-  assignment and pre-treatment covariates are continuous within a defensible bandwidth; the
-  repression-by-rainfall interaction is precise relative to a pre-specified smallest effect of
-  substantive interest; and the conclusion survives spatial trends, bandwidths, modern-boundary
-  safeguards, influence checks, and at least one independent outcome measurement system.
-- What would falsify or weaken it: The boundary cannot be reproduced, geographic support or power
-  is inadequate, predetermined covariates are discontinuous, the interaction is unstable across
-  design choices, an apparently null result is too imprecise for equivalence, or holdout and
-  independent data fail to reproduce the same estimand.
-- Current evidence boundary after completed checks: Within the frozen local boundary design,
-  both land-NPP and observed-nighttime-activity rainfall interactions are small and have 95%
-  confidence intervals inside the pre-specified +/-0.20 outcome-SD equivalence bounds under the
-  primary and mandatory confirmation models. The completed evidence therefore supports a local
-  bounded-null conclusion for these two rainfall-response outcomes. It does not show that
-  historical repression has no persistent level effect, does not establish resilience outside the
-  historical boundary population, and does not provide a causal conclusion for flood, price,
-  household, or agricultural-survey outcomes. National and mechanism results are retained only to
-  bound generalization and interpretation.
+Where do prolonged dry spells impose the largest constraints on annual cropland net primary
+productivity (NPP), and do those ecologically sensitive regions also exhibit stronger household
+economic relevance of local cropland productivity?
+
+This is an **applied** environmental and agricultural-geography study. It integrates national
+daily climate records and satellite-derived cropland productivity with repeated household surveys
+to determine whether a modest national average conceals geographically concentrated ecological
+and household-economic relevance. The study retains two separately estimated empirical stages:
+
+1. annual climate exposures to village-buffer cropland NPP; and
+2. prior-year village-buffer cropland NPP to household consumption.
+
+The principal contribution is the comparison of these two evidence dimensions across a frozen,
+outcome-blind regional geography. The dimensions are reported side by side and are never multiplied
+into an indirect-effect estimate.
 
 ### Supporting Research Questions
 
-#### Supporting Point 1: Local identification credibility
+#### Supporting Point 1
 
-- Role relative to central point: validate identification.
-- Research question: Can the historical Southwest-West repression boundary support a credible,
-  adequately powered local comparison of contemporary rainfall sensitivity?
-- Why it matters: A bounded-null conclusion is informative only if treatment assignment,
-  geographic continuity, effective sample size, and the smallest substantively meaningful effect
-  were fixed independently of the outcome estimates.
-- Data support currently visible: The public replication frame, independently reconstructed
-  historical boundary, treatment side, signed distance, five boundary segments, predetermined
-  covariates, annual rainfall, and modern-commune crosswalk are all available.
-- Key variables or data scope: Higher-Repression Southwest Zone, Signed Distance to Historical
-  Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support, and
-  May October Rainfall Anomaly Z (1991-2020).
-- What would verify it: Exact boundary reproduction, adequate observations and rainfall variation
-  on both sides, no multiplicity-robust predetermined discontinuity, minimum detectable effects
-  below the 0.20-SD threshold, and compatibility with the mandatory within-modern-commune model.
-- What would falsify or weaken it: Failed reproduction, inadequate effective units, material
-  predetermined discontinuities, coincidence with modern administrative boundaries that cannot
-  be absorbed, or instability across pre-specified bandwidths and boundary segments.
-- Current evidence status: Reproduction, linkage, density, power, and continuity gates pass. The
-  proximity of modern commune boundaries is handled through a frozen mandatory within-commune
-  confirmation model rather than ignored.
+- Research question: What is the national natural-unit magnitude of the association between prolonged dry spells and annual cropland NPP, including the NPP change associated with the observed P10-to-P90 dry-spell contrast?
+- Role relative to central point: Establish the national ecological benchmark against which spatially concentrated sensitivity is interpreted.
+- Success condition: The national village-year panel has traceable support, the dry-spell coefficient has a stable adverse direction, and its observed-exposure translation can be reported in natural NPP units.
+- Failure condition: The analytical panel is not reproducible, the coefficient changes direction across the primary measurement choices, or the observed-exposure translation is too imprecise to interpret.
 
-#### Supporting Point 2: Independent outcome validation
+#### Supporting Point 2
 
-- Role relative to central point: validate measurement.
-- Research question: Does the bounded local rainfall-sensitivity conclusion replicate across land
-  productivity and independently observed nighttime economic activity?
-- Why it matters: Agreement across vegetation production and nighttime activity reduces the risk
-  that a bounded-null conclusion is an artifact of one sensor, outcome scale, or economic domain.
-- Data support currently visible: The frozen 5 km annual land-NPP design contains 291 villages and
-  4,398 design-equivalent village-years for 2001-2021; the observed-VIIRS design contains 3,112
-  grid cells and 28,008 cell-years for 2013-2021.
-- Key variables or data scope: Annual Land NPP Anomaly kg C per m2, Annual Land NPP Anomaly Z
-  2001-2020, Asinh Annual Mean Radiance, rainfall anomalies, historical-side assignment, signed
-  distance, and the frozen common-support indicators.
-- What would verify it: Primary and mandatory confirmation estimates are mutually compatible and
-  their standardized confidence intervals lie inside the fixed -0.20 to 0.20 equivalence bounds
-  for both outcome systems.
-- What would falsify or weaken it: Opposite or materially incompatible results across NPP and
-  nighttime activity, confidence intervals crossing both equivalence bounds, or dependence on one
-  outcome definition, quality restriction, rainfall window, or bandwidth.
-- Current evidence status and next feasibility check: Boundary reproduction, support, continuity,
-  blinded power, and the annual land-NPP and VIIRS rainfall-response estimates are complete. Both
-  activated outcomes support a substantively precise local null under the frozen primary and
-  mandatory confirmation specifications. Any local flood, price, household, or independent
-  agricultural analysis still requires source acquisition, compatible shock timing, and a new
-  outcome-blind support and power audit before estimation.
+- Research question: How strongly does dry-spell sensitivity vary across the six frozen SKATER regions and across continuous local coefficient surfaces?
+- Role relative to central point: Determine whether the national benchmark conceals spatially concentrated ecological sensitivity.
+- Success condition: Outcome-blind regions meet the frozen support gates, regional slopes reject a common-slope restriction, and the broad spatial pattern is compatible with adequately supported continuous estimates.
+- Failure condition: Regionalisation depends on outcomes, regions lack analytical support, regional slopes are compatible with one common slope, or continuous patterns are unstable under adjacent bandwidths.
 
-#### Supporting Point 3: Adaptation mechanisms
+#### Supporting Point 3
 
-- Role relative to central point: mechanism.
-- Research question: Through which constraints does historical conflict reduce resilience:
-  damaged irrigation and infrastructure, weaker agricultural investment, limited diversification,
-  depleted assets, restricted mobility, or lower human capital?
-- Why it matters: Mechanisms distinguish a persistent resilience trap from a purely statistical
-  interaction between geography and weather.
-- Data support currently visible: Household modules provide irrigable parcels, crop diversity,
-  agricultural inputs, and agricultural dependence. The audited village module provides 3,005
-  valid in-range irrigated agricultural land shares across six waves and 1,359 permanent-market
-  observations in 2011 and 2021. Conditional all-weather-road fields and 2021-only costly-coping
-  outcomes do not provide defensible interaction support.
-- Key variables or data scope: Village irrigated agricultural land share, two-wave permanent-market
-  access, irrigable parcel share, crop diversity, agricultural input expenditure, and agricultural
-  dependence.
-- What would verify it: Historically exposed places show weaker ex ante adaptive capacity or
-  stronger use of costly coping responses when shocks occur, in patterns consistent with the
-  outcome results.
-- What would falsify or weaken it: Mechanism variables do not differ, are measured in too few
-  waves, or behave in directions inconsistent with the proposed resilience pathway.
-- Current evidence status: The activated six-test family is complete. Village irrigation and
-  two-wave permanent-market gradients are small and imprecise, as is the village
-  irrigation-by-drought estimate. Household parcel irrigation is directionally coherent but has
-  a six-test Holm-adjusted p-value of approximately 0.106; crop diversity and agricultural input
-  estimates are near zero. Roads and costly-coping outcomes remain deferred. All mechanism
-  results are channel-consistent associations rather than causal mediation.
+- Research question: Is prior-year cropland NPP associated more robustly with household food consumption than with total consumption after household-composition and socioeconomic adjustment?
+- Role relative to central point: Establish whether local cropland productivity has measurable household economic relevance in the linked survey data.
+- Success condition: Exact interview-year linkage is reproducible and the food-consumption association retains its positive direction and precision under the expanded control block and declared exposure sensitivities.
+- Failure condition: Household linkage or consumption harmonisation is not comparable across waves, or the food-consumption estimate loses direction or precision under the declared checks.
 
-#### Supporting Point 4: National breadth and transport limits
+#### Supporting Point 4
 
-- Role relative to central point: broaden and validate.
-- Research question: How far can the local rainfall-sensitivity conclusion be reconciled with
-  national observational patterns, and what additional evidence is required before transport to
-  household, agricultural, flood, or price outcomes?
-- Why it matters: A local geographic discontinuity can improve internal validity but cannot alone
-  establish national relevance. Independent outcome and shock measurements are also necessary to
-  distinguish a substantive result from a product-specific artifact.
-- Data support currently visible: The completed national repeated-cross-section release links
-  historical bombing exposure, rainfall, partial inundation, local prices, and socioeconomic
-  outcomes. A 2023 holdout survey, independent agriculture surveys, cropland productivity, and
-  external price sources remain candidate extensions with unaudited access or comparability.
-- Key variables or data scope: National bombing and Khmer Rouge exposure measures, household and
-  person outcomes, rainfall, flood and price measures, holdout indicators, and future independent
-  agricultural or cropland outcomes.
-- What would verify it: At least one independent measurement system supports a compatible effect
-  or a pre-specified equivalence conclusion, and discrepancies across local and national designs
-  are explained by estimand or support rather than selective reporting.
-- What would falsify or weaken it: Validation data cannot be linked, rely on the same underlying
-  source, measure a different population without transport justification, or contradict the main
-  estimate beyond pre-specified compatibility bounds.
-- Current evidence status and next feasibility check: National survey estimates do not support
-  broad cross-domain amplification; the adverse attendance-price pattern is definition-sensitive
-  and therefore remains supplementary discovery evidence. The local result cannot yet be
-  transported to household, flood, price, or agricultural-survey outcomes. Audit access,
-  geography, provenance, temporal support, and outcome comparability for any future extension
-  before promoting it into the central analysis contract.
+- Research question: Which regions combine relatively strong ecological dry-spell sensitivity with relatively strong food-consumption relevance, and which regions show discordant evidence requiring a different monitoring strategy?
+- Role relative to central point: Convert the two separately estimated evidence dimensions into a transparent regional monitoring and adaptation typology.
+- Success condition: At least some outcome-blind regions remain jointly elevated relative to the national ecological and household-reference estimates under expanded controls and adequate sample support.
+- Failure condition: Candidate priority regions disappear under the declared controls, depend on an arbitrary composite score, or lack sufficient ecological or household observations.
+
+#### Supporting Point 5
+
+- Research question: Does the dry-spell conclusion remain stable when annual rainfall is omitted or orthogonalised relative to Rx5day and when MODIS NPP quality support is explicitly restricted or adjusted?
+- Role relative to central point: Test whether the ecological result is an artefact of rainfall collinearity, wet-year retrieval conditions, or one NPP-quality threshold.
+- Success condition: The dry-spell coefficient retains its adverse direction and comparable magnitude when rainfall is omitted or residualised and when NPP quality is adjusted or restricted.
+- Failure condition: The dry-spell coefficient changes direction materially, loses interpretable support, or appears only under one rainfall or NPP-quality treatment.
 
 ### Scope of Analysis
 
-- Topics: Long-run consequences of conflict, climate resilience, food-price vulnerability, rural
-  livelihoods, food security, and human capital.
-- Primary exposure concept: An activated local intensive-margin contrast in Khmer Rouge repression
-  defined by the independently reproduced historical Southwest-West zone boundary, with a frozen
-  5 km primary bandwidth and mandatory within-modern-commune confirmation. National bombing
-  density and Khmer Rouge site measures provide secondary
-  breadth and generalization evidence. Landmine contamination and clearance remain excluded.
-- Primary contemporary shock: May-October rainfall variation, with annual rainfall as a frozen
-  alternative. Flood and food-price shocks remain supporting national or supplementary analyses
-  and are not part of the central local estimand.
-- Units of analysis: Households, individuals, survey PSUs or villages, annual village panels, and
-  annual VIIRS grid-cell panels linked to historical assignment and contemporary shocks. Future
-  holdout and cropland sources remain candidate units. Inference will respect
-  the effective assignment, shock, and spatial-correlation units rather than individual record
-  counts alone.
-- Historical exposure period: The civil-war and Khmer Rouge mass-violence era before the
-  socioeconomic survey period; the local primary contrast is assignment to the historically more
-  repressive Southwest rather than the adjacent West zone.
-- Outcome period: Socioeconomic survey waves from 2004 through 2021. The georeferenced main
-  place-based estimation window is 2007-2021; CSES 2004 remains useful only for analyses that do
-  not require local conflict or shock linkage unless its geography can later be recovered.
-- Geographic scope: Cambodia, with national coverage where common support is adequate and
-  pre-specified regional restrictions where necessary.
-- Secondary design: National repeated-cross-section estimates based on broader conflict measures,
-  plus independent holdout and spatial validation. Birth-cohort exposure remains outside the
-  executable plan unless early-life residence can be established.
+- **Geographic scope:** Cambodia, using mapped household-survey villages and national public village
+  points.
+- **Stage-1 period:** 2001-2021, determined by the harmonised annual cropland-NPP panel.
+- **Stage-2 period:** 2007-2021 survey waves; 2004 remains a consumption-construction diagnostic.
+- **Primary spatial scale:** 5 km village-centred buffers, with 2 km and 10 km sensitivities.
+- **Stage-1 focal exposure:** annual maximum consecutive dry days below 1 mm. Heat days, heat
+  degree-days, Rx5day, and annual precipitation remain model components or secondary results.
+- **Household outcome hierarchy:** total consumption remains the originally prespecified benchmark;
+  food consumption is the focal robust household-relevance result in the revised narrative. This
+  post-result distinction is reported transparently rather than presented as preregistered.
+- **Regionalisation:** one frozen six-region SKATER partition selected from outcome-blind candidate
+  diagnostics before regional outcome estimation.
+- **Regional prioritisation:** ecological sensitivity and household economic relevance are displayed
+  as separate dimensions with uncertainty and sample support; no composite causal-loss estimate is
+  constructed.
+- **Continuous spatial heterogeneity:** geographically weighted residual regression remains the
+  continuous check for Stage 1; Stage-2 local surfaces remain appendix diagnostics.
 
 ### Study Design Declaration
 
-- Research type: applied.
-- Main study design: Activated local geographic boundary design around the historical
-  Southwest-West repression boundary, interacted with contemporary shocks after successful
-  reproduction, support, continuity, power, and falsification audits and with a mandatory
-  within-modern-commune confirmation specification.
-- Main estimand: The local Southwest-minus-West difference in rainfall sensitivity caused by
-  assignment to the more repressive historical zone near the boundary, evaluated separately for
-  annual land NPP and observed nighttime activity. National repeated-cross-section interactions
-  remain supporting associational estimands.
-- Main comparison strategy: Local linear spatial RD with side-specific distance functions,
-  boundary-segment and time controls, spatially appropriate inference, placebo boundaries, and
-  pre-specified bandwidth and equivalence analyses; national models retain their existing fixed
-  effects and inference contract.
-- Interpretation limit: The completed result is a local precise-null conclusion for land-NPP and
-  nighttime-activity rainfall sensitivity under the frozen boundary and modern-commune safeguard.
-  Any causal language remains conditional on assignment, continuity, shock exogeneity, common
-  support, and the mandatory confirmation model. It applies only to the local intensive margin of
-  repression and cannot be generalized automatically to all Cambodian conflict exposure or to
-  untested household, flood, price, and agricultural outcomes.
-- Excluded research scope: Landmine exposure and mine clearance are not the central exposure,
-  treatment, mechanism, or policy intervention in this project.
+- Research type: applied
+- Stage 1 is a national village-year panel with village and year fixed effects.
+- Stage 2 is a survey-weighted repeated household cross-section linked to the most recent completed
+  annual cropland-NPP observation.
+- Regression variables and effect translations remain in natural units. Standardisation is used
+  only inside the spatial clustering algorithm.
+- Heat-day count and heat degree-days are alternative heat specifications and are never entered
+  together.
+- Regional priority evidence is based on transparent regional coefficients, confidence intervals,
+  natural-unit translations, and analytical support rather than a significance-selected score.
+- GeoDetector, temporal sample splitting, and multiplication of Stage-1 and Stage-2 coefficients
+  remain excluded.
 
 ## 2. Theoretical Background  /  Conceptual Framework  /  Problem Formulation
 
-Research type: applied
-
 ### Research Gap
 
-Research on conflict legacies often studies average long-run effects on income, institutions,
-health, or education. Research on climate shocks often studies average exposure or present-day
-coping capacity. Less is known about whether historically assigned political repression creates a
-durable difference in local sensitivity to later climate variation. Cambodia permits this
-question to be tested around a reproduced historical repression boundary and across two annual
-outcome systems measuring vegetation production and nighttime activity.
+National climate-productivity estimates are useful benchmarks but can have limited operational
+meaning when ecological sensitivity varies sharply across space. A small national coefficient can
+average together places with almost no response and places where the same dry-spell contrast is
+associated with several times the national productivity change. Uniform national risk rankings may
+therefore fail to identify where additional agricultural monitoring, water-management assessment,
+or household protection evidence is most needed.
 
-The contribution therefore centers identification rather than breadth. The local historical
-repression boundary supplies the central quasi-experimental contrast in the intensive margin of
-state violence; land NPP is the primary outcome and observed nighttime activity is an independent
-measurement validation. Completed national bombing, flood, price, household, and mechanism
-analyses bound generalization but do not define the headline question. The contribution is not a
-new estimate of landmine contamination or clearance.
+Remote-sensing studies and household-welfare studies also usually occupy separate evidence systems.
+Satellite NPP provides repeated ecological measurement but cannot establish whether the measured
+productivity is economically relevant to households. Household surveys measure food and total
+consumption directly but provide intermittent spatial observations and do not by themselves locate
+environmental production constraints. Integrating the two sources at a common village-centred scale
+can identify regions in which the two evidence dimensions coincide, without requiring them to be
+treated as a single mediated coefficient.
 
-The Nature Communications standard sought here is not universal statistical significance. It is
-an identified and independently validated answer that can support either a robust adverse effect
-or a precise, substantively bounded null. Definition-sensitive discovery findings cannot serve as
-the causal core.
+Rainfall measurement creates an additional interpretive problem. Rx5day and annual precipitation
+are strongly correlated, and annual MODIS NPP quality depends partly on gap-filled optical inputs
+under unfavourable atmospheric conditions. A negative coefficient on annual precipitation in a
+joint model is therefore not self-interpreting. The regional dry-spell contribution is credible only
+if it remains stable when rainfall quantity, rainfall concentration, and NPP quality support are
+handled transparently.
 
 ### Conceptual Framework
 
-The proposed framework is:
+The revised framework contains three evidence dimensions:
 
-1. Historical conflict destroys infrastructure, assets, human capital, and local organizations;
-   it also causes displacement and alters settlement and production patterns.
-2. Reconstruction is uneven, so affected places may retain weaker irrigation, market access,
-   public services, financial capacity, trust, or accumulated household assets.
-3. These persistent constraints may be difficult to detect in normal periods but limit ex ante
-   protection, adjustment, borrowing, diversification, and mobility when a new shock occurs.
-4. Rainfall variation affects vegetation production and may propagate into local economic
-   activity; land NPP and nighttime radiance measure these responses through independent systems.
-5. Flood, food-price, household, education, and mechanism results can show whether the local
-   conclusion is broadly compatible with other domains, but they cannot substitute for the local
-   boundary estimand.
-6. If more intense repression created a persistent human-capital or infrastructure trap, then
-   otherwise comparable places on the high-repression side of the historical boundary should
-   exhibit different responses to later external shocks. If the response difference is precisely
-   absent, persistent average poverty need not imply generalized shock vulnerability.
+1. **Ecological sensitivity:** annual dry-spell persistence is associated with within-village
+   changes in accumulated cropland carbon productivity.
+2. **Household economic relevance:** prior-year local cropland productivity is associated with
+   household consumption, with food consumption providing the more specification-stable outcome.
+3. **Regional concentration:** predetermined geographic characteristics organise places in which
+   ecological sensitivity and household relevance may coincide or diverge.
 
-The supporting national associational relationship is:
+The actionable output is a regional evidence typology. Regions with stronger negative dry-spell
+slopes and stronger positive food-consumption slopes become priorities for additional agricultural
+monitoring and adaptation assessment; discordant regions motivate different diagnostic questions.
+NPP remains an ecological carbon-productivity measure rather than crop yield, and the regional
+coincidence of the two dimensions is interpreted as prioritisation evidence rather than a mediated
+causal effect.
 
-\[
-Y_{igt} = \beta(ConflictLegacy_g \times Shock_{gt})
-          + \theta Shock_{gt} + \alpha_g + \lambda_t
-          + X_{igt}'\gamma + \epsilon_{igt}.
-\]
+### Hypotheses and Weakening Evidence
 
-Here, \(Y_{igt}\) is an outcome for household or individual \(i\), place \(g\), and survey wave
-\(t\); \(ConflictLegacy_g\) is a pre-survey measure of historical conflict intensity;
-\(Shock_{gt}\) is a contemporary flood, drought, rainfall, or price shock; \(\alpha_g\) denotes
-the most demanding feasible place fixed effects; \(\lambda_t\) denotes survey-wave effects; and
-\(X_{igt}\) contains pre-specified controls. Time-invariant conflict exposure is absorbed by place
-fixed effects. The parameter \(\beta\) measures differential shock sensitivity associated with
-historical conflict exposure in the supporting national design; it is not the central causal
-estimand.
+- **H1 — reproducible dry-spell constraint:** longer annual dry spells are associated with lower
+  annual cropland NPP nationally and across declared measurement and covariance checks. The claim is
+  weakened if its direction changes when annual rainfall is omitted or orthogonalised, or when NPP
+  quality support is restricted.
+- **H2 — substantively important regional heterogeneity:** the national dry-spell coefficient masks
+  regional magnitudes that differ materially in natural units and reject a common regional slope.
+  The claim is weakened if regional contrasts disappear after common-model estimation or are not
+  compatible with adequately supported continuous surfaces.
+- **H3 — household food-consumption relevance:** higher prior-year cropland NPP is positively
+  associated with real per-capita food consumption after household-composition and socioeconomic
+  adjustment. Total consumption remains a broader, more specification-sensitive benchmark. The
+  claim is weakened if the food estimate loses direction or precision under the expanded control
+  block and declared exposure sensitivities.
+- **H4 — regional concentration of joint relevance:** at least some outcome-blind regions combine
+  relatively strong ecological sensitivity with relatively strong food-consumption relevance under
+  common regional-interaction models. The claim is weakened if candidate priority regions disappear
+  under expanded household controls or if apparent ranking depends on an arbitrary composite score.
 
-Food-price, flood, and cohort extensions remain supplementary or future analyses. They require
-their own support, timing, and provenance gates and cannot broaden the central local rainfall
-claim after their results are observed.
-
-The central local quasi-experimental relationship is:
-
-\[
-Y_{igt} = \alpha_t + \tau R_g + \beta S_{gt}
-          + \theta(R_g \times S_{gt}) + f(d_g)
-          + R_g f(d_g) + B_g'\pi + X_{igt}'\gamma + \epsilon_{igt}.
-\]
-
-Here, \(R_g\) indicates assignment to the more repressive Southwest zone, \(d_g\) is signed
-distance to the historical Southwest-West boundary, and \(B_g\) contains pre-specified boundary
-segment or other design terms that do not absorb the assignment contrast. The coefficient
-\(\theta\) is the local difference in shock sensitivity associated with the more intensive
-repression regime. It has a causal interpretation only if the boundary reconstruction,
-continuity, local support, shock exogeneity, and spatial falsification conditions pass.
-
-### Problem Formulation
-
-The immediate empirical problem is to determine whether the historical Southwest-West repression
-contrast can be reconstructed, linked, and shown to have adequate local support before estimating
-differential rainfall sensitivity. The second problem is to distinguish an uninformative null from
-a substantively bounded null through outcome-blind power calculations, a frozen SESOI, and
-compatible evidence from independent outcome systems.
-
-Identification must address persistent agroecology, modern administrative boundaries, distance
-trends, boundary-segment influence, spatial correlation, and measurement quality. Minimum
-diagnostics include exact boundary reproduction, density and predetermined continuity, common
-support, effective-unit power, a mandatory within-modern-commune confirmation, fixed bandwidths,
-alternative rainfall windows, outcome-quality checks, and independent outcome validation.
-
-Current data support the reproduced boundary, annual rainfall, 2001-2021 land NPP, and 2013-2021
-observed VIIRS designs. National socioeconomic, food-price, and partial-period inundation data
-remain useful for supporting breadth and limitations, but their unequal coverage prevents them
-from redefining the local central estimand.
-
-The design is intentionally stage-gated. Historical-boundary replication, geographic linkage,
-predetermined-covariate continuity, effective sample size, minimum detectable effects, and the
-smallest effect of substantive interest were frozen before outcome interactions. Passing these
-gates supports a local rainfall-sensitivity interpretation; replication in VIIRS limits
-measurement-specific explanations. National evidence and future holdout sources determine only
-how far that conclusion may be transported. New validation analyses will remain prospectively
-registered, with all departures reported.
+No arbitrary equivalence threshold or outcome-standard-deviation rule is used. Magnitudes,
+confidence intervals, observed exposure contrasts, analytical support, and stability across declared
+specifications are reported directly.
 
 ## 3. Data Overview
 
 ### Data Sources and Scope
 
-| data source | provider | generation method | period | unit or spatial scale | analytical role |
-|---|---|---|---|---|---|
-| Cambodia Socio-Economic Survey | National Institute of Statistics, Ministry of Planning, Cambodia | Repeated cross-sectional household, person, agriculture, consumption, food-security, education, and village-infrastructure modules with survey weights for household and person records | Georeferenced waves from 2007 to 2021 | Household-wave, person-wave, and village PSU-wave observations | Outcomes, mechanisms, demographic controls, and survey weights |
-| Historical conflict geography | Yale Cambodian Genocide Program Interactive Geographic Database | Georeferenced U.S. bombing targets and Khmer Rouge prison and burial-site inventories | Historical exposure predating the socioeconomic surveys | Point records aggregated to audited commune, district, and province geographies | Primary and alternative historical-conflict exposure measures |
-| CHIRPS rainfall | Climate Hazards Center, University of California Santa Barbara | Satellite-based infrared rainfall estimates blended with rain-gauge observations | Monthly observations from 1981 to 2021; fixed 1991-2020 climate normal | Gridded rainfall aggregated to audited survey geographies | Drought, rainfall-anomaly, and extreme-wet shock measures |
-| Food-price monitoring | World Food Programme | Market-commodity price observations aggregated to province-month | Analytical price support from 2003 to 2021 | Market observations summarized at province-month | Wholesale rice and broad retail food-price shocks |
-| Global Flood Database | Cloud to Street and Dartmouth Flood Observatory | Event-level inundation and duration derived from Terra and Aqua MODIS observations | Cambodia-intersecting events from 2007 to 2018 | Event rasters aggregated to audited survey geographies | Partial-period satellite inundation validation |
-| Consumer price indices | International Monetary Fund series sourced from Cambodian national authorities | Monthly all-items, food, and education price indices rebased to a 2021 annual mean | 2007 to 2021 | National monthly and annual indices | Convert monetary outcomes to constant 2021 riels |
-| Administrative geography references | Cambodian public administrative-data providers | Gazetteer and boundary references harmonized to survey geography codes | Historical survey waves linked to contemporary reference geographies | Village, commune, district, and province | Audited spatial crosswalk and linkage-quality classification |
+The data sources combine daily gridded maximum temperature and precipitation, annual satellite
+NPP and land cover, repeated national household surveys and consumer-price indices, national
+public village locations, and predetermined terrain, cropland, population, and road context. The
+data scope is national Cambodia: climate coverage spans 1991-2024, cropland NPP spans 2001-2021,
+and the spatially linked household analysis uses survey waves from 2007-2021, with 2004 retained
+only as a nominal consumption diagnostic.
 
-### Nature Communications Upgrade Sources
+### Evidence Architecture
 
-The following sources include both activated upgrade inputs and candidates that remain outside the
-active analysis release. A source is described as independent validation only after its provenance,
-geographic support, timing, and overlap with current inputs have been audited.
+| Readable data name | Period | Observation | Coverage and missingness | Quality controls | Research use | Limitation |
+|---|---|---|---|---|---|---|
+| National Village Climate-Cropland Productivity Panel | 2001-2021 | public village point-year, with 2 km, 5 km, and 10 km buffer variants | 59,135 complete 5 km strict-cropland rows; 186,858 village-buffer-year NPP rows across three radii for 2,966 points | observed-cell counts, valid-day counts, cropland pixel support, recoded QC diagnostics, and filled-days percentage are retained | Stage-1 measurement audit, national fixed-effects estimation, regional heterogeneity, continuous spatial heterogeneity, and robustness | NPP measures annual cropland carbon productivity rather than crop yield or farm revenue |
+| Interview-Aligned Household Consumption and Cropland Productivity Data | 2007-2021 | household-wave linked to the most recent completed village-buffer NPP year | 44,290 eligible households linked to 5 km strict-cropland NPP; 43,120 total-consumption and 43,365 food-consumption complete cases | exact interview calendar year, prior NPP year, survey weight, outcome construction, linkage, and complete-case flags are retained | Stage-2 linkage audit, national and regional NPP-consumption estimation, robustness, and continuous diagnostics | repeated cross-sections do not follow the same household over time, and unmatched households cannot enter spatially linked models |
+| Predetermined Village Spatial Context and Regionalisation Data | baseline or long-run | mapped village point and spatial-neighbour relation | national public village locations with terrain, slope, cropland, population, roads, long-run climate, and one frozen six-region assignment | outcome variables, regression residuals, coefficient signs, and p-values are excluded from construction; every region passes the frozen support gates | Outcome-blind SKATER regionalisation, regional interaction models, and map interpretation | analytical regions can cross administrative boundaries and describe spatial heterogeneity rather than administrative jurisdictions |
 
-| candidate source | intended role | current status | promotion requirement |
-|---|---|---|---|
-| Historical Southwest-West repression boundary and open replication materials | Activated geographic-boundary assignment, signed distance, published baseline replication, and placebo geometry | Acquired, checksum-bound, independently reproduced, linked, and activated | Completed: all 1,359 public assignments, signed distances, and five segment assignments reproduce exactly; source and geometry provenance are bound |
-| Cambodia Socio-Economic Survey 2023 | Prospective holdout for household, education, welfare, and coping outcomes | Official report identified; linkable microdata not acquired | Obtain authorized microdata and usable geography; harmonize outcomes without using holdout estimates to choose definitions |
-| Cambodia Agriculture Surveys 2020-2024 | Independent agricultural and irrigation validation | Public catalogue identified; analytical support unaudited | Audit geography, sampling, outcome comparability, and overlap with boundary and national designs |
-| International rice-price and Cambodian market-price systems | External price shock and domestic pass-through validation | Sources identified; provenance relationship to current price data unaudited | Separate international shock from domestic transmission; verify whether domestic systems share underlying records |
-| Annual land-productivity, cropland-productivity, and economic-activity outcomes | High-frequency outcome panels around the historical boundary | Annual land NPP for 2001-2021 and observed VIIRS nighttime activity for 2013-2021 are activated and estimated; cropland productivity remains pending | Completed for NPP and VIIRS under frozen products, support, quality, and spatial inference; a remaining cropland product requires a frozen mask, sensor, temporal composite, and validation target |
-| Independent rainfall, soil-moisture, flood, or discharge products | Shock-measure validation and possible full-period flood extension | Candidate only | Demonstrate temporal and spatial coverage, measurement independence, and outcome-compatible exposure windows |
+### Coverage and Linkage Rules
 
-### Analytical Units and Coverage
+- Climate data are not spatially or temporally imputed. Sixteen temperature cells and three
+  precipitation cells have no source values; village buffers average the remaining observed cells
+  and retain valid-day and included-cell counts.
+- Three pairs of current village codes map to the same physical public village point. Stage 1
+  collapses those duplicates before estimation so the same physical location is not double
+  weighted.
+- Strict cropland NPP is the primary ecological measure. Inclusive agriculture is retained as a
+  land-cover sensitivity.
+- Stage 2 uses the actual interview calendar year minus one. The 2019 survey is correctly split
+  between interviews conducted in 2019 and 2020, which link to 2018 and 2019 NPP, respectively.
+- Strict-cropland and inclusive-agriculture NPP are materialised at 2, 5, and 10 km. The 5 km
+  measure remains primary; the narrower and wider buffers are scale sensitivities.
+- Unmatched households remain in the consumption release but cannot enter spatially linked NPP
+  models.
 
-The estimation release contains two repeated-cross-section analysis samples:
+### Data Strengths
 
-- 62,920 household-wave observations for agricultural production, agricultural inputs, food
-  consumption, and food-security outcomes.
-- 268,485 person-wave observations for school attendance, years attended, and real education
-  expenditure.
-- 3,740 village PSU-wave observations in the six waves containing comparable village-infrastructure
-  modules; 3,005 have a valid in-range irrigated agricultural land share.
-- 4,398 design-equivalent village-years from 291 villages in the frozen 5 km annual land-NPP
-  primary sample for 2001-2021.
-- 28,008 grid-cell-years from 3,112 cells in the frozen 5 km observed-VIIRS primary sample for
-  2013-2021.
-- Both releases cover the georeferenced 2007, 2009, 2011, 2013, 2014, 2016, 2017, 2019, and 2021
-  survey waves. They are not longitudinal household or individual panels.
-- The exposure spine contains 5,617 unique PSU-wave rows. The household and education samples use
-  5,616 of these PSU-wave combinations because one exposure-spine row contains no released outcome
-  observation.
+- Climate shocks are derived from daily observations and expressed in natural units.
+- The 35 C threshold is absolute and does not mechanically classify a fixed share of every local
+  temperature history as extreme.
+- Annual cropland NPP uses native MODIS pixels inside explicit village-centred buffers and retains
+  pixel-count and quality-control information.
+- CSES food and non-food recall periods are harmonised item by item rather than added without time
+  conversion.
+- Actual interview-year alignment prevents the cross-calendar-year 2019 fieldwork from receiving
+  the same prior-year NPP exposure mechanically.
+- The same public village coordinates support panel estimation, spatial regionalisation, and local
+  coefficient mapping.
 
-Historical conflict and annual rainfall exposure are available for every released observation.
-The audited spatial linkage uses commune resolution for 5,574 PSU-wave rows, district resolution
-for 39 rows, and province resolution for 4 rows. Link resolution and method are retained for
-sensitivity analysis.
+### Material Limitations
 
-### Shock-Specific Availability
-
-| shock component | usable PSU-wave rows | time coverage | principal limitation |
-|---|---:|---|---|
-| Historical conflict exposure | 5,617 | Time-invariant, pre-outcome-period exposure | Observational geography; correlated historical and agroecological legacies remain possible |
-| Annual rainfall shocks | 5,617 | 2007-2021 survey waves | Calendar-year measures may not match every outcome reference period |
-| Interview-month rainfall shocks | 4,609 | All linked waves except 2019 | Interview month is unavailable in 2019 |
-| Wholesale rice-price shocks | 3,067 | Partial coverage across 2007-2021, excluding 2019 monthly alignment | Early coverage is concentrated in 8-9 provinces |
-| Broad retail food-price shocks | 1,241 | Primarily later waves | Commodity and market coverage expands sharply over time |
-| Survey-year satellite inundation | 3,601 | 2007-2017 survey waves | Selected major events only; the product ends in 2018 |
-| Interview-preceding satellite inundation | 3,241 | 2009-2017 survey waves | The 2007 preceding window is incomplete and post-2018 waves are unavailable |
-
-Missing shock exposure is never coded as zero. A zero denotes no mapped event only within a
-documented coverage window. Price and satellite-inundation analyses therefore use explicit
-coverage-restricted samples and are not treated as balanced full-period designs.
-
-### Outcome Availability
-
-Agricultural physical outcomes and harmonized monetary outcomes are available across the linked
-2007-2021 waves, subject to module-specific observation. Monetary outcomes are expressed in 2021
-constant-price riels. Direct severe food-insecurity indicators are comparable in 2014, 2016,
-2017, 2019, and 2021; the ordinal severity sum is comparable in 2016, 2017, 2019, and 2021.
-School-attendance outcomes are defined for ages 6-17, while the comparable education-expenditure
-measure begins in 2009. Village irrigated agricultural land share is comparable in 2007, 2009,
-2011, 2014, 2016, and 2021. Permanent Market Access is comparable only in 2011 and 2021 and is
-restricted to secondary appendix use.
-
-### Exploratory Screening and Limitations
-
-The focused briefing reviewed six current analysis layers, summarized 358 readable variables,
-generated 30 exploratory distribution plots, and skipped no files. Time-structured variables were
-detected, but no additional exploratory time-series plots were generated because the confirmed
-figure plan already specifies the substantive temporal analyses.
-
-Key limitations are repeated cross-sections rather than a household panel, incomplete early local
-price coverage, absent interview month in 2019, satellite-inundation coverage ending in 2018,
-possible selective migration, administrative-boundary harmonization, and nonrandom historical
-conflict geography. These limitations require shock-specific samples, transparent coverage
-tables, demanding geographic and survey-wave adjustment, and calibrated associational language.
-
-For future boundary-linked survey analysis, the 85 Kampong Speu PSUs, 3,748 household observations,
-and 4,291 school-age children remain upper bounds before the frozen bandwidth and outcome-specific
-shock support are imposed. Price-linked support is concentrated in three waves. The completed NPP
-and VIIRS analyses use annual spatial panels and effective-unit inference; any new survey, price,
-flood, or agricultural outcome still requires power calculations at the assignment, shock, and
-spatial-correlation levels rather than justification from individual record counts.
+- CSES is a repeated cross-section, not a household panel.
+- NPP is not crop yield, farm revenue, or crop-specific production.
+- Consumption instruments change across waves, particularly in 2019. Survey-wave fixed effects
+  and instrument-regime diagnostics are therefore mandatory.
+- CSES 2004 lacks comparable CPI and imputed-rent support and is excluded from the real-price main
+  outcome.
+- Spatial regionalisation and GWR describe heterogeneity; they do not independently identify
+  causal mechanisms.
+- A positive relationship in both stages is consistent with, but does not prove, a mediated causal
+  pathway from climate through NPP to household consumption.
 
 ## 4. Variable Construction  /  Key Variables
 
-### Release Scope and Linkage
+### Stage-1 Climate and Ecological Variables
 
-The active analysis release covers the georeferenced 2007-2021 survey waves. It contains 62,920
-household-wave observations and 268,485 person-wave education observations. Historical conflict
-and annual rainfall measures link to every released observation. Interview-month rainfall
-measures are unavailable for the 2019 wave because interview month is missing. Monthly food-price
-coverage is also intentionally unbalanced and is never interpreted as zero when a local market
-observation is absent.
-
-The primary design is place-based. Historical conflict exposure is fixed before the outcome
-period, while rainfall and local price shocks vary by place and time. Event-level satellite
-inundation has been constructed for 2007-2018 as a secondary validation layer. A full-period
-river-discharge exposure has not yet been constructed; extreme-wet rainfall remains a distinct
-precipitation measure and is not labelled as flood exposure.
-
-In every variable table below, `variable_name` contains the readable variable name and
-`full_name` contains the article-facing full name; neither column contains raw source names.
-
-### Historical Conflict Construction
-
-Repeated bombing records at the same location are collapsed on a 10 metre projected grid before
-aggregation. Valid mapped geographies with no conflict point receive a structural zero. Prison
-and burial-site measures remain separate from bombing intensity; no composite conflict index is
-imposed.
-
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
+| Readable variable | Readable data name | Unit | Construction | Role | Final variable |
 |---|---|---|---|---|---|
-| Log Bombing Unique Locations per 100 km2 | Log bombing-location density | main explanatory | \(Conflict_g=\log(1+100N_g/A_g)\), where \(N_g\) is unique bombing locations and \(A_g\) is area in square kilometres. | Collapse repeated coordinates on a 10 metre grid, count within geography, scale per 100 square kilometres, then apply log one plus. | yes |
-| Any US Bombing Record | Any mapped bombing record | alternative explanatory | \(1[N_g>0]\). | One when at least one bombing record maps to the geography; zero only for a valid mapped geography with no record. | yes |
-| Khmer Rouge Prison Count | Khmer Rouge prison-site count | alternative explanatory | Number of prison sites mapped within geography \(g\). | Spatial count retained separately from bombing exposure. | yes |
-| Distance to Nearest Khmer Rouge Prison km | Distance to nearest Khmer Rouge prison site | alternative explanatory | Minimum projected distance in kilometres from geography \(g\) to a prison site. | Nearest-site distance in a projected coordinate system. | yes |
-| Khmer Rouge Burial Site Count | Khmer Rouge burial-site count | alternative explanatory | Number of burial sites mapped within geography \(g\). | Spatial count retained separately from bombing exposure. | yes |
-| Distance to Nearest Khmer Rouge Burial Site km | Distance to nearest Khmer Rouge burial site | alternative explanatory | Minimum projected distance in kilometres from geography \(g\) to a burial site. | Nearest-site distance in a projected coordinate system. | yes |
+| Annual Heat Days at or Above 35 C | National Village Climate-Cropland Productivity Panel | days/year | count of calendar days with daily maximum temperature at or above 35 C | primary heat exposure; report per 10 days | yes |
+| Annual Heat Degree-Days Above 35 C | National Village Climate-Cropland Productivity Panel | degree-C days/year | sum of daily maximum temperature exceedance above 35 C | alternative heat-intensity exposure; report per 10 degree-days | yes |
+| Annual Maximum Consecutive Five-Day Precipitation Rx5day | National Village Climate-Cropland Productivity Panel | mm | maximum rolling sum of precipitation over five consecutive calendar days | extreme-rainfall exposure; report per 10 mm | yes |
+| Annual Maximum Consecutive Dry Days Below 1 mm | National Village Climate-Cropland Productivity Panel | days | longest annual run with daily precipitation below 1 mm | dry-spell exposure; report per 10 days | yes |
+| Annual Precipitation Total | National Village Climate-Cropland Productivity Panel | mm/year | sum of daily precipitation over the calendar year | rainfall-quantity control; report per 100 mm | yes |
+| Annual Strict-Cropland Mean NPP | National Village Climate-Cropland Productivity Panel | kg C/m2/year | mean annual MODIS NPP among same-year strict-cropland pixels within the village buffer | primary stage-1 outcome and input to the timed stage-2 exposure; report per 0.1 kg C/m2 | yes |
+| Annual Inclusive-Agriculture Mean NPP | National Village Climate-Cropland Productivity Panel | kg C/m2/year | corresponding mean including cropland-natural vegetation mosaics | land-cover sensitivity and input to its timed stage-2 counterpart | yes |
+| NPP Pixel Support | National Village Climate-Cropland Productivity Panel | count/share | candidate pixels, valid pixels, valid-pixel share, and recoded QC diagnostics | sample-quality gate | yes |
+| Mean Annual Strict-Cropland NPP Filled-Days Percentage | National Village Climate-Cropland Productivity Panel | percent | mean percentage of growing-season days for which gap-filled FPAR/LAI inputs contribute to annual strict-cropland NPP pixels within the village buffer; lower values indicate less gap filling | continuous quality adjustment and outcome-independent P50/P75 quality-support sensitivity | yes |
 
-Bombing record counts, bombing-date counts, reported aircraft counts, reported grave counts, and
-reported body counts are retained for robustness and measurement diagnostics but are not primary
-exposures. Reported bomb load or tonnage is not used as a primary measure.
+Heat-day count and heat degree-days have a 5 km correlation of 0.93. They are therefore estimated
+in separate heat specifications. Regression values are not standardised.
 
-### Candidate Quasi-Experimental and Validation Variables
+### Stage-2 Household Variables
 
-The variables below are approved design targets but remain non-final until the corresponding
-source, construction, feasibility, and validation gates are completed. Materializing a candidate
-variable does not activate it for effect estimation or permit a manuscript claim.
-
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
+| Readable variable | Readable data name | Unit | Construction | Role | Final variable |
 |---|---|---|---|---|---|
-| Higher-Repression Southwest Zone | Assignment to the more repressive historical Southwest zone | treatment | \(R_g=1\) for locations assigned to the Southwest zone and \(R_g=0\) for comparable West-zone locations. | Deterministic point-in-polygon assignment from the checksum-verified public zone geometry. The independent reconstruction matches all 1,359 assignments in the public replication frame. Exact public village-code linkage is primary; one unique exact normalized-name match within the same commune is the only allowed fallback rule, and unresolved links remain missing. | yes |
-| Signed Distance to Historical Repression Boundary km | Signed distance to the Southwest-West historical boundary | running variable | Minimum EPSG 32648 projected distance in kilometres to the shared zone boundary, positive in the Southwest and negative in the West. | The independent construction correlates 1.000000 with the public replication distance and has a mean absolute difference below \(10^{-12}\) km. No distance is imputed for an unresolved village link. | yes |
-| Historical Boundary Segment | Historical boundary segment identifier | design control | Identifier for the nearest of five historical-boundary vertices inside the published Kampong Speu study polygon. | Reconstruct the five public boundary vertices before outcome access and assign the nearest vertex in EPSG 32648. The independent segment assignment matches all 1,359 public replication villages. | yes |
-| Historical-Boundary Common Support | Five-kilometre historical-boundary common support | primary sample | One for an eligible village with absolute signed distance no greater than 5 km; fixed 2, 10, 15, 20, and 30 km indicators define robustness windows. | The 5 km primary bandwidth, alternative fixed bandwidths, and 0.20 standardized-outcome SESOI were approved after outcome-blind support, continuity, administrative-boundary, segment-influence, and power diagnostics. No outcome coefficient was inspected when selecting support. | yes |
-| International Rice Price Shock | Externally measured international rice-price shock | candidate contemporary shock | Pre-specified monthly log change or anomaly in an international rice-price benchmark. | Freeze benchmark, transformation, lag, and interview alignment before linking outcomes. | no |
-| Domestic Rice Price Pass-Through | Domestic transmission of the external rice-price shock | candidate validation or mechanism | Change in Cambodian market rice prices associated with the external benchmark over the same window. | Audit whether domestic sources share records with the current price system before claiming independent validation. | no |
-| Holdout Survey Indicator | Prospective holdout socioeconomic-survey observation | candidate validation sample | One for observations from a survey wave not used in the current discovery analysis. | Assign only after authorized microdata and comparable geography are obtained. | no |
-| Annual Land NPP Mean kg C per m2 | Annual local land net primary production | spatial outcome input | \(NPP_{vt}=n_{vt}^{-1}\sum_{p\in B_v}NPP_{pt}\), where \(B_v\) contains valid 500 metre pixel centres within 1,000 metres of historical village point \(v\). | Use Terra MOD17A3HGF Version 6.1 annual NPP for 2001-2024, retain values in the documented valid range, apply the 0.0001 scale factor, and take an unweighted mean over valid buffer pixels. Missing pixels are not imputed. This is land vegetation production, not crop yield or cropland-only productivity. | yes |
-| Annual Land NPP Anomaly kg C per m2 | Annual local land net primary production anomaly | primary spatial outcome | \(A_{vt}=NPP_{vt}-\overline{NPP}_{v,2001:2020}\). | Subtract each village's fixed 2001-2020 mean and retain the natural unit of kilograms of carbon per square metre. The activated analysis period is 2001-2021 because rainfall is unavailable after 2021. All villages have a complete 2001-2020 NPP baseline. | yes |
-| Annual Land NPP Anomaly Z 2001-2020 | Standardized annual local land net primary production anomaly | outcome-scale robustness | \(Z^{NPP}_{vt}=A_{vt}/s(NPP_{v,2001:2020})\). | Divide the natural-unit anomaly by the village-specific 2001-2020 standard deviation. Use this scale for the approved 0.20-SD SESOI and cross-specification comparison; natural-unit estimates remain primary for interpretation. | yes |
-| Mean NPP QC Filled Growing-Season Days Percent | Mean share of growing-season days using gap-filled NPP inputs | outcome-quality field | \(QC_{vt}=n_{vt}^{-1}\sum_{p\in B_v}QC_{pt}\). | Average the paired valid-pixel quality field within the same 1,000 metre buffer. Higher values indicate more growing-season days whose FPAR or LAI input was filled. Retain it for a prespecified measurement-quality sensitivity analysis; do not tune a threshold using estimated effects. | yes |
-| Annual Climate Link Method | Annual spatial-panel climate-geography linkage method | linkage-quality field | Categorical indicator for the geography rule used to attach commune-year rainfall to village \(v\). | Use exact historical commune code for 1,302 villages. For 17 villages in obsolete commune codes, use a deterministic village-point-within-modern-climate-commune crosswalk; unmatched or ambiguous locations remain missing. Climate linkage is complete for 2001-2021, while 2022-2024 rainfall remains missing rather than zero. | yes |
-| Log One Plus Distance to River m | Log one plus historical distance to the nearest mapped river | robustness control | \(L_v=\log(1+RiverDistance_v)\), with distance measured in metres. | Link the public replication-frame river-distance field by exact historical village code, retain nonnegative distances, apply log one plus, and do not impute. Include its interaction with rainfall and historical side only in the prespecified river-distance robustness model. | yes |
-| Cropland Productivity Anomaly | Annual cropland vegetation-productivity anomaly | candidate spatial outcome not yet materialized | Within-location annual anomaly in a pre-specified, cropland-masked vegetation or productivity measure. | Freeze a defensible cropland mask, sensor product, temporal composite, quality threshold, and validation target. The unmasked annual land NPP variables above cannot substitute for this construct. | no |
-| Annual Mean Radiance | Annual mean nighttime radiance | spatial outcome input | Annual mean VIIRS radiance for each approximately 500 metre grid cell. | Use EOG VIIRS Annual VNL V2.1 for 2013-2021. Retain zero and negative background-corrected values; do not impute or winsorize. | yes |
-| Asinh Annual Mean Radiance | Inverse-hyperbolic-sine annual mean nighttime radiance | primary independent-validation outcome | \(Y_{pt}=\operatorname{asinh}(Radiance^{mean}_{pt})\). | Transform annual mean radiance over all grid cells, including zero and negative values. Grid-cell fixed effects absorb time-invariant light levels in the boundary model. | yes |
-| Asinh Annual Median Radiance | Inverse-hyperbolic-sine annual median nighttime radiance | outcome-construction robustness | \(Y^{median}_{pt}=\operatorname{asinh}(Radiance^{median}_{pt})\). | Apply the same transformation to annual median radiance without imputation or winsorization. | yes |
-| Any Nonzero Annual Mean Radiance | Any detected nonzero annual mean nighttime radiance | extensive-margin robustness | \(1[Radiance^{mean}_{pt}\neq 0]\). | One for nonzero annual mean radiance and zero otherwise; retain negative background-corrected values as nonzero measurements. | yes |
-| Cloud-Free Observations | Annual cloud-free VIIRS observation count | outcome-quality field | Number of cloud-free observations contributing to grid cell \(p\) in year \(t\). | Retain the count continuously. The main model uses all observed pixel-years; the frozen quality robustness requires at least 40 cloud-free observations. | yes |
-| At Least 40 Cloud-Free Observations | VIIRS coverage-robustness sample indicator | quality-restricted sample | \(1[CloudFreeObservations_{pt}\geq 40]\). | Apply only as the pre-specified quality robustness restriction. It excludes 2,283 of 397,980 pixel-years; the 30-observation flag remains diagnostic only. | yes |
-| Village Irrigated Agricultural Land Share | Village agricultural land share reported as irrigated | primary village mechanism | \(IrrigatedLand_{vt}/AgriculturalLand_{vt}\). | Use comparable village-infrastructure waves 2007, 2009, 2011, 2014, 2016, and 2021. Require positive total agricultural land, nonnegative irrigated land, and a ratio in [0,1]; set zero or missing denominators and irrigated area exceeding total area to missing. The final data contain 3,005 valid in-range village-years. | yes |
-| All-Weather Road Access | Village access to an all-weather road | deferred candidate mechanism | Binary access or harmonized distance to the nearest all-weather road. | Do not activate: the item is conditionally routed after motorable-road access, so missing values cannot be coded as no access. | no |
-| Permanent Market Access | Village access to a permanent market | secondary wave-limited appendix mechanism | \(1[Village\ reports\ a\ permanent\ market]\). | Map the verified common source coding in which one denotes yes and two denotes no to 1 and 0 in 2011 and 2021 only. Preserve other waves and the single missing 2011 response as missing. The final data contain 1,359 village-years; do not describe this as a full-period mechanism. | yes |
-| Reduced Essential Education or Health Expenditure | Costly coping through reduced essential nonfood expenditure | deferred candidate mechanism | One when a household reports reducing essential education or health spending as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 53 any-yes versus 16 consistent-yes households among 10,080 households. | no |
-| Child Withdrawn from School as Coping | Costly coping through child school withdrawal | deferred candidate mechanism | One when a household reports withdrawing a child from school as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 20 any-yes versus 4 consistent-yes households among 10,080 households. | no |
-| Formal Lender Borrowing as Coping | Household formal-lender borrowing response to hardship | deferred candidate mechanism | One when a household reports borrowing money or food from a formal lender or bank as a coping response. | Code questionnaire response 3 as yes and 1 or 2 as no, but do not activate for interaction estimation: the comparable item is 2021-only and has 146 any-yes versus 37 consistent-yes households. Do not substitute general liabilities. | no |
-| Productive Asset Sale as Coping | Sale of productive assets in response to hardship | deferred candidate mechanism | One when a household reports selling productive assets or transport as a coping response. | Do not activate for interaction estimation: the comparable item is 2021-only and has 5 any-yes and no consistent-yes households among 10,080 households. | no |
-| Adult Work Migration as Coping | Adult household member sent elsewhere for work as a coping response | deferred candidate mechanism | One when a household reports sending an adult member elsewhere to seek work. | Do not activate for interaction estimation: the comparable item is 2021-only and has 18 any-yes versus 4 consistent-yes households among 10,080 households. Do not substitute general migration. | no |
+| Real 2021 Annual Total Consumption per Capita | Interview-Aligned Household Consumption and Cropland Productivity Data | 2021 riels/person/year | annualised food, recall non-food, housing services, and where required education, deflated by the applicable CPI and divided by household size | primary stage-2 outcome; log used in regression | yes |
+| Real 2021 Annual Food Consumption per Capita | Interview-Aligned Household Consumption and Cropland Productivity Data | 2021 riels/person/year | seven-day food value multiplied by 52, deflated with interview-month food CPI, divided by household size | secondary stage-2 outcome; log used in regression | yes |
+| Interview Calendar Year | Interview-Aligned Household Consumption and Cropland Productivity Data | year | actual household interview calendar year; the 2019 survey retains interviews conducted in both 2019 and 2020 | timing anchor | yes |
+| Prior NPP Calendar Year | Interview-Aligned Household Consumption and Cropland Productivity Data | year | Interview Calendar Year minus one | exact annual NPP linkage key | yes |
+| Prior-Year Strict-Cropland NPP | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | Annual Strict-Cropland Mean NPP in Prior NPP Calendar Year within 5 km | focal stage-2 exposure; report per 0.1 kg C/m2 | yes |
+| Prior-Year Inclusive-Agriculture NPP | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | Annual Inclusive-Agriculture Mean NPP in Prior NPP Calendar Year within 5 km | stage-2 land-cover sensitivity | yes |
+| Prior-Year Strict-Cropland NPP at 2 km | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | strict-cropland NPP in Prior NPP Calendar Year within 2 km | narrow-buffer stage-2 sensitivity | yes |
+| Prior-Year Inclusive-Agriculture NPP at 2 km | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | inclusive-agriculture NPP in Prior NPP Calendar Year within 2 km | combined land-cover and narrow-buffer sensitivity | yes |
+| Prior-Year Strict-Cropland NPP at 10 km | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | strict-cropland NPP in Prior NPP Calendar Year within 10 km | wide-buffer stage-2 sensitivity | yes |
+| Prior-Year Inclusive-Agriculture NPP at 10 km | Interview-Aligned Household Consumption and Cropland Productivity Data | kg C/m2/year | inclusive-agriculture NPP in Prior NPP Calendar Year within 10 km | combined land-cover and wide-buffer sensitivity | yes |
+| Prior-Year NPP Pixel Support | Interview-Aligned Household Consumption and Cropland Productivity Data | count/share | candidate pixels, valid pixels, valid-pixel share, recoded QC percentage, and original above-100 QC pixel count for each radius and land-cover definition | stage-2 quality and support gate | yes |
+| Household Composition Vector | Interview-Aligned Household Consumption and Cropland Productivity Data | natural shares/counts | household size, female share, mean age, child share, older-person share, and dependency ratio | prespecified demographic controls | yes |
+| Household Head Ever Attended School | Interview-Aligned Household Consumption and Cropland Productivity Data | binary | education response for the unique household member coded as household head | household-head education control | yes |
+| Socioeconomic Control Vector | Interview-Aligned Household Consumption and Cropland Productivity Data | natural units/categories | urban-rural status, agricultural participation, and Household Head Ever Attended School | prespecified sensitivity controls | yes |
+| Household Survey Weight | Interview-Aligned Household Consumption and Cropland Productivity Data | survey weight | harmonised released household weight | primary stage-2 weighting | yes |
+| Consumption Instrument Regime | Interview-Aligned Household Consumption and Cropland Productivity Data | category | 2007; 2009-2013; 2014-2017; and 2019-2021 questionnaire regimes | diagnostic and sensitivity interaction | yes |
+| Stage-2 Complete-Case Flags | Interview-Aligned Household Consumption and Cropland Productivity Data | binary | positive survey weight, mapped 5 km strict-cropland prior-year NPP, required outcome, and complete prespecified control block | reproducible analytical-sample gate | yes |
 
-### Contemporary Climate Shocks
+Food is annualised from the prior seven days by multiplying by 52. Non-food components are
+annualised using the item-specific 1-, 3-, 6-, or 12-month recall period. Housing services combine
+actual or equivalent rent, utilities, and non-duplicated maintenance. Education is added separately
+in 2019 and 2021 because it is absent from those waves' recall non-food list. No monetary outcome is
+winsorised and no item nonresponse is imputed.
 
-Rainfall measures use a fixed 1991-2020 climate normal calculated from monthly observations
-beginning in 1981. Monthly rainfall is aggregated at the audited commune, district, or province
-resolution used by the survey geography. The link method and spatial resolution remain available
-as quality fields.
+The interview-aligned household release contains 77,904 household-wave records. Among 62,526
+households eligible for the real total-consumption outcome, strict-cropland NPP links to 42,886 at
+2 km, 44,290 at 5 km, and 44,986 at 10 km. The primary 5 km model has 43,120 complete total-
+consumption observations after applying the outcome, weight, NPP-linkage, and Household Composition
+Vector gates; the corresponding food-consumption sample has 43,365 observations. Missing values
+remain missing, and no regression variable is winsorised, clipped, or standardised.
 
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
+### Spatial Regionalisation Variables
+
+SKATER uses elevation, slope, long-run mean annual rainfall, long-run means of the four
+climate-shock measures, cropland share, baseline population, and historical or predetermined road
+accessibility. Features are standardised only for clustering. NPP, consumption, regression
+residuals, coefficient signs, and p-values are excluded from region construction. REDCAP was
+evaluated only as a pre-outcome candidate-selection diagnostic and is not a final analysis variable.
+
+Candidate region counts were restricted to four through seven and evaluated before regional
+outcome coefficients were inspected. One six-region SKATER partition is frozen. Every selected
+region must contain at least 200 villages, an average of at least 15 complete stage-1 years per
+village, and at least 3,000 stage-2 households.
+
+For interpretation, the frozen codes have descriptive geographic labels. R1 is the northern-
+northwestern interior and northern Tonle Sap arc, centred on Banteay Meanchey, Siem Reap, and
+Kampong Thom and extending into parts of Battambang and Preah Vihear. R2 is the western Tonle Sap
+agricultural belt, principally Battambang, Pursat, and Pailin. R3 is the eastern-northeastern Mekong
+corridor and uplands, spanning Tboung Khmum, Kratie, Stung Treng, Ratanak Kiri, and Mondul Kiri. R4
+is the lower Mekong and southeastern plains, principally Kandal, Prey Veng, Kampong Cham, and Svay
+Rieng. R5 is the south-central interior plains, centred on Kampong Speu, Takeo, Kampong Chhnang, and
+part of Kandal. R6 is the southern coastal belt, spanning Kampot, Preah Sihanouk, Koh Kong, Kep,
+and southern Takeo. These labels summarize the geography of analytical clusters rather than define
+administrative regions; cluster boundaries can cross province boundaries.
+
+| Readable variable | Readable data name | Unit | Construction | Role | Final variable |
 |---|---|---|---|---|---|
-| Annual Rainfall Anomaly Z (1991-2020) | Annual standardized rainfall anomaly | contemporary shock | \(Z_{gt}=(R_{gt}-\bar{R}_{g,1991:2020})/s_{g,1991:2020}\). | Sum monthly rainfall within year and standardize within geography against 1991-2020. | yes |
-| May October Rainfall Anomaly Z (1991-2020) | May-October standardized rainfall anomaly | contemporary shock | \(Z^{MO}_{gt}=(R^{MO}_{gt}-\bar{R}^{MO}_{g,1991:2020})/s^{MO}_{g,1991:2020}\). | Sum May-October rainfall and standardize within geography against 1991-2020. | yes |
-| Interview Month SPI 3 Month | Interview-aligned three-month Standardized Precipitation Index | contemporary shock | Standard normal transform of the fitted cumulative probability for the three-month rainfall total. | Gamma maximum-likelihood fit by geography and ending calendar month over 1991-2020. | yes |
-| Interview Month SPI 6 Month | Interview-aligned six-month Standardized Precipitation Index | contemporary shock | Standard normal transform of the fitted cumulative probability for the six-month rainfall total. | Gamma maximum-likelihood fit by geography and ending calendar month over 1991-2020. | yes |
-| Interview Month SPI 12 Month | Interview-aligned twelve-month Standardized Precipitation Index | contemporary shock | Standard normal transform of the fitted cumulative probability for the twelve-month rainfall total. | Gamma maximum-likelihood fit by geography and ending calendar month over 1991-2020. | yes |
-| Interview Month Drought Shock SPI 3 | Three-month drought indicator | contemporary shock | \(1[SPI3_{gt}\leq -1]\). | Missing SPI remains missing rather than being coded as no drought. | yes |
-| Interview Month Drought Shock SPI 6 | Six-month drought indicator | contemporary shock | \(1[SPI6_{gt}\leq -1]\). | Missing SPI remains missing rather than being coded as no drought. | yes |
-| Interview Month Drought Shock SPI 12 | Twelve-month drought indicator | contemporary shock | \(1[SPI12_{gt}\leq -1]\). | Missing SPI remains missing rather than being coded as no drought. | yes |
-| Annual Rainfall Extreme Wet Shock | Annual extreme-wet rainfall indicator | contemporary shock | \(1[R_{gt}\geq Q_{0.9}(R_{g,1991:2020})]\). | Geography-specific upper-tail indicator using the fixed climate normal. | yes |
+| CSES Public-Point Linkage | Interview-Aligned Household Consumption and Cropland Productivity Data | binary and identifier | deterministic link from a CSES village code to a unique national public village point | stage-2 NPP linkage and survey-support map | yes |
+| Village Spatial Adjacency | Predetermined Village Spatial Context and Regionalisation Data | binary edge list | shared-neighbour graph among mapped village locations | spatial contiguity constraint | yes |
+| SKATER Region ID | Predetermined Village Spatial Context and Regionalisation Data | category | frozen six-region minimum-spanning-tree partition of standardised outcome-blind clustering features | primary discrete spatial region | yes |
 
-Calendar-year, May-October, interview-aligned, and lagged windows must be matched to each outcome's
-reference period. Extreme-wet rainfall is a rainfall shock, not a direct flood measure.
+### Timing Alignment
 
-### Satellite-Observed Inundation Validation
-
-Event maps identify maximum inundation and duration during selected major flood events. Permanent
-water is excluded from the inundated numerator. Pixel areas are latitude-adjusted before
-aggregation, and raster coverage plus clear-observation quality remain available. The event
-product ends in 2018 and does not supply a balanced 2007-2021 panel, so these measures are
-secondary validation variables rather than the primary full-period flood specification.
-
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
-|---|---|---|---|---|---|
-| Survey Year Maximum Flooded Geography Share | Maximum survey-year satellite-observed inundated share | secondary shock validation | \(FloodShare^{year}_{gt}=\max_e(FloodArea_{ge}/Area_g)\). | Maximum across mapped events overlapping the survey calendar year, after excluding permanent water. | no |
-| Preceding 12 Month Maximum Flooded Geography Share | Maximum interview-preceding satellite-observed inundated share | secondary shock validation | \(FloodShare^{12m}_{gt}=\max_{e\in[t-12,t]}(FloodArea_{ge}/Area_g)\). | Maximum across mapped events overlapping the twelve months before interview; incomplete windows remain missing. | no |
-| Survey Year Local Inundation Event Count | Number of survey-year events with local inundation | secondary shock validation | \(\sum_e 1[FloodArea_{ge}>0]\). | Count of mapped survey-year events with positive local inundation. | no |
-| Survey Year Maximum Flood Duration Days | Maximum survey-year inundation duration | secondary shock validation | \(\max_e Duration_{ge}\). | Maximum observed duration among locally mapped survey-year events. | no |
-
-Survey-year coverage is available for the 2007-2017 survey waves. The 2019 and 2021 waves remain
-missing because the event product ends in 2018. A continuous river-discharge series is still
-needed before flood can be treated as a primary shock over the complete outcome period.
-
-### Contemporary Food-Price Shocks
-
-Two local price measures are retained because market coverage changes over time. The narrow
-wholesale rice series begins in 2003 but covers only 8-9 provinces in most early years. The broad
-retail food series is useful mainly after 2013 and requires at least two observed commodities in a
-province-month. Both remove same-month national price movements before being linked to survey
-location and month.
-
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
-|---|---|---|---|---|---|
-| Local Relative Log Wholesale Rice Price | Local wholesale low-quality rice price pressure | contemporary shock | \(P^{rice}_{gt}=\log(p^{rice}_{gt})-\log(p^{rice}_{t,national})\). | Province-month median wholesale price per kilogram relative to the same-month national median. | yes |
-| 12 Month Change in Local Relative Log Wholesale Rice Price | Twelve-month change in local wholesale rice price pressure | contemporary shock | \(\Delta_{12}P^{rice}_{gt}=P^{rice}_{gt}-P^{rice}_{g,t-12}\). | Exact twelve-month difference; noncontiguous or absent observations remain missing. | yes |
-| Broad Retail Food Local Relative Log Price | Broad local retail food-price pressure | contemporary shock | \(P^{food}_{gt}=J_{gt}^{-1}\sum_j[\log(p_{jgt})-\log(p_{jt,national})]\). | Mean across observed food commodities when at least two commodities are available. | yes |
-| 12 Month Change in Broad Retail Food Local Relative Log Price | Twelve-month change in broad local retail food-price pressure | contemporary shock | \(\Delta_{12}P^{food}_{gt}=P^{food}_{gt}-P^{food}_{g,t-12}\). | Exact twelve-month difference; absent observations remain missing. | yes |
-
-The 2019 wave has no interview-month food-price exposure. No month is imputed and no annual price
-measure substitutes for the missing monthly exposure.
-
-### Outcomes, Mechanisms, and Controls
-
-| variable_name | full_name | role | formal_definition | construction_or_coding | is_final_variable |
-|---|---|---|---|---|---|
-| Cultivated Crop Area m2 | Total cultivated crop area | outcome | Sum of cultivated area within household-wave. | Stable area fields and units across the linked waves. | yes |
-| Harvested Crop Area m2 | Total harvested crop area | outcome | Sum of harvested area within household-wave. | Stable area fields and units across the linked waves. | yes |
-| Crop Production Quantity kg | Total crop production quantity | outcome | Sum of crop quantity within household-wave. | Stable kilogram-equivalent fields across the linked waves. | yes |
-| Crop Yield kg per ha | Crop yield | outcome | \(Yield_{it}=10000ProductionKg_{it}/HarvestedAreaM2_{it}\). | Defined only when harvested area is positive and production is observed. | yes |
-| Post Harvest Loss Share | Share of output lost after harvest | outcome | \(LossShare_{it}=LossKg_{it}/(ProductionKg_{it}+LossKg_{it})\). | Defined when the denominator is positive. | yes |
-| Crop Diversity Count | Number of distinct crops | mechanism | Distinct crop count within household-wave. | Count of distinct reported crop codes. | yes |
-| Irrigable Parcel Share | Share of observed parcels that can receive irrigation | mechanism | \(IrrigableShare_{it}=IrrigableParcels_{it}/ObservedParcels_{it}\). | Missing when irrigation status is not observed. | yes |
-| Real 2021 Crop Production Value Riels | Crop production value at 2021 prices | outcome | \(RealValue^{2021}_{it}=NominalValue_{it}CPI_{2021}/CPI_t\). | Annual all-items price adjustment to 2021 riels. | yes |
-| Real 2021 Agricultural Input Cost Riels | Agricultural input costs at 2021 prices | outcome | \(RealCost^{2021}_{it}=NominalCost_{it}CPI_{2021}/CPI_t\). | Annual all-items price adjustment to 2021 riels. | yes |
-| Real 2021 Food Consumption Value per Household Member Riels | Food consumption per household member at 2021 prices | outcome | \(FoodPC^{2021}_{it}=RealFoodValue^{2021}_{it}/HouseholdSize_{it}\). | Food-specific price adjustment followed by household-size scaling. | yes |
-| Food Items with Positive Consumption Count | Number of food items with positive consumption | outcome | Count of observed item values greater than zero. | Constructed within household-wave. | yes |
-| Any Severe Food Insecurity Experience | Any severe food insecurity experience | outcome | One for any no-food, sleep-hungry, or whole-day-without-food experience. | Comparable direct-question waves only. | yes |
-| Food Insecurity Severity Sum | Ordinal food insecurity severity sum | outcome | Sum of three frequency codings. | Comparable in 2016, 2017, 2019, and 2021. | yes |
-| Currently Attending School | Current school attendance | outcome | One for a current-attendance response of yes. | Main attendance sample is ages 6-17 with observed response. | yes |
-| Years Attended School | Years attended school | outcome | Reported completed years attended. | Person-wave outcome. | yes |
-| Real 2021 Education Expenditure Riels | Education expenditure at 2021 prices | outcome | \(RealEdu^{2021}_{it}=NominalEdu_{it}CPI^{edu}_{2021}/CPI^{edu}_t\). | Annual education-price adjustment; comparable expenditure begins in 2009. | yes |
-| Agricultural Household | Agricultural-household indicator | heterogeneity/sample | One for positive parcel area or an observed crop-production record. | Pre-specified subgroup indicator. | yes |
-| Household Size | Household-member count | control | Number of member records within household-wave. | Harmonized across linked waves. | yes |
-| Age Years | Age in completed years | control | Reported completed age. | Person-wave control. | yes |
-| Female | Female indicator | control | One for female and zero for male. | Person-wave control. | yes |
-| Household Survey Weight | Household survey weight | weight | Wave-specific survey weight. | Retained without rescaling in preprocessing. | yes |
-| Person Survey Weight | Person survey weight | weight | Wave-specific person survey weight. | Retained without rescaling in preprocessing. | yes |
-
-### Preprocessing and Interpretation Rules
-
-- Missing values are not imputed.
-- Variables are not winsorized.
-- Nonresponse is not converted to zero.
-- A structural conflict zero is assigned only after a valid spatial geography is established.
-- Nominal monetary source fields are not used as the main cross-wave outcomes; separate 2021-price
-  variables are used.
-- Food-price samples must be reported separately for the narrow wholesale series and broad retail
-  series because their geographic and commodity coverage differs.
-- Satellite inundation is used only in coverage-matched secondary analyses; post-2018 noncoverage
-  is missing and is never coded as no flood.
-- The final household and education releases contain no landmine variables.
-- Historical conflict remains observational. Interaction estimates may still reflect correlated
-  agroecology, reconstruction, migration, or other persistent local legacies.
+- Stage 1 uses climate shocks and cropland NPP from the same calendar year \(t\).
+- Stage 2 sets Prior NPP Calendar Year equal to Interview Calendar Year minus one and links all NPP
+  definitions through that exact year. In the 2019 survey release, 5,034 households were interviewed
+  in 2019 and 5,041 in 2020, so their prior NPP years are 2018 and 2019, respectively.
+- No early-versus-late or other temporal sample split is part of the primary design.
+- Survey-wave and, when available, interview-time fixed effects absorb common survey timing.
 
 ## 5. Identification Strategy
 
-The evidence hierarchy is fixed. Sections 5.3-5.5 define the central local repression-by-rainfall
-design, its activation rules, and its independent outcome validation. Sections 5.1-5.2 and 5.6
-retain completed national and mechanism analyses as supporting evidence on breadth, scope, and
-interpretation; they do not supply co-equal headline estimands.
+### Design Principle
 
-### 5.1 Supporting national breadth design and estimands
+The study estimates two linked conditional relationships at three spatial resolutions. Stage 1
+uses within-village annual variation to quantify climate-NPP sensitivity. Stage 2 uses linked
+repeated household cross-sections to quantify the household economic relevance of prior-year local
+NPP. A national model provides the benchmark, the frozen outcome-blind regions identify coherent
+departures from that benchmark, and continuous Stage-1 surfaces test whether the regional pattern
+extends beyond imposed borders.
 
-The supporting national design uses repeated household and person cross-sections linked to predetermined historical-conflict exposure and contemporary shocks. Its estimand is the change in outcome sensitivity to a contemporary shock associated with a one-standard-deviation increase in historical conflict exposure. The preferred conflict measure is Log Bombing Unique Locations per 100 km2. The primary linkage uses commune-level historical exposure; district- and province-linked records are retained for sensitivity analyses when commune linkage is unavailable.
+The primary synthesis compares regional ecological sensitivity with regional food-consumption
+relevance. Each dimension retains its own estimate, uncertainty, and analytical support. This
+side-by-side comparison produces a transparent regional prioritisation typology without converting
+the two relationships into a product-of-coefficients estimate.
 
-The main specifications absorb historical-geography fixed effects and province-by-wave fixed effects. Identification therefore comes from differences in time-varying shock exposure across locations and waves, interacted with predetermined differences in conflict exposure. The key conditional assumption is that, after fixed effects and observed covariates, other time-varying determinants of outcomes are not jointly correlated with the conflict-by-shock interaction. This assumption is more credible for weather shocks than for food prices, so price results will be interpreted more cautiously and subjected to stronger spatial and temporal sensitivity checks.
+### Stage-1 Identification
 
-The supporting shock-specific strategy is:
+Village fixed effects remove persistent location characteristics, including average terrain,
+market access, and long-run agricultural suitability. Year fixed effects absorb national annual
+shocks. Identification therefore comes from within-village changes in annual climate exposure and
+NPP relative to common year conditions. Annual rainfall total separates rainfall quantity from
+Rx5day and consecutive dry-day structure.
 
-- Drought: use 12-month SPI as the common cross-domain measure. Negative values indicate drier conditions. May–October rainfall and 3- and 6-month SPI windows will test seasonal and timing sensitivity.
-- Excess rainfall: use annual extreme-rainfall exposure as the main wet-shock measure, supplemented by seasonal rainfall and alternative threshold definitions. Continuous exposure-response estimates are preferred to a single arbitrary cutoff.
-- Food prices: use the 12-month local relative wholesale rice-price shock as the main price measure. Broad retail-price shocks enter only as a later-wave robustness analysis because their survey-wave support is narrower. Results will always report the shock-specific sample.
-- Flooding: treat satellite inundation as secondary validation rather than a coequal main shock because the current series ends before the last two survey waves and is not yet a final exposure product.
+The primary 5 km model uses Annual Strict-Cropland Mean NPP and retains NPP Pixel Support as an
+explicit quality gate. Annual Heat Days at or Above 35 C is the primary heat exposure. Annual Heat
+Degree-Days Above 35 C replaces, rather than accompanies, the heat-day count in the alternative
+heat-intensity model. The two heat definitions are compared on the same outcome support. Primary
+inference clusters standard errors by village. Two-way village-and-year clustering, 0.5-degree
+spatial-block clustering, and Conley spatial HAC are prespecified sensitivity estimators because
+climate and ecological residuals may remain serially or spatially correlated. Conley inference
+uses a Bartlett kernel, a 50 km focal cutoff, and 25 km and 100 km cutoff sensitivities; covariance
+pairs are formed within calendar year after fixed-effect residualisation.
 
-Baseline associations between historical conflict and present outcomes provide descriptive evidence of persistent legacies. They do not identify a causal effect of bombing. Mechanism outcomes—irrigable land, crop diversity, input use, land access, and agricultural dependence—will be interpreted as evidence on adaptive capacity or exposure channels, not as causal mediation effects.
+The revised rainfall and measurement audit adds four outcome-independent checks. First, Annual
+Precipitation Total is omitted to test whether the dry-spell estimate depends on conditioning on a
+highly correlated rainfall quantity. Second, Annual Precipitation Total is residualised against
+Rx5day with village and year effects before entering the NPP model, so rainfall concentration and
+residual annual quantity are reported separately. Third, Mean Annual Strict-Cropland NPP Filled-
+Days Percentage enters as a continuous quality covariate. Fourth, the model is repeated in the
+lower-P75 and lower-P50 portions of that quality measure, with thresholds fixed from the pooled
+quality distribution before estimating the outcome model. These checks evaluate the dry-spell
+coefficient; the conditional annual-rainfall coefficient is not treated as an agricultural-damage
+estimand.
 
-The planned Descriptive Outcomes by Historical Conflict Exposure table provides an unadjusted
-survey-weighted profile across conflict-exposure groups. It does not implement the adjusted
-baseline legacy model. Adjusted Baseline Historical Conflict Legacy Estimates will report
-\(\rho\), its uncertainty, the analytical sample, and the province-by-wave adjustment before
-Supporting Point 1 is treated as evaluated.
+The resulting coefficients quantify within-village annual climate sensitivity of cropland carbon
+productivity. National estimates populate National Climate-to-NPP Regression Results and National
+Climate-to-NPP Responses; robustness evidence is separated into the corresponding appendix outputs.
 
-The national drought and food-price interactions are estimable but remain supporting observational
-evidence. Flood amplification is only partially identified with the current satellite coverage.
-The proposed early-life cohort comparison is not identified because the data do not establish
-birthplace or childhood residence; age at the interview location must not be used to infer
-childhood conflict exposure.
+### Stage-2 Identification
 
-### 5.2 National-design interpretation boundary
+The household model links consumption to prior-year NPP, includes exact survey-time fixed effects,
+uses released survey weights, and controls for household composition. Standard errors are clustered
+by linked village because households in the same village and survey period share the NPP exposure.
+Real 2021 Annual Total Consumption per Capita remains the originally prespecified benchmark.
+Real 2021 Annual Food Consumption per Capita is the focal outcome for the revised household-
+relevance claim because it retains direction and precision under the expanded socioeconomic control
+block. Both enter in logarithms, while Prior-Year Strict-Cropland NPP remains in natural units.
 
-The conflict-by-shock coefficient estimates differential contemporary shock sensitivity across places with different historical conflict exposure. It does not, by itself, identify the causal effect of historical conflict. Claims will therefore use terms such as amplification, differential sensitivity, and conflict-conditioned response, while explicitly conditioning causal language on the maintained spatial-linkage and parallel-response assumptions.
+Household Composition Vector is the original prespecified control block. Socioeconomic Control
+Vector is required for the revised food-consumption headline and regional-priority estimates;
+composition-only regional estimates remain visible as the original specification. Consumption
+Instrument Regime, alternative location fixed effects, and alternative NPP definitions remain
+sensitivities. A location fixed-effect sensitivity separates within-location temporal association
+from persistent between-place differences but does not replace the repeated-cross-section estimand.
 
-### 5.3 Central historical-boundary annual spatial design
+Stage 2 measures the household economic relevance of local cropland productivity and is not used as
+a product-of-coefficients mediation model. Exact interview-year alignment is complete: Prior NPP
+Calendar Year equals Interview Calendar Year minus one for every timed household record. National
+NPP-to-Consumption Regression Results therefore uses the frozen interview-aligned stage-2 sample.
 
-The activated causal core is a local geographic regression-discontinuity interaction design around
-the historical boundary between the more repressive Southwest zone and the adjacent West zone. The
-outcome panel contains annual village-level land net primary production from 2001-2021. The design
-asks whether assignment to the Higher-Repression Southwest Zone changes the response of Annual Land
-NPP Anomaly kg C per m2 to May October Rainfall Anomaly Z (1991-2020). Signed Distance to Historical
-Repression Boundary km is the running variable, Historical Boundary Segment identifies locally
-comparable portions of the boundary, and Historical-Boundary Common Support fixes the primary sample
-at 5 km. Annual Rainfall Anomaly Z (1991-2020) is the pre-specified alternative shock. The treatment
-contrast concerns the intensity of Khmer Rouge repression represented by the published boundary;
-it is not a contrast between conflict and no conflict.
+### Outcome-Blind Regionalisation
 
-The primary specification uses all 291 linked villages within 5 km over 2001-2021 and absorbs
-village fixed effects and Historical Boundary Segment-by-year fixed effects. A mandatory
-confirmation specification restricts the sample to the 138 villages in the nine modern climate
-communes containing villages on both historical sides and additionally absorbs modern climate
-commune-by-year fixed effects. Strong causal language requires directionally coherent, substantively
-compatible estimates across the primary and confirmation specifications. The confirmation model is
-not optional if the primary estimate is favorable.
+SKATER uses Village Spatial Adjacency and the standardised, outcome-blind feature set declared in
+Section 4. NPP, consumption, residuals, coefficient signs, and p-values are not used to construct
+regions. Four-through-seven-region SKATER and REDCAP candidates were evaluated before regional
+outcome coefficients were inspected. The six-region SKATER solution was retained because it had
+higher perturbation stability and lower mean within-region geographic distance while passing the
+frozen support gate of at least 200 villages, 15 complete stage-1 years per village on average, and
+3,000 stage-2 households in every region. REDCAP remains a candidate-selection audit only.
 
-The primary outcome is annual land vegetation production, not crop yield, crop-specific production,
-or household welfare. The local design therefore identifies a geographically and substantively
-limited effect on rainfall sensitivity of land NPP. The completed national bombing-based design
-remains a broader associational analysis. The two estimands will not be pooled or described as
-replications of the same population effect.
+Zone-specific slopes are estimated through interactions in the common national sample rather than
+through independently selected regional subsamples. A joint test of slope equality is evaluated
+before individual regional intervals are interpreted. The frozen map and regional slopes populate
+Outcome-Blind Regions and Zonal Climate-to-NPP Responses.
 
-### 5.4 Identification activation and remaining stop rules
+The reader-facing map identifies the frozen codes with the short labels north/northwest (R1),
+western Tonle Sap (R2), east/northeast Mekong (R3), lower Mekong/southeast (R4), south-central
+interior (R5), and southern coast (R6). The labels are descriptive aids and do not alter the
+outcome-blind algorithm, frozen village assignments, or region-specific estimands.
 
-The historical assignment and signed distance were independently reproduced for all 1,359 public
-replication villages. The 5 km bandwidth, May-October rainfall shock, 0.20 standardized-outcome
-smallest effect of substantive interest, and dual-specification rule were frozen before outcome
-access. The 5 km strong-dependence power calculation has an 80% minimum detectable effect near 0.16
-outcome standard deviations; the strict within-modern-commune model remains below 0.20. Density,
-road-alignment, and leave-one-segment diagnostics do not independently stop the design.
+### Regional Evidence Typology
 
-Predetermined physical covariates show no multiplicity-adjusted material discontinuity at 5 km,
-although river distance exceeds the 0.25-standard-deviation review threshold with wide uncertainty.
-Rainfall-shock-by-river-distance adjustment is therefore a pre-specified robustness check. Four
-1975 settlement proxies differ materially near the boundary, but their timing overlaps the onset of
-Khmer Rouge rule; they are reported as timing-ambiguous diagnostics and are not included as main
-controls. Modern commune-boundary proximity remains a design concern and is handled by the mandatory
-within-commune confirmation model rather than declared absent.
+Regional Dry-Spell Sensitivity and Food-Consumption Relevance and Regional Ecological-Economic
+Priority Evidence compare the six regional coefficients without collapsing them into one index.
+The ecological axis translates each regional dry-spell slope over the pooled P10-to-P90 dry-spell
+contrast and expresses the result in kg C/ha and as a percentage of that region's mean annual NPP.
+The household axis translates the expanded-control food-consumption slope for a 0.1 kg C/m2 NPP
+increment. National estimates form the reference lines. A region is classified as jointly elevated
+only when both point estimates exceed their corresponding national magnitude and both 95 percent
+intervals exclude zero. Other regions are labelled ecological-only, household-relevance-only, or
+mixed/discordant according to the two displayed dimensions. The rule is fixed before the expanded-
+control regional estimates are inspected.
 
-The effect is not promoted to a causal conclusion if the primary and confirmation estimates are
-directionally incompatible, if confidence intervals remain compatible with substantively important
-effects of both signs, if one boundary segment or bandwidth drives the result, or if annual-rainfall,
-quality, distance-trend, and spatial-inference checks reveal instability. Independent crop,
-nighttime-light, or socioeconomic validation is still required for a Nature Communications-level
-broad claim. Failure of validation narrows the result to land NPP in the local Kampong Speu boundary
-population rather than replacing the frozen primary design.
+### Continuous Spatial Heterogeneity
 
-### 5.5 Activated nighttime-activity independent validation
+Geographically weighted models apply the global model's timing controls and covariate structure
+before local weighting. An adaptive nearest-neighbour bandwidth is selected without reference to
+local coefficient significance. Local coefficients are accompanied by bandwidth, effective-sample,
+and uncertainty diagnostics so that unsupported local extremes are not interpreted as geographic
+findings. The continuous surfaces test whether discrete regional differences represent smooth and
+reproducible spatial structure or sensitivity to selected boundaries. The main-text continuous
+figure is restricted to the two climate-to-NPP surfaces, which have strong local information and
+stable signs across adjacent bandwidths. The NPP-to-consumption surfaces are retained as an
+appendix diagnostic because their substantially smaller effective local samples and mostly
+zero-crossing local intervals do not support pointwise geographic claims.
 
-Annual VIIRS nighttime radiance provides an independently measured spatial outcome for 2013-2021.
-The validation retains the historical assignment, signed-distance construction, five boundary
-segments, 5 km primary support, rainfall shocks, and mandatory within-modern-commune safeguard from
-the activated boundary design. The unit is an approximately 500 metre grid cell by year inside the
-Kampong Speu replication frame. The primary outcome is Asinh Annual Mean Radiance over all cells,
-including zero and negative background-corrected values. Asinh Annual Median Radiance and Any
-Nonzero Annual Mean Radiance are outcome-definition checks; at least 40 cloud-free observations is
-the frozen coverage restriction.
+### Evidence Classification
 
-This validation tests whether the local repression contrast changes the rainfall sensitivity of
-nighttime activity. It does not test a discontinuity in average nighttime-activity levels, identify
-a household-welfare effect, or establish national transport. It is the central independent-outcome
-validation paired with land NPP; future holdout survey, agriculture, cropland-productivity, and
-external-price evidence may broaden transport but is not required to define the present estimand.
+- H1 is supported when the dry-spell coefficient is negative, substantively interpretable in
+  natural units, and stable under rainfall, NPP-quality, buffer, land-cover, and covariance checks.
+- H2 is supported when the regional dry-spell equality test rejects, translated regional magnitudes
+  differ materially, and the pattern is compatible with adequately supported continuous surfaces.
+- H3 is supported when the expanded-control food-consumption coefficient is positive nationally
+  and remains positive in the declared exposure sensitivities; total consumption is reported as the
+  broader benchmark rather than a required confirmation.
+- H4 is supported when at least one outcome-blind region meets the fixed jointly elevated rule under
+  expanded household controls. A significant regional equality test without qualifying regional
+  estimates is evidence of heterogeneity but not of a priority region.
+- A stable direction with an interval spanning zero is described as imprecise rather than as
+  evidence of no relationship. No arbitrary outcome-standard-deviation threshold is used.
 
-### 5.6 Supporting village-mechanism design
+The completed evidence supports all four hypotheses at their declared scope. For H1, the national
+dry-spell coefficient is -0.002152 kg C m-2 per ten additional dry days and remains negative when
+annual rainfall is omitted (-0.002304), residualised (-0.002152), continuously adjusted for NPP
+quality (-0.002478), or restricted to the lower 75% (-0.002175) and lower 50% (-0.002244) of the
+gap-filling distribution. H2 is supported by the rejected regional slope-equality test and natural-
+unit differences: the pooled P10-to-P90 dry-spell contrast corresponds to a 1.46% national NPP
+decline, compared with 2.64% in R4 and 3.76% in R6. H3 is supported by the positive expanded-control
+food-consumption association nationally (2.13% per 0.1 kg C m-2 NPP); total consumption remains the
+broader, more specification-sensitive benchmark. H4 is supported because R4 and R6 meet the fixed
+jointly elevated rule, while R1 shows household relevance without above-national ecological
+sensitivity and R5 provides a discordant comparison.
 
-The activated village-mechanism analysis has two complementary associational estimands. First,
-adjusted conflict gradients in Village Irrigated Agricultural Land Share and Permanent Market
-Access test whether historically exposed places exhibit weaker persistent infrastructure. Second,
-the conflict-by-drought interaction in Village Irrigated Agricultural Land Share tests whether
-reported irrigated capacity changes more adversely with drought at higher historical conflict
-exposure. The first estimand uses province-by-wave adjustment without historical-geography fixed
-effects; the second retains the national design's historical-geography and province-by-wave fixed
-effects.
+### Interpretation Boundaries
 
-The unit is one village survey PSU-year. The primary specifications are unweighted because the
-village module has no released village sampling weight. A sensitivity specification weights each
-PSU-year by the summed Household Survey Weight of sampled households linked to that PSU; it is
-interpreted as household-population exposure weighting rather than a village sampling weight.
-Inference is clustered by linked historical geography. Permanent Market Access is limited to a
-baseline conflict gradient in 2011 and 2021; its short, sticky two-wave series is not used for a
-conflict-by-drought interaction.
-
-These models cannot identify causal mediation. Village infrastructure may reflect agroecology,
-post-conflict investment, migration, public programs, or measurement differences correlated with
-historical conflict. Their role is to test whether a pre-specified channel is directionally
-coherent with the completed national and local evidence.
+- Rx5day and consecutive dry days are meteorological exposures rather than observed disasters, and
+  NPP is carbon productivity rather than crop yield or farm income.
+- The two regional dimensions support prioritisation and additional field assessment; multiplying
+  their coefficients or attributing intervention effects falls outside the design.
+- Region boundaries remain frozen independently of outcomes, and isolated local coefficients are
+  interpreted only with adequate support and compatibility with regional evidence.
 
 ## 6. Main Estimation Framework
 
-The central models are the outcome-blind feasibility and equivalence framework in Section 6.8,
-the land-NPP boundary model in Section 6.9, and the nighttime-activity validation model in Section
-6.10. Sections 6.1-6.7 retain the completed national analysis as supporting breadth and
-robustness; Section 6.11 retains mechanism evidence as interpretive support.
+### Notation and Interpretation Limits
 
-### 6.1 Supporting baseline legacy model
+All formulas below reuse the same symbols whenever the analytical unit and quantity are unchanged;
+later formulas define only new symbols. Coefficients quantify the stated within-village panel or
+survey-weighted repeated-cross-section relationships under their declared controls. The regional
+synthesis keeps the ecological and household coefficients as separate evidence dimensions.
 
-For descriptive persistence estimates:
+### Stage 1: Annual Climate Shocks and Cropland NPP
 
-\[
-Y_{igpt} = \rho C_g + \delta_{pt} + X_{igpt}'\gamma + \epsilon_{igpt}.
-\]
-
-Here, \(Y_{igpt}\) is an outcome for household or person \(i\), linked historical geography \(g\), province \(p\), and survey wave \(t\); \(C_g\) is standardized historical conflict exposure; \(\rho\) is the conditional legacy association; \(\delta_{pt}\) denotes province-by-wave fixed effects; \(X_{igpt}\) is the prespecified covariate vector; \(\gamma\) is its coefficient vector; and \(\epsilon_{igpt}\) is the error term. Because geography fixed effects would absorb time-invariant \(C_g\), this model is descriptive and uses province-by-wave fixed effects rather than historical-geography fixed effects.
-
-The adjusted estimate from this model must be reported separately from unadjusted conflict-tercile
-means. The existing descriptive table may remain as a sample profile, but it cannot substitute for
-the conditional estimate \(\rho\).
-
-### 6.2 Supporting national conflict-conditioned shock model
-
-For shock family \(k\):
+For public village point \(v\) and calendar year \(t\), the primary model is:
 
 \[
-Y_{igpt}^{(k)} =
-\alpha_g + \delta_{pt}
-+ \theta_k S_{gt}^{(k)}
-+ \beta_k \left(C_g \times S_{gt}^{(k)}\right)
-+ X_{igpt}'\gamma_k
-+ \epsilon_{igpt}^{(k)}.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_H Heat35_{vt}
++ \beta_R Rx5day_{vt} + \beta_D CDD_{vt}
++ \beta_P RainTotal_{vt} + \epsilon_{vt}.
 \]
 
-In addition to the definitions above, \(k\) indexes drought, excess-rainfall, food-price, or flood shocks; \(\alpha_g\) is a historical-geography fixed effect; \(S_{gt}^{(k)}\) is the contemporary shock; \(\theta_k\) is average shock sensitivity at mean historical conflict; \(\beta_k\) is the amplification parameter of interest; \(\gamma_k\) is the shock-specific covariate coefficient vector; and \(\epsilon_{igpt}^{(k)}\) is the shock-specific error. Both \(C_g\) and each continuous shock will be standardized over the relevant analytical support before forming the interaction.
+Here, \(NPP_{vt}\) is Annual Strict-Cropland Mean NPP; \(Heat35_{vt}\) is Annual Heat Days at or
+Above 35 C; \(Rx5day_{vt}\) is Annual Maximum Consecutive Five-Day Precipitation Rx5day;
+\(CDD_{vt}\) is Annual Maximum Consecutive Dry Days Below 1 mm; and \(RainTotal_{vt}\) is Annual
+Precipitation Total. The terms \(\alpha_v\) and \(\lambda_t\) are village and calendar-year fixed
+effects. The coefficients \(\beta_H\), \(\beta_R\), \(\beta_D\), and \(\beta_P\) are the conditional
+climate-NPP slopes, and \(\epsilon_{vt}\) is the error term.
 
-If a shock varies only at the province-by-wave level, its main effect is absorbed by \(\delta_{pt}\) and \(\theta_k\) is not separately estimated; the conflict-by-shock interaction remains the target parameter where within-province conflict exposure varies. Specifications will report the actual shock variation and fixed effects rather than silently dropping collinear terms.
-
-The estimated marginal shock response at conflict level \(C_g\) is:
+The alternative heat-intensity specification is:
 
 \[
-\frac{\partial E[Y_{igpt}^{(k)} \mid C_g,S_{gt}^{(k)},X_{igpt}]}
-{\partial S_{gt}^{(k)}} = \theta_k + \beta_k C_g.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_{HDD} HDD35_{vt}
++ \beta_R Rx5day_{vt} + \beta_D CDD_{vt}
++ \beta_P RainTotal_{vt} + \epsilon_{vt}.
 \]
 
-Conflict-Conditioned Shock Response Curves will plot this quantity over the common support of
-historical conflict exposure. Cross-Domain Amplification Effects will report standardized
-interaction effects across outcome domains.
+The new term \(HDD35_{vt}\) is Annual Heat Degree-Days Above 35 C and \(\beta_{HDD}\) is its
+conditional slope. Annual Heat Days at or Above 35 C and Annual Heat Degree-Days Above 35 C are
+never entered together in a primary specification.
 
-In this expression, \(E\) denotes the conditional expectation operator and \(\partial\) denotes a partial derivative; all other symbols are defined above.
-
-### 6.3 Outcome families and functional form
-
-Primary outcome families are:
-
-- Agriculture: crop yield, post-harvest loss share, and real crop-production value.
-- Consumption and food security: real food consumption per capita, severe food insecurity, and food-insecurity severity.
-- Education: current school attendance, completed years of schooling, and real education expenditure.
-- Adaptive capacity and mechanisms: irrigable-land share, crop diversity, real agricultural input cost, land access, and agricultural dependence.
-
-Nonnegative, right-skewed monetary and production outcomes will use the inverse hyperbolic sine transformation in the main model, with level estimates reported for interpretation. Shares will be modeled in levels. Binary outcomes will use a survey-weighted linear probability model in the main analysis, with logit average marginal effects as a sensitivity check. Counts will be modeled in levels or inverse hyperbolic sine form according to their mass at zero, with Poisson pseudo-maximum likelihood as a sensitivity check. No outcome will be winsorized in the primary specification; influence checks will be reported separately. Standardized effects are reserved for cross-domain comparison figures and do not replace estimates in natural units.
-
-### 6.4 Heterogeneity and mechanisms
-
-For prespecified subgroup characteristic \(H_{igpt}\), the heterogeneity model is:
+To test whether the Rx5day relationship is non-monotonic, the linear Rx5day term is replaced by a
+restricted cubic spline whose knots are fixed at the pooled 10th, 50th, and 90th percentiles of
+Annual Maximum Consecutive Five-Day Precipitation Rx5day before outcome estimation:
 
 \[
-Y_{igpt} =
-\alpha_g + \delta_{pt}
-+ \theta S_{gt}
-+ \mu H_{igpt}
-+ \beta \left(C_g \times S_{gt}\right)
-+ \eta \left(S_{gt} \times H_{igpt}\right)
-+ \phi \left(C_g \times H_{igpt}\right)
-+ \kappa \left(C_g \times S_{gt} \times H_{igpt}\right)
-+ X_{igpt}'\gamma + \epsilon_{igpt}.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_H Heat35_{vt}
++ \sum_{m=1}^{M} \rho_m B_m(Rx5day_{vt})
++ \beta_D CDD_{vt} + \beta_P RainTotal_{vt} + \epsilon_{vt}.
 \]
 
-Here, \(H_{igpt}\) is the agricultural-household indicator in the principal heterogeneity analysis;
-\(\mu\) captures the subgroup level difference; \(\eta\) captures differential shock sensitivity
-by agricultural status at mean conflict exposure; \(\phi\) captures the conditional
-conflict-by-subgroup association; and \(\kappa\) captures whether conflict-conditioned shock
-sensitivity differs between agricultural and nonagricultural households. All constituent
-lower-order terms are retained so that \(\kappa\) has the standard hierarchical three-way
-interaction interpretation. Place-based heterogeneity applies the same hierarchy to the confirmed
-urban-rural indicator. Common-support strata remain diagnostic rather than primary estimands.
-Early-life cohort heterogeneity remains out of scope until childhood-location exposure can be
-constructed.
+The terms \(B_m(\cdot)\) are the restricted-cubic-spline basis functions, \(m\) indexes those
+functions, \(M\) is the number of basis terms implied by the fixed knots, and \(\rho_m\) are the
+corresponding coefficients. The plotted curve reports adjusted predicted NPP differences over
+observed common support rather than extrapolating beyond the data.
 
-Notation is consistent across the formulas in this section: later formulas reuse symbols defined
-above and define only newly introduced symbols.
+National Climate-to-NPP Regression Results follows a fixed ladder: a heat-only fixed-effect model,
+addition of Annual Precipitation Total, the full primary model above, and the full alternative
+degree-day model. National Climate-to-NPP Responses reports the fully adjusted coefficients and the
+flexible Rx5day curve. Coefficients are displayed for 10 heat days, 10 degree-days, 10 mm Rx5day,
+10 consecutive dry days, and 100 mm annual precipitation; the estimation itself uses unstandardised
+natural-unit variables.
 
-### 6.5 Samples, weights, and covariates
+Declared stage-1 sensitivities are Annual Inclusive-Agriculture Mean NPP, matched 2 km and 10 km
+buffers, NPP Pixel Support restrictions, alternative heat degree-days, two-way clustering,
+spatial-block clustering, Conley spatial HAC, and leave-one-year diagnostics. The Conley focal
+cutoff is 50 km, with 25 km and 100 km sensitivities. The robustness plan assesses sign, magnitude,
+interval overlap, and sample support and never selects an exposure definition by its p-value.
 
-Each estimand uses complete observations for its outcome, shock, conflict measure, weights, fixed effects, and prespecified covariates; no global complete-case sample will be imposed. Survey weights will be used in primary household and person regressions, with unweighted estimates as sensitivity checks. School-attendance models use the documented school-age eligibility rule. Agriculture outcomes use the relevant agricultural-household or crop-reporting sample.
-
-Covariates are limited to variables that cannot plausibly be downstream of the contemporary shock or historical exposure within the target interpretation. The main interaction design relies primarily on historical-geography and province-by-wave fixed effects; demographic controls improve precision but will not be allowed to substitute for these fixed effects.
-
-### 6.6 Inference
-
-Primary standard errors will be clustered by linked historical geography, the level at which
-conflict exposure varies. For the central interaction estimates, Spatial-HAC estimates using 50,
-100, and 200 km cutoffs will be reported as sensitivity checks for residual spatial dependence.
-Because local rice-price shocks vary at a coarser spatial level than commune conflict exposure,
-every central price specification will additionally report province-clustered wild-bootstrap
-inference. Clustering by survey wave alone is not appropriate because there are too few waves.
-Output labels may name a sensitivity procedure only when the corresponding statistic has actually
-been computed and reported. Inference and Multiplicity Checks will report these sensitivity
-statistics separately from the compact main-estimates table.
-
-### 6.7 Robustness and falsification
-
-Robustness analyses will include:
-
-- Alternative conflict measures: bombing sites, locations, intensity, and zero-conflict indicators.
-- Alternative shock definitions and windows: 3-, 6-, and 12-month SPI; seasonal and annual rain; alternative wet thresholds; wholesale and broad retail price shocks.
-- Alternative spatial linkage: commune-only common support, all available links, and district/province fallback samples.
-- Survey-weighted and unweighted estimates; alternative fixed-effect structures that preserve identifying variation.
-- Levels, inverse hyperbolic sine, nonlinear binary/count models, and standardized-effect presentations.
-- Leave-one-province-out, leave-one-wave-out, and formal influence diagnostics without primary-sample winsorization.
-- Future-shock placebo tests where temporal support permits.
-- Within-family multiplicity adjustments for the agriculture, consumption, education, and mechanism families.
-- Satellite flood estimates as secondary convergence evidence, clearly separated from the core drought and price results.
-
-The minimum executable robustness set before substantive synthesis is: alternative conflict and
-shock definitions; commune-only and all-linkage samples; weighted and unweighted estimates;
-alternative fixed effects that preserve identifying variation; logit average marginal effects for
-binary outcomes; Poisson pseudo-maximum-likelihood sensitivity for count outcomes; leave-one-
-province and leave-one-wave checks; upper-tail influence checks without changing the primary
-sample; future-shock placebos where support permits; and within-family multiplicity-adjusted
-inference. Results that are unavailable because of support or estimator failure must be marked as
-not estimable rather than omitted silently. Inference and Multiplicity Checks will report spatial,
-coarse-cluster, and multiple-testing sensitivity; Falsification and Functional Form Checks will
-report placebo, nonlinear-model, and alternative-fixed-effect results.
-
-Because the school-attendance response to the local rice-price shock is the only central estimate
-that remains precise after the initial inference suite, it must also be reported under alternative
-bombing, prison, and burial-site measures; alternative wholesale and broad-retail price
-constructions; and leave-one-province-out and leave-one-wave-out re-estimation. The three
-adaptive-capacity outcomes must be treated as one mechanism family for Holm adjustment before the
-irrigation association is used as channel evidence.
-
-### 6.8 Central blinded feasibility, power, and equivalence
-
-The boundary, Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary
-km, Historical Boundary Segment, Historical-Boundary Common Support, and annual rainfall design
-were constructed and audited before an NPP interaction was inspected. The 5 km primary bandwidth,
-May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) as the alternative,
-and a 0.20 standardized-outcome effect per one-standard-deviation shock as the smallest effect of
-substantive interest were frozen under outcome blinding. No numerical threshold was chosen from an
-observed NPP interaction estimate.
-
-Simulation-based power preserved the observed assignment, rainfall, year, village serial
-correlation, climate-commune-by-year dependence, and district-by-year dependence. The 5 km model
-has an 80% minimum detectable effect near 0.16 standardized outcome units. The mandatory
-within-modern-commune confirmation model remains powered below the 0.20 threshold after absorbing
-modern climate commune-by-year fixed effects. Leave-one-segment-out minimum detectable effects also
-remain below 0.20.
-
-Confidence intervals for Annual Land NPP Anomaly Z 2001-2020 are compared with the fixed
-equivalence bounds of -0.20 and 0.20. An interval contained within those bounds supports a
-substantively precise null; an interval crossing both bounds is inconclusive; and an interval that
-excludes zero but remains inside one bound is statistically detectable but substantively small.
-Natural-unit estimates remain primary for interpretation.
-
-### 6.9 Central historical-boundary rainfall-response model
-
-For village \(v\) and year \(t\), the frozen primary annual spatial model is:
+The rainfall-omission sensitivity removes Annual Precipitation Total while retaining the other
+three primary climate regressors:
 
 \[
-A_{vt} = \alpha_v + \lambda_{s(v)t} + \beta S_{c(v)t}
-+ \theta \left(R_v \times S_{c(v)t}\right)
-+ \eta_0 \left(d_v \times S_{c(v)t}\right)
-+ \eta_1 \left(R_v \times d_v \times S_{c(v)t}\right)
-+ \epsilon_{vt}.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_H^{(-P)} Heat35_{vt}
++ \beta_R^{(-P)} Rx5day_{vt} + \beta_D^{(-P)} CDD_{vt} + \epsilon_{vt}^{(-P)}.
 \]
 
-Here, \(A_{vt}\) is Annual Land NPP Anomaly kg C per m2; \(\alpha_v\) is a village fixed effect;
-\(\lambda_{s(v)t}\) is a Historical Boundary Segment-by-year fixed effect; \(R_v\) is
-Higher-Repression Southwest Zone; \(S_{c(v)t}\) is May October Rainfall Anomaly Z (1991-2020) for
-the linked climate commune \(c(v)\); \(\beta\) is shock sensitivity at the boundary on the West
-side; \(\theta\) is the Southwest-minus-West difference in shock sensitivity at the boundary and
-the primary parameter; \(d_v\) is Signed Distance to Historical Repression Boundary km; \(\eta_0\)
-and \(\eta_1\) allow the rainfall response to vary linearly with distance and separately by side;
-and \(\epsilon_{vt}\) is the error term. Village fixed effects absorb all time-invariant level
-differences, including the treatment and running-variable main effects.
+The superscript \((-P)\) denotes the specification without Annual Precipitation Total. The focal
+comparison is between \(\beta_D^{(-P)}\) and the primary \(\beta_D\).
 
-The primary sample contains all eligible villages within 5 km from 2001-2021 and applies equal
-village-year weights. The mandatory confirmation model restricts to modern climate communes that
-contain villages on both sides and adds \(\mu_{c(v)t}\), a modern climate commune-by-year fixed
-effect, to the equation. In that model the shock main effect is absorbed by \(\mu_{c(v)t}\), and
-\(\theta\) is identified only from within-commune, within-year cross-side differences. Strong
-causal interpretation requires compatible direction and magnitude across the two models.
-
-Annual Rainfall Anomaly Z (1991-2020), fixed 2, 10, 15, 20, and 30 km windows, triangular distance
-weights, and Annual Land NPP Anomaly Z 2001-2020 are pre-specified robustness analyses. A river
-robustness model adds the complete lower-order and three-way interactions among rainfall,
-Higher-Repression Southwest Zone, and centered Log One Plus Distance to River m. A measurement-
-quality model analogously adjusts for centered Mean NPP QC Filled Growing-Season Days Percent and
-its hierarchical interactions; no quality threshold is tuned from the estimated effect.
-
-Primary uncertainty uses two-way clustering by village and district-by-year to allow serial
-dependence within villages and contemporaneous dependence across villages in the same district.
-Village-plus-climate-commune-by-year clustering, leave-one-boundary-segment-out estimates, and the
-pre-specified strong-dependence design variance are reported as sensitivity analyses. With only
-five boundary segments and nine cross-side modern communes, segment- or commune-level bootstrap
-statistics are labelled diagnostic rather than definitive.
-
-### 6.10 Independent validation and transport
-
-Annual Land NPP Anomaly kg C per m2 is the first activated boundary outcome and is not counted as
-independent validation of itself. The validation contract will identify one untouched socioeconomic
-holdout using Holdout Survey Indicator, one independent agricultural measurement system where
-linkage is feasible, and additional annual spatial validation through Cropland Productivity Anomaly
-and Nighttime Economic Activity Anomaly.
-Independent rainfall, flood or river-discharge, and international or domestic rice-price products
-will be selected by provenance and coverage before comparison with results, not by which product
-reproduces the preferred sign.
-
-Validation requires the same treatment assignment and a compatible shock-response estimand.
-Results will report differences in population, timing, geography, outcome construction, and
-identifying variation. A validation estimate is considered compatible when its pre-specified
-confidence interval or equivalence region is consistent with the main natural-unit estimand after
-documented scale conversion. Directional similarity alone is insufficient, and failure to link or
-measure the same population is a transport limitation rather than a null replication.
-
-For VIIRS grid cell \(p\) and year \(t\), the activated nighttime-activity validation model is:
+For the orthogonalised-rainfall sensitivity, Annual Precipitation Total is first decomposed as:
 
 \[
-Y_{pt} = \alpha_p + \lambda_{s(p)t} + \beta S_{c(p)t}
-+ \theta \left(R_p \times S_{c(p)t}\right)
-+ \eta_0 \left(d_p \times S_{c(p)t}\right)
-+ \eta_1 \left(R_p \times d_p \times S_{c(p)t}\right)
-+ \epsilon_{pt}.
+RainTotal_{vt} = a_v + l_t + \pi Rx5day_{vt} + r_{vt}.
 \]
 
-Here, \(Y_{pt}\) is Asinh Annual Mean Radiance, \(\alpha_p\) is a grid-cell fixed effect,
-\(R_p\) is historical-side assignment, and \(d_p\) is signed distance to the boundary. The other
-terms retain their Section 6.9 meanings at grid-cell rather than village support. The primary model
-uses 5 km support and boundary-segment-by-year fixed effects. The mandatory confirmation restricts
-to modern climate communes containing grid cells on both sides and adds climate-commune-by-year
-fixed effects. Outcome-definition, annual-rainfall, at-least-40-cloud-free-observation, triangular-
-weight, and fixed 2, 10, 15, 20, and 30 km specifications are frozen robustness checks.
-
-For equivalence reporting, natural-unit coefficients are divided by the pooled within-grid-cell
-standard deviation of Asinh Annual Mean Radiance in the frozen 5 km sample. This scale matches the
-within-cell identifying variation after grid-cell fixed effects. Confidence intervals are compared
-with the pre-specified -0.20 and 0.20 bounds. The overall radiance standard deviation remains a
-secondary scale diagnostic and is not used to strengthen the equivalence conclusion.
-
-### 6.11 Mechanism families and multiplicity
-
-For village infrastructure outcome \(j\), the adjusted persistence model is:
+Here, \(a_v\) and \(l_t\) are village and year effects in the auxiliary rainfall model, \(\pi\) is
+the conditional Rx5day-rainfall slope, and \(r_{vt}\) is Residual Annual Precipitation Total. The
+outcome model is then:
 
 \[
-100 M_{vgpt}^{(j)} = \rho_j C_g + \delta_{pt} + \epsilon_{vgpt}^{(j)}.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_H^{(r)} Heat35_{vt}
++ \beta_R^{(r)} Rx5day_{vt} + \beta_D^{(r)} CDD_{vt}
++ \beta_P^{(r)} r_{vt} + \epsilon_{vt}^{(r)}.
 \]
 
-Here, \(M_{vgpt}^{(j)}\) is Village Irrigated Agricultural Land Share or Permanent Market Access
-for village survey PSU \(v\), linked historical geography \(g\), province \(p\), and survey wave
-\(t\); \(\rho_j\) is the adjusted association with standardized Log Bombing Unique Locations per
-100 km2; and the remaining terms retain their Section 6.1 meanings at village PSU-year support.
-Both outcomes are expressed in percentage points. Because historical-geography fixed effects
-would absorb \(C_g\), this is a descriptive persistence model with province-by-wave fixed effects.
+The superscript \((r)\) identifies the residual-rainfall specification. This decomposition makes
+the Rx5day coefficient inclusive of the annual-rainfall component statistically associated with
+Rx5day while \(\beta_P^{(r)}\) describes residual rainfall quantity.
 
-The drought-sensitive village-irrigation model is:
+The continuous NPP-quality adjustment adds Mean Annual Strict-Cropland NPP Filled-Days Percentage,
+denoted \(QC_{vt}\):
 
 \[
-100 I_{vgpt} = \alpha_g + \delta_{pt} + \theta D_{gt}
-+ \beta_I \left(C_g \times D_{gt}\right) + \epsilon_{vgpt}^{I}.
+NPP_{vt} = \alpha_v + \lambda_t + \beta_H^{(Q)} Heat35_{vt}
++ \beta_R^{(Q)} Rx5day_{vt} + \beta_D^{(Q)} CDD_{vt}
++ \beta_P^{(Q)} RainTotal_{vt} + \kappa QC_{vt} + \epsilon_{vt}^{(Q)}.
 \]
 
-Here, \(I_{vgpt}\) is Village Irrigated Agricultural Land Share; \(D_{gt}\) is drought severity,
-defined as the negative of standardized Interview Month SPI 12 Month; and \(\beta_I\) is the
-conflict-conditioned drought association in percentage points. Both \(C_g\) and \(D_{gt}\) are
-standardized within the complete analytical sample. The model absorbs linked historical-geography
-and province-by-wave fixed effects. Primary estimation is unweighted; the pre-specified
-household-population exposure-weighted sensitivity uses the summed Household Survey Weight within
-each PSU-year. Standard errors are clustered by linked historical geography.
+The new coefficient \(\kappa\) adjusts for the mean percentage of growing-season days whose annual
+NPP inputs were gap filled. The primary model is also estimated after restricting \(QC_{vt}\) to
+its pooled P75 and P50 thresholds, which are fixed before those outcome regressions are run.
 
-The expanded infrastructure and agricultural-capacity family contains six primary tests: the two
-village persistence gradients, the village irrigation conflict-by-drought interaction, and the
-previously estimated conflict-by-drought interactions for Irrigable Parcel Share, Crop Diversity
-Count, and Real 2021 Agricultural Input Cost Riels. Holm adjustment is recomputed over all six so
-that adding the village outcomes cannot strengthen the earlier parcel-irrigation claim through
-selective family definition. Weighted village sensitivities are not additional family members.
-All-Weather Road Access and the five costly-coping candidates are listed as unavailable or deferred,
-not silently omitted. Mechanism evidence remains channel-consistent rather than causal mediation.
+For the within-transformed Stage-1 design matrix, Conley covariance at spatial cutoff \(c\) is:
 
-### 6.12 Nature Communications evidence gate
+\[
+\widehat{V}_{Conley}(c) =
+(\widetilde{X}'\widetilde{X})^{-1}
+\left[
+\sum_t \sum_{i \in t}\sum_{j \in t}
+K\left(\frac{d_{ij}}{c}\right)
+\widehat{u}_i\widehat{u}_j
+\widetilde{x}_i\widetilde{x}_j'
+\right]
+(\widetilde{X}'\widetilde{X})^{-1}.
+\]
 
-The strongest paper configuration requires all of the following: a reproduced historical
-assignment contrast; adequate local support and effective power; continuity and modern-boundary
-checks; a stable repression-by-shock estimate or a precise equivalence result; independent
-validation; and a coherent, multiplicity-aware mechanism pattern. Passing only the local design
-supports a geographically limited causal claim. Passing only the national design supports a
-calibrated associational or precise-null claim. A large discovery coefficient that fails the
-pre-specified design or validation checks will not be promoted to the central conclusion.
+Here, \(\widetilde{X}\) is the regressor matrix after village and calendar-year fixed-effect
+residualisation; \(\widetilde{x}_i\) is its row for observation \(i\); \(\widehat{u}_i\) is the
+corresponding residual; \(d_{ij}\) is the distance in kilometres between villages \(i\) and
+\(j\); \(c\) is 25, 50, or 100 km; and
+\(K(a)=\max(1-a,0)\) is the Bartlett kernel. The summation is restricted to observations in the
+same calendar year. This sensitivity complements rather than replaces village-clustered primary
+inference and two-way clustering.
+
+### Stage 2: Cropland NPP and Household Consumption
+
+For household \(h\), linked village \(v\), survey time \(s\), and outcome \(j\), the household
+model is:
+
+\[
+\log(C_{hvs}^{j}) = \tau_s + \theta_j NPP_{v,s-1}
++ X_{hvs}'\gamma_j + \eta_{hvs}^{j}.
+\]
+
+Here, \(C_{hvs}^{j}\) is Real 2021 Annual Total Consumption per Capita when \(j=Total\) and Real
+2021 Annual Food Consumption per Capita when \(j=Food\); \(NPP_{v,s-1}\) is Prior-Year
+Strict-Cropland NPP; \(\tau_s\) is a survey-wave or exact survey-time fixed effect; \(X_{hvs}\) is
+Household Composition Vector; \(\gamma_j\) is its coefficient vector; \(\theta_j\) is the
+outcome-specific NPP slope; and \(\eta_{hvs}^{j}\) is the error term. Estimation uses Household
+Survey Weight and village-clustered standard errors.
+
+For a 0.1 kg C/m2 increase in Prior-Year Strict-Cropland NPP, the reported percentage difference
+in consumption is:
+
+\[
+\Delta_j(0.1) = 100 \left[\exp(0.1\theta_j)-1\right].
+\]
+
+The new term \(\Delta_j(0.1)\) is the model-implied percentage difference in outcome \(j\) for the
+declared NPP increment. National NPP-to-Consumption Regression Results retains the original fixed
+ladder for both outcomes: survey-time controls only, addition of Household Composition Vector,
+addition of Socioeconomic Control Vector, and a location-fixed-effect sensitivity. The original
+composition-adjusted total-consumption model remains identified as prespecified; the expanded-
+control food-consumption model supplies the revised household-relevance headline.
+
+Declared stage-2 sensitivities interact the NPP slope with Consumption Instrument Regime, compare
+Prior-Year Strict-Cropland NPP with Prior-Year Inclusive-Agriculture NPP, compare the 5 km primary
+measure with Prior-Year Strict-Cropland NPP at 2 km and Prior-Year Strict-Cropland NPP at 10 km,
+compare prior-year and contemporaneous timing, report the expanded-control sample change, and
+repeat simpler models on the expanded-control common sample. These checks appear in
+NPP-to-Consumption Robustness Results rather than changing the primary model.
+
+### Regional Slope Models
+
+For either stage, region-specific slopes are estimated in the common national sample. For
+observation \(i\), focal exposure \(Z_i\), predetermined region \(k\), and \(K\) regions:
+
+\[
+Y_i = FE_i + W_i'\delta + \sum_{k=1}^{K}\mu_k R_{ik}
++ \sum_{k=1}^{K}\phi_k Z_i R_{ik} + u_i.
+\]
+
+Here, \(Y_i\) is the relevant NPP or log-consumption outcome; \(FE_i\) denotes the corresponding
+global model's fixed effects; \(W_i\) contains the remaining approved covariates; \(\delta\) is
+their coefficient vector; \(R_{ik}\) indicates membership in region \(k\); \(\mu_k\) is the region
+main effect when it is not absorbed by fixed effects; \(\phi_k\) is the region-specific slope of
+focal exposure \(Z_i\); and \(u_i\) is the error term. The same specification is run with SKATER
+Region ID. The number of regions is frozen at \(K=6\) using the outcome-blind rules in Section 5.
+Stage-1 regional estimates retain the common Annual Precipitation Total control. The revised
+Stage-2 regional food model includes both Household Composition Vector and Socioeconomic Control
+Vector; the original composition-only regional estimates remain reported as a comparison.
+
+The prespecified joint test is:
+
+\[
+H_0: \phi_1 = \phi_2 = \cdots = \phi_K.
+\]
+
+The null hypothesis \(H_0\) states that the focal slope is equal across all regions. Regional
+coefficients are interpreted as evidence of heterogeneity only after considering this joint test,
+their confidence intervals, sample support, and compatibility with the continuous local surface.
+
+Let \(q_{0.10}\) and \(q_{0.90}\) be the pooled P10 and P90 of Annual Maximum Consecutive Dry Days
+Below 1 mm, let \(\phi_{Dk}\) be the Region \(k\) dry-spell coefficient reported per 10 days, and let
+\(\overline{NPP}_k\) be that region's mean Annual Strict-Cropland Mean NPP. The translated regional
+NPP change and proportional magnitude are:
+
+\[
+\Delta NPP_k^{10-90} = \phi_{Dk}\frac{q_{0.90}-q_{0.10}}{10},
+\]
+
+\[
+M_k^{10-90} = 100\frac{\Delta NPP_k^{10-90}}{\overline{NPP}_k}.
+\]
+
+The first quantity is also multiplied by 10,000 to report kg C/ha. Let \(\theta_{Fk}^{(S)}\) be the
+expanded-control regional slope for log Real 2021 Annual Food Consumption per Capita. Its separate
+household translation is:
+
+\[
+\Delta Food_k(0.1) = 100\left[\exp\left(0.1\theta_{Fk}^{(S)}\right)-1\right].
+\]
+
+Regional Dry-Spell Sensitivity and Food-Consumption Relevance plots \(-M_k^{10-90}\) against
+\(\Delta Food_k(0.1)\), with 95 percent intervals propagated from each coefficient and national
+estimates shown as reference lines. Regional Ecological-Economic Priority Evidence reports the same
+two dimensions, support counts, and the fixed classification rule from Section 5.
+
+### Geographically Weighted Models
+
+The continuous model residualises the outcome and focal regressors using the corresponding global
+fixed effects and approved controls, then estimates a locally weighted relationship at target
+location \(s_0\):
+
+\[
+\widehat{\psi}(s_0) = \arg\min_{\psi}
+\sum_i q_i w\left[d(s_i,s_0);b(s_0)\right]
+\left(\widetilde{Y}_i-\widetilde{W}_i'\psi\right)^2.
+\]
+
+Here, \(s_i\) is observation \(i\)'s mapped village location; \(d(s_i,s_0)\) is its distance from
+target location \(s_0\); \(w[\cdot]\) is an adaptive nearest-neighbour kernel; \(b(s_0)\) is the
+local bandwidth; \(\widetilde{Y}_i\) and \(\widetilde{W}_i\) are the outcome and regressors after
+the corresponding global adjustment; \(q_i\) equals one in stage 1 and Household Survey Weight in
+stage 2; \(\psi\) is the vector of local slopes; and \(\widehat{\psi}(s_0)\) is its estimate.
+
+The neighbour count is selected once per model by corrected Akaike Information Criterion, with
+cross-validation recorded as a sensitivity. Continuous Spatial Heterogeneity reports the two
+climate-to-NPP surfaces. Continuous NPP-to-Consumption Spatial Diagnostics contains the two
+household-outcome surfaces as appendix diagnostics. GWR Bandwidth and Effective-Sample Diagnostics
+and GWR and Local-Regression Diagnostics report bandwidth, coefficient dispersion, uncertainty,
+effective local sample size, and multiple-comparison support. GWR remains a spatial heterogeneity
+diagnostic rather than a separate causal estimator.
 
 ## 7. Analytical Workflow
 
-The manuscript-facing evidence sequence is narrower than the full analytical inventory below:
+| analysis step | detailed question | variables used | formula/model used | data processing | generated figure/table title | claim evaluated | success condition | failure condition | support status |
+|---|---|---|---|---|---|---|---|---|---|
+| Stage-1 Sample and Linkage Audit | Supporting Point 1 | NPP Pixel Support; Annual Strict-Cropland Mean NPP; Annual Inclusive-Agriculture Mean NPP | linkage, duplicate-location, temporal-support, and attrition audit | collapse duplicate village codes that represent the same physical point; retain buffer, year, pixel-support, and quality counts | Research Design Data Linkage and Analytical Support; Analytical Samples and Variable Definitions | the national ecological benchmark rests on a traceable village-year sample | village locations, annual support, exclusions, and retained observations are reproducible | duplicate locations, temporal gaps, or exclusions cannot be reconciled into one analytical sample | supported; the stage-1 support and linkage audit is materialised |
+| Climate and NPP Measurement Audit | Supporting Point 1 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP; Annual Inclusive-Agriculture Mean NPP; NPP Pixel Support; Mean Annual Strict-Cropland NPP Filled-Days Percentage | natural-unit distribution, dependence, geography, and measurement-quality audit | aggregate daily climate to village-buffer years; apply strict and inclusive land-cover masks; retain valid-pixel and filled-days support | National Geography of Climate Exposure and Cropland NPP; Climate-Shock Distributions and Correlations; Cropland Definition and NPP Quality Support; Climate-Shock Descriptive Statistics and Correlations; Annual Cropland-NPP Coverage and Quality | the focal exposures and ecological outcome have interpretable variation and adequate support | climate distributions, correlations, spatial coverage, and NPP quality are transparent before estimation | exposure overlap, missing support, or NPP quality cannot be characterised well enough to interpret the national model | supported for the current 5 km stage-1 panel |
+| National Climate-to-NPP Estimation | Supporting Point 1 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP | two-way village and year fixed-effects models with primary heat-days, alternative heat degree-days, and flexible Rx5day specifications | use the complete national 5 km strict-cropland panel and translate coefficients into the declared natural-unit increments and observed P10-to-P90 dry-spell contrast | National Climate-to-NPP Responses; National Climate-to-NPP Regression Results | prolonged dry spells provide a reproducible national ecological constraint and benchmark magnitude | the dry-spell coefficient has a stable adverse direction and an interpretable natural-unit translation | the dry-spell direction is unstable, the interval is uninformative, or the observed-exposure translation cannot be supported | supported; the dry-spell coefficient is negative and precise while heat-intensity and Rx5day results are more conditional |
+| Climate-to-NPP Robustness and Measurement Sensitivity | Supporting Point 5 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP; Annual Inclusive-Agriculture Mean NPP; NPP Pixel Support; Mean Annual Strict-Cropland NPP Filled-Days Percentage | rainfall omission and residualisation, continuous and restricted NPP-quality checks, alternative buffers and land cover, alternative inference, and leave-one-year sensitivity | hold the focal estimand fixed while changing one declared rainfall, quality, measurement, spatial-scale, or covariance choice at a time | Climate-to-NPP Robustness Coefficients; Climate-to-NPP Robustness Results | the dry-spell result is not an artefact of rainfall collinearity, wet-year retrieval conditions, or one measurement choice | the dry-spell coefficient remains adverse and comparable across the declared rainfall and NPP-quality treatments | the coefficient changes direction materially, loses interpretable support, or appears only under one rainfall or quality treatment | supported; the dry-spell coefficient remains negative and precise across the focal rainfall and quality checks |
+| Outcome-Blind Spatial Regionalisation | Supporting Point 2 | Village Spatial Adjacency; SKATER Region ID | SKATER minimum-spanning-tree regionalisation with four-through-seven-region candidate diagnostics and one frozen six-region solution | standardise predetermined clustering features only; enforce spatial contiguity and minimum stage-1 and stage-2 support; exclude outcomes and fitted results | Outcome-Blind Regions and Zonal Climate-to-NPP Responses | regional boundaries are contiguous, adequately supported, and independent of outcomes | one contiguous solution passes all frozen support gates without using NPP, consumption, coefficients, or p-values | selected regions fail contiguity or support gates, or their construction uses outcome information | supported; one six-region SKATER partition is frozen |
+| Regional Climate-to-NPP Heterogeneity Estimation | Supporting Point 2 | SKATER Region ID; Annual Heat Days at or Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP | common-sample regional slope-interaction model, joint slope-equality test, and P10-to-P90 natural-unit translation | interact the focal climate exposures with the frozen regions in the common national sample and retain the national covariate set | Outcome-Blind Regions and Zonal Climate-to-NPP Responses; Regional Climate-to-NPP Regression Results | the national dry-spell benchmark conceals substantively important regional heterogeneity | the joint equality test rejects and translated regional dry-spell magnitudes differ materially with adequate support | regional slopes are compatible with one common slope or apparent differences are driven by unsupported regions | supported; the dry-spell equality test rejects and regional magnitudes differ materially |
+| Continuous Climate-to-NPP Spatial Heterogeneity | Supporting Point 2 | Annual Heat Days at or Above 35 C; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP | geographically weighted residual regression with adaptive bandwidth selection | residualise with the global fixed-effects specification and estimate local slopes using the selected neighbour bandwidth and adjacent-bandwidth checks | Continuous Spatial Heterogeneity; GWR Bandwidth and Effective-Sample Diagnostics; GWR and Local-Regression Diagnostics | the regional pattern reflects broader continuous ecological spatial structure rather than only one partition | local effective samples are adequate and the broad coefficient pattern remains stable across adjacent bandwidths | local support is inadequate or the sign pattern changes materially under adjacent bandwidths | supported for the dry-spell surface; adjacent-bandwidth signs are stable at 94 percent of villages |
+| Household Consumption and Lagged-NPP Linkage Audit | Supporting Point 3 | Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Interview Calendar Year; Prior NPP Calendar Year; Prior-Year Strict-Cropland NPP; Prior-Year Inclusive-Agriculture NPP; Prior-Year Strict-Cropland NPP at 2 km; Prior-Year Strict-Cropland NPP at 10 km; Prior-Year NPP Pixel Support; Stage-2 Complete-Case Flags; Household Survey Weight; Consumption Instrument Regime; CSES Public-Point Linkage | consumption harmonisation, exact interview-year linkage, missingness, and attrition audit | annualise recall components, apply the appropriate CPI, compute per-capita outcomes, link interview year minus one to NPP, and retain wave-specific support flags | Research Design Data Linkage and Analytical Support; Analytical Samples and Variable Definitions; Household Linkage and Consumption Support by Wave; Consumption Harmonisation by Survey Wave; Household Linkage and Missingness by Survey Wave | stage-2 outcomes and prior-year NPP exposure are comparable and traceable across survey waves | timing, outcome construction, linkage, missingness, and analytical retention are reproducible by wave | survey instruments cannot be harmonised, interview timing is ambiguous, or linkage attrition cannot be characterised | supported; exact timing, three buffer scales, two land-cover definitions, and complete-case flags are materialised |
+| National NPP-to-Consumption Estimation | Supporting Point 3 | Prior-Year Strict-Cropland NPP; Stage-2 Complete-Case Flags; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Survey Weight | survey-weighted repeated-cross-section regression ladder with survey-time effects and village-clustered uncertainty | estimate total- and food-consumption models with sequential household-composition and socioeconomic controls and translate a 0.1 kg C/m2 NPP contrast into percentage differences | Cropland NPP and Household Consumption; National NPP-to-Consumption Regression Results | prior-year cropland productivity has household economic relevance, with food consumption as the focal robust outcome | the food-consumption estimate remains positive and precise under the expanded control block | the food-consumption estimate loses direction or precision after the declared controls | supported for food consumption; total consumption remains the more specification-sensitive benchmark |
+| NPP-to-Consumption Robustness | Supporting Point 3 | Prior-Year Strict-Cropland NPP; Prior-Year Inclusive-Agriculture NPP; Prior-Year Strict-Cropland NPP at 2 km; Prior-Year Strict-Cropland NPP at 10 km; Prior-Year NPP Pixel Support; Stage-2 Complete-Case Flags; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Head Ever Attended School; Household Survey Weight; Consumption Instrument Regime | controls, timing, instrument-regime, location-effect, land-cover, buffer-scale, and common-sample sensitivity ladder | vary one declared exposure, timing, control, instrument, location-effect, or sample rule at a time while retaining survey weights and village-clustered uncertainty | NPP-to-Consumption Robustness Results | the focal food-consumption relationship is not generated by one questionnaire regime, timing rule, NPP definition, buffer, or changing sample | the food estimate retains its positive direction across the core declared alternatives and its limitations are transparent | the food result exists only for one timing, land-cover, buffer, instrument regime, or selected sample | partially supported; food estimates are more stable than total-consumption estimates, but some specifications lose precision |
+| Regional NPP-to-Consumption Heterogeneity Estimation | Supporting Point 4 | Prior-Year Strict-Cropland NPP; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Survey Weight; SKATER Region ID | expanded-control survey-weighted regional slope-interaction models with joint equality tests | interact prior-year NPP with the frozen regions in the linked household sample and retain household-composition and socioeconomic controls | Cropland NPP and Household Consumption; Regional NPP-to-Consumption Regression Results | household economic relevance varies across the same outcome-blind regions used for ecological heterogeneity | the food-consumption slope equality test rejects and region-specific estimates retain adequate household support | regional food slopes are compatible with one common slope or are driven by sparse regional samples | supported for food consumption; the expanded-control regional equality test rejects |
+| Regional Ecological-Economic Priority Synthesis | Supporting Point 4 | SKATER Region ID; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Strict-Cropland Mean NPP; Prior-Year Strict-Cropland NPP; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Survey Weight | separate P10-to-P90 regional NPP translation, expanded-control food-consumption translation, national-reference comparison, and fixed two-dimensional typology | calculate ecological and household translations separately, retain their confidence intervals and sample support, and classify regions without multiplying coefficients | Regional Dry-Spell Sensitivity and Food-Consumption Relevance; Regional Ecological-Economic Priority Evidence | some regions jointly concentrate ecological dry-spell sensitivity and household food-consumption relevance | at least one adequately supported region lies above both fixed national-reference dimensions under expanded household controls | apparent priority regions disappear under expanded controls, require an arbitrary composite score, or lack sample support | supported; R4 and R6 meet the fixed jointly elevated rule while discordant regions remain visible |
+| Continuous NPP-to-Consumption Spatial Diagnostics | Supporting Point 4 | Prior-Year Strict-Cropland NPP; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Household Survey Weight | geographically weighted residual regression for the two household outcomes | residualise with the corresponding national household model and report adaptive bandwidth, effective local sample, coefficient dispersion, and interval support | Continuous NPP-to-Consumption Spatial Diagnostics; GWR Bandwidth and Effective-Sample Diagnostics; GWR and Local-Regression Diagnostics | continuous local estimates diagnose whether the regional household pattern is spatially diffuse or concentrated | local effective samples and adjacent-bandwidth behaviour are sufficient for broad descriptive interpretation | local samples are sparse or intervals are too unstable for pointwise interpretation | diagnostic only; local effective samples and interval support are insufficient for a pointwise priority claim |
 
-1. Reproduce the historical repression boundary and establish local identification, power, and
-   the mandatory modern-commune safeguard.
-2. Estimate the frozen land-NPP rainfall-sensitivity contrast and evaluate it against the
-   pre-specified equivalence bounds.
-3. Test the same local estimand in observed nighttime activity as an independent outcome system.
-4. Use the completed national survey and six-test mechanism families to bound generalization and
-   interpretation, not to create additional headline claims.
-5. Reserve flood, food-price, broader household, and future holdout analyses for supplementary
-   evidence or prospectively gated extensions.
+The analysis proceeds in this order. Spatial regions, bandwidth rules, sample gates, QC thresholds,
+and regional typology rules are frozen before the new coefficients are inspected. The national
+model remains the reference even when regional magnitudes are stronger. Null, imprecise, or
+discordant results remain reportable and are not replaced by post hoc variables, boundaries,
+outcomes, or temporal partitions.
 
-The table retains every completed and pending analytical step for reproducibility. Its row order
-does not imply equal narrative weight.
+Interpretation limits are applied consistently across the workflow: Stage 1 quantifies annual
+cropland-carbon sensitivity, Stage 2 quantifies household economic relevance, and the regional
+synthesis compares the two estimates without multiplying them into a mediated loss.
 
-| step | variables used | formula/model used | generated figure/table title | theory or claim evaluated | support status |
-|---|---|---|---|---|---|
-| Audit sample, linkage, and common support | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; Annual Rainfall Extreme Wet Shock; 12 Month Change in Local Relative Log Wholesale Rice Price; Survey Year Maximum Flooded Geography Share; Household Survey Weight; Person Survey Weight | Unweighted counts, survey-weighted coverage shares, linkage-level counts, and common-support diagnostics before outcome-specific estimation | Shock-Specific Analytical Support | Whether exposure overlap and sample support are adequate for the supporting national analyses | Supported for estimation with shock-specific denominators; detailed maps, distributions, and linkage workbooks are retained only in the internal output archive |
-| Describe baseline conflict legacy | Log Bombing Unique Locations per 100 km2 and confirmed agriculture, consumption, food-security, education, mechanism, and control variables | Unadjusted conflict-tercile profiles plus the Section 6.1 adjusted baseline legacy model | Mechanism Pathways and National Generalization | Persistent development legacy outside the interaction estimand | Not broadly supported: adjusted associations are small and mixed; detailed baseline tables are retained only in the internal output archive |
-| Estimate drought amplification | Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; agricultural, consumption, food-security, and education outcomes | Supporting national conflict-conditioned shock model in Section 6.2 and marginal response function over common conflict support | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether national observational evidence shows greater drought sensitivity at higher historical conflict exposure | Inconclusive: national estimates are generally imprecise and do not establish consistent amplification |
-| Estimate excess-rainfall amplification | Log Bombing Unique Locations per 100 km2; Annual Rainfall Extreme Wet Shock; Annual Rainfall Anomaly Z (1991-2020); agricultural and welfare outcomes | Main conflict-conditioned shock model in Section 6.2 with continuous rainfall sensitivity and threshold alternatives | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether historical conflict is associated with greater sensitivity to unusually wet conditions | Inconclusive: estimates are generally imprecise and direct inundation does not reproduce a clear pattern |
-| Estimate food-price amplification | Log Bombing Unique Locations per 100 km2; 12 Month Change in Local Relative Log Wholesale Rice Price; 12 Month Change in Broad Retail Food Local Relative Log Price; consumption, food-security, and education outcomes | Main conflict-conditioned shock model in Section 6.2 with province-clustered wild-bootstrap sensitivity | Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates | Whether conflict legacy amplifies purchasing-power, food-security, and education responses to local price shocks | Partially supported but definition-sensitive: the school-attendance interaction is adverse and precise under the primary definitions but not stable across alternative conflict and price definitions |
-| Evaluate adaptive capacity and agricultural dependence | Irrigable Parcel Share; Crop Diversity Count; Real 2021 Agricultural Input Cost Riels; Agricultural Household; Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month | Mechanism outcomes and the hierarchical three-way heterogeneity model in Section 6.4 | Mechanism Pathways and National Generalization; Mechanism Families and Multiplicity Checks | Whether adaptive-capacity constraints and agricultural dependence align with the proposed resilience pathway | Suggestive but not multiplicity-robust: parcel irrigation is directionally coherent, but no activated mechanism survives the six-test Holm adjustment |
-| Test alternative definitions, inference, and influence | Alternative conflict measures; 3-, 6-, and 12-month SPI; seasonal rainfall; wholesale and broad retail price shocks; linkage levels; weights | Section 6.6 inference plan and Section 6.7 robustness, placebo, multiplicity, nonlinear-model, and leave-one-out checks | Alternative Conflict Measures and Shock Definitions; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether central conclusions depend on one exposure definition, shock window, region, wave, or influential observation | Completed: the retained formal suite reports definition, inference, multiplicity, placebo, and functional-form checks; detailed influence diagnostics remain archived internally |
-| Validate with satellite-observed inundation | Annual Rainfall Extreme Wet Shock; Survey Year Maximum Flooded Geography Share; Preceding 12 Month Maximum Flooded Geography Share; Survey Year Maximum Flood Duration Days; Log Bombing Unique Locations per 100 km2; agricultural outcomes | Coverage-matched secondary interaction models and overlap diagnostics | Alternative Conflict Measures and Shock Definitions | Whether direct inundation evidence converges with the extreme-wet rainfall pattern | Not supported as convergence evidence; the detailed satellite diagnostic figure is retained only in the internal output archive |
-| Synthesize evidence across domains | Natural-unit and standardized interaction estimates from agriculture, consumption, food security, education, and mechanisms | Cross-domain standardized-effect synthesis with natural-unit estimates retained in tables | Mechanism Pathways and National Generalization; Cross-Domain Amplification Effects; Main Historical Conflict by Shock Interaction Estimates; Alternative Conflict Measures and Shock Definitions; Inference and Multiplicity Checks; Falsification and Functional Form Checks | Whether sign, magnitude, uncertainty, and robustness jointly support conflict-conditioned shock amplification | Limited and outcome-specific support: the evidence does not establish broad cross-domain amplification |
-| Freeze the upgraded analysis contract | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Land NPP Anomaly kg C per m2 | Prospective decision log, 5 km primary support, 0.20 standardized-outcome SESOI, dual-specification rule, and interpretation limits frozen before outcome access | Prospective Analysis Decisions and Deviations | Whether the upgraded design separates design decisions from first outcome access | Supported: the annual spatial contract and mandatory confirmation model were human-approved after outcome-blind diagnostics |
-| Reproduce and link the historical boundary | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support | Independent reproduction of treatment assignment, deterministic spatial linkage, and blinded linkage audit | Historical Repression Boundary Design; Historical Boundary Linkage and Power Feasibility | Whether the published geographic assignment contrast can be reconstructed and linked without using contemporary outcomes | Supported: all 1,359 public assignments, signed distances, and five segment assignments reproduce exactly; annual panel linkage is complete for 2001-2021 |
-| Audit support, continuity, power, and equivalence | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020) | Covariate continuity, density, modern-boundary coincidence, effective-unit simulation, minimum detectable effects, 0.20 SESOI, and segment influence | Boundary Support Power and Continuity Diagnostics; Historical Boundary Linkage and Power Feasibility; Geographic RD Identification and Falsification Checks | Whether the local estimand is adequately powered and whether modern boundaries require a design safeguard | Partially supported with a frozen safeguard: power, density, and segment checks pass; modern commune proximity requires the mandatory within-commune confirmation model; 1975 settlement proxies remain timing-ambiguous |
-| Estimate annual land-productivity rainfall sensitivity | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical Boundary Segment; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020); Annual Land NPP Anomaly kg C per m2; Annual Land NPP Anomaly Z 2001-2020; Mean NPP QC Filled Growing-Season Days Percent; Log One Plus Distance to River m | Section 6.9 primary and within-modern-commune confirmation models, followed by bandwidth, annual-rainfall, standardized-outcome, river-distance, and quality sensitivities | Historical Repression and Contemporary Shock Sensitivity; Historical Boundary Shock-Response Estimates | Whether more intense historical repression changes land-NPP sensitivity to contemporary rainfall near the boundary | Supported as a substantively precise local null: the primary and mandatory confirmation estimates are small, mutually compatible, and inside the pre-specified equivalence bounds across the frozen sensitivity set |
-| Estimate local price-shock sensitivity | Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical-Boundary Common Support; International Rice Price Shock; Domestic Rice Price Pass-Through; Real 2021 Food Consumption Value per Household Member Riels; Any Severe Food Insecurity Experience; Currently Attending School | Section 6.9 model with externally defined price innovation and separately estimated domestic pass-through | Historical Repression and Contemporary Shock Sensitivity; Historical Boundary Shock-Response Estimates | Whether more intense historical repression causally changes contemporary price-shock sensitivity near the boundary | Pending and conditional on adequate temporal support, pass-through evidence, and effective-unit power |
-| Validate nighttime activity independently | Asinh Annual Mean Radiance; Asinh Annual Median Radiance; Any Nonzero Annual Mean Radiance; Cloud-Free Observations; At Least 40 Cloud-Free Observations; Higher-Repression Southwest Zone; Signed Distance to Historical Repression Boundary km; Historical-Boundary Common Support; May October Rainfall Anomaly Z (1991-2020); Annual Rainfall Anomaly Z (1991-2020) | Section 6.10 primary and within-modern-commune grid-cell models, pooled within-cell outcome-SD conversion, equivalence bounds, and frozen outcome, coverage, weighting, rainfall, and bandwidth checks | Nighttime Activity Independent Validation; Nighttime Activity Independent Validation Estimates | Whether the local land-NPP conclusion is compatible with an independently measured nighttime-activity response | Supported as precise-null independent spatial validation: the primary estimate is 0.041 outcome SD with a 95% confidence interval from -0.033 to 0.115, and the mandatory confirmation estimate is 0.003 with a 95% confidence interval from -0.065 to 0.071; both remain inside the pre-specified equivalence bounds and do not imply absence of a level legacy |
-| Complete remaining untouched-survey and spatial validation | Holdout Survey Indicator; Cropland Productivity Anomaly; Higher-Repression Southwest Zone; Interview Month SPI 12 Month; International Rice Price Shock | Frozen compatible estimands, natural-unit scale conversion, confidence-region compatibility, and equivalence checks | Independent Validation Across Survey and Spatial Outcomes; Independent Validation and Transport Checks | Whether the local conclusion survives additional independent outcome and shock measurement and whether its population scope is transportable | Pending access, provenance, geography, and comparability audit |
-| Evaluate the activated mechanism family | Village Irrigated Agricultural Land Share; Permanent Market Access; Irrigable Parcel Share; Crop Diversity Count; Real 2021 Agricultural Input Cost Riels; Log Bombing Unique Locations per 100 km2; Interview Month SPI 12 Month; Household Survey Weight | Section 6.11 village persistence and conflict-conditioned drought models, household-population exposure-weighted sensitivity, and six-test Holm adjustment | Mechanism Pathways and National Generalization; Mechanism Families and Multiplicity Checks | Whether persistent village infrastructure and drought-sensitive agricultural capacity align with the proposed resilience pathway | Completed but weak: village irrigation, market access, crop diversity, and input estimates are small or imprecise; parcel irrigation is directionally coherent but has an expanded-family Holm-adjusted p-value of approximately 0.106; no result identifies causal mediation |
-| Integrate local identification and national breadth | Historical Boundary Shock-Response Estimates; Main Historical Conflict by Shock Interaction Estimates; Nighttime Activity Independent Validation Estimates; Mechanism Families and Multiplicity Checks | Structured comparison of local boundary, national associational, independent spatial-validation, mechanism, and equivalence conclusions without coefficient pooling | Mechanism Pathways and National Generalization | Whether stronger internal validity, national relevance, independent validation, and mechanisms jointly meet the evidence gate | Partially completed: the synthesis separates national discovery evidence, local land-NPP and VIIRS precise-null results, and weak mechanism evidence; the full multi-source validation and transport gate remains pending |
+### Pre-Estimation Gate
 
-The central Nature Communications sequence has passed boundary reproduction, linkage, blinded
-power, conditional identification activation, land-NPP estimation, and independent observed-VIIRS
-validation. Both outcome systems support a substantively precise local bounded null for rainfall
-sensitivity under the frozen 5 km primary and mandatory within-modern-commune confirmation models.
-Completed national breadth analyses do not support broad cross-domain amplification; the narrower
-education-price finding remains definition-sensitive, and the six-test mechanism family contains
-no multiplicity-robust channel result. These findings bound interpretation rather than compete
-with the local central claim. Additional holdout, agriculture, cropland, price, and direct-flood
-sources remain prospectively gated extensions, while early-life cohort analysis remains outside
-scope.
+Exact interview-year linkage, 2 km and 10 km NPP, and Prior-Year Inclusive-Agriculture NPP are
+complete. The spatial gate is also complete: one six-region SKATER assignment was frozen before
+regional outcome coefficients were inspected. Each selected region is contiguous and passes the
+approved minimum of 200 villages, 15 complete stage-1 years per village on average, and 3,000
+stage-2 households. The NPP-quality P75 and P50 thresholds and the national-reference regional
+typology rule were frozen before the new estimates. Rainfall/QC sensitivity estimation, the
+expanded-control regional food model, and the fixed regional classification are now complete.
 
 ## 8. Figure and Table Plan
+
+The main-text sequence moves from analytical support and national estimates to discrete spatial
+heterogeneity, household relevance, and a regional comparison of ecological sensitivity with food-
+consumption relevance. Continuous surfaces, measurement, linkage, regionalisation, robustness, and
+local-model diagnostics are reserved for the appendix. The old dry-spell-EVI and direct heat-food
+outputs remain superseded and are not publication inputs for this plan.
 
 ### Figures
 
 | title | what it expresses | figure type | subpanels | key variables | placement | status |
 |---|---|---|---:|---|---|---|
-| Cross-Domain Amplification Effects | Summarizes supporting national interaction estimates across agriculture, consumption, food security, and education. | forest | 4 | Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Rainfall Extreme Wet Shock, 12 Month Change in Local Relative Log Wholesale Rice Price, Crop Yield kg per ha, Real 2021 Crop Production Value Riels, Real 2021 Food Consumption Value per Household Member Riels, Any Severe Food Insecurity Experience, Currently Attending School, Real 2021 Education Expenditure Riels | appendix | done |
-| Historical Repression Boundary Design | Establishes the historical assignment contrast, boundary geometry, segments, and frozen local support. | map | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support | main text | done |
-| Boundary Support Power and Continuity Diagnostics | Documents full support, continuity, power, modern-boundary, and SESOI diagnostics behind the central design. | coefficient and line | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical Boundary Segment, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) | appendix | done |
-| Historical Repression and Contemporary Shock Sensitivity | Presents the primary land-NPP rainfall-response result, mandatory confirmation, bandwidths, and outcome-quality sensitivity. | line and forest | 4 | Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020), Annual Land NPP Anomaly kg C per m2, Annual Land NPP Anomaly Z 2001-2020, Mean NPP QC Filled Growing-Season Days Percent | main text | done |
-| Nighttime Activity Independent Validation | Tests the same local rainfall-response estimand in independently measured nighttime activity. | forest | 2 | Asinh Annual Mean Radiance, Asinh Annual Median Radiance, Any Nonzero Annual Mean Radiance, Cloud-Free Observations, At Least 40 Cloud-Free Observations, Higher-Repression Southwest Zone, Signed Distance to Historical Repression Boundary km, Historical-Boundary Common Support, May October Rainfall Anomaly Z (1991-2020), Annual Rainfall Anomaly Z (1991-2020) | main text | done |
-| Mechanism Pathways and National Generalization | Synthesizes the local bounded-null results with supporting national breadth and multiplicity-aware mechanism evidence without pooling distinct estimands. | forest | 4 | Village Irrigated Agricultural Land Share, Permanent Market Access, Irrigable Parcel Share, Crop Diversity Count, Real 2021 Agricultural Input Cost Riels, Log Bombing Unique Locations per 100 km2, Interview Month SPI 12 Month, Annual Land NPP Anomaly Z 2001-2020, Asinh Annual Mean Radiance, Higher-Repression Southwest Zone | main text | done |
+| Research Design Data Linkage and Analytical Support | documents national village linkage, temporal support, NPP linkage across buffer scales and land-cover definitions, and sample attrition before any coefficient is interpreted | map and bar | 4 | CSES Public-Point Linkage; NPP Pixel Support; Interview Calendar Year; Prior NPP Calendar Year; Prior-Year Strict-Cropland NPP; Prior-Year Inclusive-Agriculture NPP; Prior-Year Strict-Cropland NPP at 2 km; Prior-Year Inclusive-Agriculture NPP at 2 km; Prior-Year Strict-Cropland NPP at 10 km; Prior-Year Inclusive-Agriculture NPP at 10 km; Prior-Year NPP Pixel Support; Stage-2 Complete-Case Flags; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita | main | done |
+| National Geography of Climate Exposure and Cropland NPP | shows where heat, extreme rainfall, dry spells, and cropland productivity are concentrated across Cambodia | map | 4 | Annual Heat Days at or Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Strict-Cropland Mean NPP | main | done |
+| National Climate-to-NPP Responses | presents the national fixed-effect estimates, the alternative heat-intensity specification, and the flexible Rx5day response in natural units | forest and line | 3 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP | main | done |
+| Outcome-Blind Regions and Zonal Climate-to-NPP Responses | maps the one frozen six-region SKATER partition and tests whether climate-NPP slopes differ across its contiguous regions | map and forest | 2 | Village Spatial Adjacency; SKATER Region ID; Annual Heat Days at or Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Strict-Cropland Mean NPP | main | done |
+| Cropland NPP and Household Consumption | compares the national regression ladder for total consumption, the food-consumption confirmation, and expanded-control frozen-SKATER regional slopes | forest | 4 | Prior-Year Strict-Cropland NPP; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Survey Weight; SKATER Region ID | main | done |
+| Regional Dry-Spell Sensitivity and Food-Consumption Relevance | compares the six regions on natural-unit dry-spell sensitivity and expanded-control food-consumption relevance, with uncertainty and analytical support shown separately | scatter | 1 | SKATER Region ID; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Strict-Cropland Mean NPP; Prior-Year Strict-Cropland NPP; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Socioeconomic Control Vector; Household Survey Weight | main | done |
+| Continuous Spatial Heterogeneity | maps the continuously varying local heat-day and dry-spell relationships with cropland NPP | coefficient map | 2 | Annual Heat Days at or Above 35 C; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Strict-Cropland Mean NPP | appendix | done |
+| Climate-Shock Distributions and Correlations | reports natural-unit distributions and dependence among the four shocks, especially overlap between the two heat measures | histogram and heatmap | 5 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total | appendix | done |
+| Cropland Definition and NPP Quality Support | compares strict and inclusive agriculture coverage and documents pixel support for the ecological outcome | map, histogram, and scatter | 3 | Annual Strict-Cropland Mean NPP; Annual Inclusive-Agriculture Mean NPP; NPP Pixel Support | appendix | done |
+| Climate-to-NPP Robustness Coefficients | shows whether national stage-1 coefficients remain stable across rainfall handling, continuous NPP-quality adjustment, quality-support restriction, buffer, NPP definition, functional form, and uncertainty choices | forest | 4 | Annual Heat Days at or Above 35 C; Annual Heat Degree-Days Above 35 C; Annual Maximum Consecutive Five-Day Precipitation Rx5day; Annual Maximum Consecutive Dry Days Below 1 mm; Annual Precipitation Total; Annual Strict-Cropland Mean NPP; Annual Inclusive-Agriculture Mean NPP; NPP Pixel Support; Mean Annual Strict-Cropland NPP Filled-Days Percentage | appendix | done |
+| Household Linkage and Consumption Support by Wave | displays exact interview timing, linked and unlinked household support, consumption coverage, and survey-regime changes across waves | bar and line | 4 | CSES Public-Point Linkage; Interview Calendar Year; Prior NPP Calendar Year; Prior-Year Strict-Cropland NPP; Prior-Year Strict-Cropland NPP at 2 km; Prior-Year Strict-Cropland NPP at 10 km; Stage-2 Complete-Case Flags; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Consumption Instrument Regime; Household Survey Weight | appendix | done |
+| GWR Bandwidth and Effective-Sample Diagnostics | evaluates whether local coefficient surfaces are supported by adequate adaptive bandwidths and local information | histogram and map | 4 | Annual Strict-Cropland Mean NPP; Prior-Year Strict-Cropland NPP; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita | appendix | done |
+| Continuous NPP-to-Consumption Spatial Diagnostics | reports total- and food-consumption local coefficient surfaces without treating locally imprecise estimates as pointwise findings | coefficient map | 2 | Prior-Year Strict-Cropland NPP; Real 2021 Annual Total Consumption per Capita; Real 2021 Annual Food Consumption per Capita; Household Composition Vector; Household Survey Weight | appendix | done |
 
 ### Tables
 
 | title | what it expresses | rows | columns | row meaning | column meaning | placement | status |
 |---|---|---:|---:|---|---|---|---|
-| Shock-Specific Analytical Support | Makes unequal support across conflict, drought, extreme-wet rainfall, food-price, and satellite-inundation exposures transparent before comparing supporting national estimates. | 7 | 9 | One historical exposure or contemporary shock definition | Analytical role, household and person counts and coverage, PSU count, province count, and supported survey waves | appendix | done |
-| Main Historical Conflict by Shock Interaction Estimates | Reports supporting national interaction estimates across drought, extreme-wet rainfall, and local food-price shocks. | 24 | 10 | Outcome-by-shock estimands | Interaction estimate, confidence interval, sample size, fixed effects, controls, weights, and implemented primary uncertainty specification | appendix | done |
-| Alternative Conflict Measures and Shock Definitions | Tests whether results survive alternative historical conflict measures, climate windows, and price constructions, including targeted alternatives for the school-attendance response to local rice-price shocks. | 29 | 10 | Alternative exposure and shock specifications | Core estimate, alternative estimate, confidence interval, sample, and specification indicators | appendix | done |
-| Inference and Multiplicity Checks | Tests whether central conflict-by-shock and adaptive-capacity-mechanism inference is robust to residual spatial dependence, coarse price clustering, and within-family multiple testing. | 27 | 12 | One central outcome-by-shock or mechanism estimand | Estimate, geography-clustered inference, Spatial-HAC inference at 50, 100, and 200 km, province wild-bootstrap inference for price models, multiplicity-adjusted inference, sample size, and estimability status | appendix | done |
-| Falsification and Functional Form Checks | Tests future-shock placebos, nonlinear binary and count models, and alternative fixed-effect structures for representative central outcomes. | 20 | 10 | One outcome-by-shock falsification, estimator, or fixed-effect comparison | Check family, outcome and shock, core estimate, alternative estimate, confidence interval or p-value, sample size, estimator, fixed effects, comparison rule, and diagnostic conclusion | appendix | done |
-| Historical Boundary Linkage and Power Feasibility | Audits reproduction, spatial linkage, observations and shocks on each side, candidate bandwidths, effective independent units, minimum detectable effects, and equivalence feasibility before outcome estimation. | to be determined after acquisition | 12 | One reproduction, linkage, support, bandwidth, shock, or outcome-family power diagnostic | Diagnostic definition, side-specific counts, waves, segments, bandwidth, effective units, smallest substantive effect, minimum detectable effect, equivalence bound, pass rule, and status | main text | done |
-| Geographic RD Identification and Falsification Checks | Reports the full predetermined continuity, density, distance-trend, bandwidth, placebo, road-alignment, and segment-influence suite. | to be determined after feasibility | 12 | One identification or falsification check | Check family, variable or estimand, specification, bandwidth, estimate, confidence interval, spatial inference, effective units, multiplicity status, pre-specified pass rule, result, and interpretation | appendix | done |
-| Historical Boundary Shock-Response Estimates | Reports the frozen annual land-NPP repression-by-rainfall effects under the primary, within-modern-commune confirmation, bandwidth, annual-rainfall, standardized-outcome, and quality-sensitivity specifications. | 12 | 12 | One outcome-by-shock specification within activated historical-boundary support | Outcome, shock, sample, bandwidth, interaction estimate, natural-unit or standardized scale, confidence interval, SESOI comparison, effective units, fixed effects, inference, and interpretation | main text | done |
-| Nighttime Activity Independent Validation Estimates | Reports the compatible VIIRS repression-by-rainfall estimate under the frozen primary, within-modern-commune, outcome-definition, coverage, weighting, rainfall, and bandwidth specifications. | 12 | 12 | One nighttime-activity outcome-by-rainfall specification within activated historical-boundary support | Outcome, shock, sample, bandwidth, interaction estimate, standardized scale, confidence interval, SESOI comparison, effective units, fixed effects, inference, and interpretation | appendix | done |
-| Mechanism Families and Multiplicity Checks | Reports the six activated infrastructure and agricultural-capacity tests, two village-weighting sensitivities, and transparent deferral of conditionally routed or sparse candidates. | 9 | 11 | One primary mechanism estimand, weighting sensitivity, or deferred candidate group | Family, variable, waves, timing, model, estimate, confidence interval, raw p-value, Holm p-value, availability, and channel interpretation | appendix | done |
-| Prospective Analysis Decisions and Deviations | Preserves the frozen outcome hierarchy, source selection, bandwidth rules, smallest effects, equivalence bounds, gates, and any dated deviations from the confirmatory contract. | to be determined prospectively | 8 | One pre-specified decision or dated deviation | Date, stage, decision, rationale, evidence unavailable at decision, gate affected, deviation status, and consequence | appendix | done |
+| Analytical Samples and Variable Definitions | consolidates variable definitions, units, timing, sample support, missingness, and linkage for both stages | about 24 | about 8 | final variable or analytical sample | definition, role, period, unit, observations, locations, missingness, and linkage status | main | done |
+| National Climate-to-NPP Regression Results | presents Stargazer-style national fixed-effect results for the primary heat-day and alternative degree-day specifications | about 10 | about 8 | climate coefficient, fixed effect, sample statistic, or fit statistic | sequential specification and alternative heat model | main | done |
+| Regional Climate-to-NPP Regression Results | reports frozen-SKATER regional climate slopes and joint slope-equality tests in a common national sample | about 24 | about 9 | region-specific climate coefficient or model statistic | region and focal climate specification | main | done |
+| National NPP-to-Consumption Regression Results | presents the survey-weighted regression ladder for total consumption and the food-consumption confirmation | about 14 | about 10 | NPP coefficient, control block, fixed effect, sample statistic, or fit statistic | outcome and sequential household specification | main | done |
+| Regional Ecological-Economic Priority Evidence | reports regional dry-spell coefficients, P10-to-P90 NPP translations, expanded-control food-consumption associations, support, and a transparent evidence typology | about 10 | about 9 | region or model-support statistic | dry-spell sensitivity, natural-unit translation, food-consumption relevance, analytical support, and evidence type | main | done |
+| Regional NPP-to-Consumption Regression Results | reports expanded-control frozen-SKATER regional NPP-consumption slopes and joint slope-equality tests | about 10 | about 9 | region-specific NPP coefficient or model statistic | region and consumption outcome | appendix | done |
+| Consumption Harmonisation by Survey Wave | documents food, non-food, housing, education, CPI, and per-capita construction choices by survey wave | about 10 | about 10 | survey wave or questionnaire regime | source component, recall period, annualisation, deflator, housing, education, eligibility, and observations | appendix | done |
+| Climate-Shock Descriptive Statistics and Correlations | reports natural-unit distributions and correlations for the stage-1 exposure family | about 12 | about 10 | climate variable or variable pair | distribution statistic, correlation, period, and support | appendix | done |
+| Annual Cropland-NPP Coverage and Quality | documents annual strict and inclusive cropland support and NPP pixel-quality gates | about 21 | about 9 | calendar year | village count, candidate pixels, valid pixels, valid share, strict NPP, inclusive NPP, and exclusions | appendix | done |
+| Climate-to-NPP Robustness Results | reports buffer, NPP-definition, support-gate, functional-form, uncertainty, and leave-one-year sensitivities | about 24 | about 9 | robustness specification and focal climate exposure | estimate, standard error, interval, sample, fixed effects, uncertainty method, and stability assessment | appendix | done |
+| Household Linkage and Missingness by Survey Wave | documents exact interview-year linkage, lagged NPP availability, outcome missingness, and analytical sample retention | about 10 | about 10 | survey wave or questionnaire regime | released households, outcome-eligible households, mapped villages, NPP-linked households, missingness, and weighted support | appendix | done |
+| NPP-to-Consumption Robustness Results | reports alternative outcomes, controls, timing, 2 km and 10 km scales, land-cover definitions, instrument regimes, location effects, and matched-sample checks | about 24 | about 10 | robustness specification and outcome | NPP estimate, standard error, interval, sample, weighting, controls, fixed effects, and stability assessment | appendix | done |
+| GWR and Local-Regression Diagnostics | reports adaptive bandwidth selection, effective local sample size, local fit, coefficient dispersion, and multiple-comparison diagnostics | about 20 | about 10 | stage, exposure-outcome pair, or diagnostic | bandwidth, neighbour count, effective sample, local-fit summary, coefficient quantiles, uncertainty, and support flag | appendix | done |
 
-卫星洪水变量及其详细诊断目前仅属于内部归档分析，不构成正式图表计划。若未来将其重新提升为正式结果，需要先返回 data-preprocessing 完成最终变量确认。
+The intended architecture remains six main-text figures and five main-text tables. The two completed
+priority outputs replace the continuous Stage-1 surface and the composition-only regional
+consumption table in the main sequence; seven figures and eight tables remain in the appendix.
+Main tables retain conventional regression-table structure; figures communicate geography,
+coefficient patterns, and model support rather than duplicating the same numeric results.
 
-⚠️ 警告：历史边界设计、年度土地NPP、年度降雨、5 km支持变量、观察期VIIRS变量和已激活的村级机制变量已经通过人工确认，其对应图表均已完成。未来留出调查、独立农业、耕地生产力和外部价格扩展不属于当前 Figure and Table Plan；只有在相应数据完成 acquisition、data-briefing、data-preprocessing 和 feasibility-check，并由人工确认最终变量后，才能重新加入计划。
+### Variable-Coverage Note
+
+All variables referenced above appear in Section 4 and are marked for final analysis. Exact
+interview-year alignment and 2, 5, and 10 km NPP construction are complete. One six-region SKATER
+assignment is frozen and the declared regional pre-estimation gate is complete. Thirteen figures and
+thirteen tables are complete, including the regional-priority figure and table.
+Publication readiness is evaluated by `critique-research-outputs` rather than inferred from
+completion status alone.
