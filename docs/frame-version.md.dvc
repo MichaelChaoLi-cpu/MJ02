@@ -1,0 +1,5 @@
+outs:
+- md5: 29a1243efb3d2b778c9fa01e0c218646
+  size: 2842
+  hash: md5
+  path: frame-version.md

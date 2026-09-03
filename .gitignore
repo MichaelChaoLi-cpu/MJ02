@@ -8,3 +8,7 @@ AGENTS.md
 __pycache__/
 *.py[cod]
 /article
+# MiliFrame private state and environment
+.frame-control/
+docs/frame-version.md
+docs/stage-control.md

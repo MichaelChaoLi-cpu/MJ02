@@ -1,0 +1,6 @@
+outs:
+- md5: a7dc5e0ebd878686ee35c178661a7881.dir
+  size: 2156404
+  nfiles: 33
+  hash: md5
+  path: board
