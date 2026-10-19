@@ -12,3 +12,21 @@ __pycache__/
 .frame-control/
 docs/frame-version.md
 docs/stage-control.md
+
+# BEGIN manuscript revision workspace
+.codex/skills/
+!/article/
+/article/*
+!/article/deliverables/
+/article/deliverables/*
+!/article/deliverables/Agricultural Systems/
+/article/deliverables/Agricultural Systems/*
+!/article/deliverables/Agricultural Systems/Rev/
+article/deliverables/Agricultural Systems/Rev/*
+!article/deliverables/Agricultural Systems/Rev/docs/
+article/deliverables/Agricultural Systems/Rev/docs/*
+!article/deliverables/Agricultural Systems/Rev/docs/revisionchanges.md
+!article/deliverables/Agricultural Systems/Rev/revision/
+article/deliverables/Agricultural Systems/Rev/revision/*
+!article/deliverables/Agricultural Systems/Rev/revision/response-draft.md
+# END manuscript revision workspace
