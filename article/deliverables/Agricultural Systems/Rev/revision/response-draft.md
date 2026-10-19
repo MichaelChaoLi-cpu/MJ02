@@ -54,10 +54,66 @@ The household analysis also needs a clearer systems interpretation. The finding 
 Please justify the temporal alignment between NPP and household food consumption. Food consumption is measured over a seven-day reference period and then annualised by multiplying by 52, whereas the explanatory variable is annual NPP from the preceding calendar year. It is unclear when during the year the seven-day food-consumption period occurred, whether it corresponds to the relevant agricultural season, or whether seasonal variation in food consumption could affect the estimated relationship. Please explain and, if possible, account for this temporal mismatch.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for raising this timing issue. The revised Methods distinguish the seven-day recall window from the units used to report consumption, identify actual interview years and months, and justify prior-year NPP as the recent completed-year productivity context. The Results and Appendix E report interview-quarter and annual-lag tests, and the Discussion identifies the regional timing differences that these tests reveal.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+Multiplication by 52 changes the reporting units, not the observation window. Each household receives NPP from the calendar year before its actual interview, including interviews that cross calendar years within the 2019 and 2021 releases. Exact interview-year/month effects account for common temporal conditions. Food values use the actual interview-year/month food CPI where available, with an actual-year annual index as fallback.
+
+To address seasonality, the additional models include region-by-interview-quarter level effects and test quarter-specific NPP slopes nationally and within regions, retaining the expanded controls, survey weights and village-clustered inference. Regional food-consumption slopes remain unequal after the seasonal-level adjustment (p<0.001). The national quarterly slope test gives p=0.156, whereas the within-region omnibus test gives p=0.012 and R3 retains evidence after Holm adjustment (p=0.030). Same-household lag comparisons also show a smaller two-year-lag point estimate in R4; the separate intervals are not a formal test of a difference between lag coefficients. These results retain the completed prior-year measure as an annual productivity context while identifying where interview season and the relevant production year require closer attention.
+
+The Methods clarify the measurement, date assignment and additional timing tests:
+
+"Food consumption is constructed from the seven-day recall value multiplied by 52 for reporting in annualized units. The annualized measure retains the original seven-day reference period."
+(Page 23, Lines 490–492)
+
+"Household survey-year and survey-month fields determine these assignments where available; the other calendar-year releases use their documented survey year and recorded month. Exact survey-time fixed effects identify each observed combination of interview calendar year and month and absorb common consumption and price conditions at that time. This rule prevents contemporaneous partial-year vegetation conditions from being treated as a completed annual exposure. The completed-year measure provides the recent annual productivity context for the food-consumption snapshot; quarter-specific and annual-lag checks assess whether the relationship depends on interview timing."
+(Page 24, Lines 507–514)
+
+"Additional timing checks allow consumption levels to vary by region and calendar quarter and NPP slopes to vary by interview quarter nationally and within regions. Joint Wald tests compare quarterly slopes, with Holm adjustment for the six region-level tests. Annual-lag sensitivity compares NPP from one and two calendar years before interview on identical household samples."
+(Page 31, Lines 670–674)
+
+The Results and Discussion explain the alignment rule and report its regional qualifications:
+
+"The household sample uses the actual interview calendar year and attaches NPP from the preceding completed calendar year, rather than assuming that every release belongs to a single nominal survey year. This timing rule is especially consequential for interviews spread across adjacent years."
+(Page 8, Lines 150–154)
+
+"National food-consumption slopes do not differ jointly by interview quarter (p=0.156), but the regional quarterly model detects within-region differences overall (p=0.012), with R3 retaining evidence after adjustment across six regional tests (Holm p=0.030). In R4, the food-consumption association is 6.65% for prior-year NPP and 1.21% for NPP two years earlier on identical households; the respective 95% intervals are 2.60–10.86% and −2.35–4.91%. These separate-model intervals describe lag sensitivity rather than a test of the difference between lag coefficients."
+(Pages 14–15, Lines 295–301)
+
+"Interview-quarter variation in R3 and lag sensitivity in R4 also make interview season and the relevant production year priorities for household follow-up."
+(Page 18, Lines 375–376)
+
+Figure 1 and Table 5 make the temporal coverage and reporting units explicit:
+
+"Actual interviews extend to January 2022 and their completed prior-year NPP assignments extend to 2021."
+(Page 33, Lines 10–11)
+
+"Food is annualised from seven-day recall by multiplying by 52; CPI conversion follows the actual interview date."
+(Page 46, Lines 7–8)
+
+Appendix B, Figure B1 and Table B2 document the survey-calendar and consumption-construction details. The following quotations use the Appendix's own page and line numbering:
+
+"The released survey universe contains 77,904 households. Excluding the spatially unlinked 2004 release leaves 62,920 source-frame records in releases labelled 2007–2021, with actual interviews extending to January 2022."
+(Page 2, Lines 23–25)
+
+"Seven-day food expenditure is multiplied by 52 to express annual units, retaining its seven-day reference period, while nonfood items are annualized from their reported recall periods."
+(Page 2, Lines 33–35)
+
+"Panel c distinguishes release labels from actual interview years and their completed prior NPP years: the 2019 release spans 2019–2020 and links to 2018–2019 NPP, while the 2021 release spans 2021–2022 and links to 2020–2021 NPP."
+(Page 11, Lines 23–25)
+
+"Notes: Food values use the food CPI for the actual interview year and month when available, with the actual-year annual food CPI as fallback. Recall nonfood and housing use the annual all-items CPI, and supplemental education uses the annual education CPI, for the actual interview year. The 2021 release includes interviews in January 2022."
+(Page 21, Lines 3–5)
+
+Appendix E and Tables E2–E3 document the timing sensitivities and the common-sample lag comparisons:
+
+"Contemporaneous NPP is unavailable for 2022 interviews and is not backfilled."
+(Page 26, Lines 8–8)
+
+"On identical households, the national food association is 2.40% with lag 1 and 2.21% with lag 2; in R4 it is 6.65% (95% CI 2.60–10.86%) with lag 1 and 1.21% (−2.35–4.91%) with lag 2. R6 remains positive in both common-lag models, whose restricted sample differs from the main regional sample. Separate-model intervals are not a formal test of lag-coefficient differences."
+(Pages 4–5, Lines 88–92)
+
+"Lag 1 and lag 2 use exactly the same households within an outcome and geographical model. Common N is the regional contribution where applicable. Each interval comes from its own lag model; comparing significance across lags is not a formal lag-slope difference test."
+(Page 28, Lines 16–17)
 
 ## Comment 4
 
