@@ -104,10 +104,70 @@ Tables F1–F2 and Figure F1 document regional profiles, interaction inference a
 The household analysis also needs a clearer systems interpretation. The finding that higher NPP is associated with higher food consumption is not that informative by itself. The more important question is why this relationship differs across regions. Please examine or discuss whether the NPP–consumption association varies with agricultural dependence, livelihood diversification, market access, cropping systems, irrigation or other system characteristics. The manuscript mentions some of these possible explanations but does not test them.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for this comment. The revised household analysis tests production and livelihood characteristics as modifiers of the NPP–consumption association and compares regional slopes before and after each adjustment. The Methods define the measures and comparisons; the Results, Discussion and Appendix F distinguish the regional food-consumption pattern from livelihood-specific contrasts in total consumption.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+The four primary modifiers are household agricultural participation, historical road distance, village irrigated-land share and household irrigable-parcel share. Each enters a separate expanded-control regional model and is compared with its baseline on exactly the same households. Rice and dry-paddy composition and explicit nonfarm-business participation provide secondary tests using the verified 2019 and 2021 releases; permanent-market presence provides an exploratory access check. The models retain region and exact interview-year/month effects, released survey weights and village-clustered inference. Holm adjustment applies separately to the four primary and three secondary interactions within each consumption outcome.
+
+For food consumption, none of the primary or secondary interactions meets the Holm-adjusted 5% criterion, and regional slopes remain unequal after every primary system adjustment (all p<0.002). The supporting total-consumption models show a lower NPP slope among agricultural participants (Holm p=0.006) and a higher slope among nonfarm-business participants (secondary-family Holm p=0.044). Thus, the tested livelihood contrasts depend on which consumption dimension is considered; these total-consumption findings are reported separately from the food-consumption result.
+
+The Discussion uses these comparisons to guide region-specific production and livelihood assessment. Appendix F specifies the support and meaning of each indicator, including the distinction between agricultural participation and agricultural income shares, explicit business participation and a complete income portfolio, and historical road distance and current travel costs. This gives the regional interpretation an empirical systems assessment while preserving the food-consumption differences that the individual adjustments do not absorb.
+
+The Abstract and Introduction state the systems question and retain the regional food-consumption conclusion:
+
+"This study identifies where dry-spell exposure, cropland productivity sensitivity, and household food-consumption relevance coincide across Cambodia and tests whether observed agricultural-system characteristics account for the regional differences."
+(Page 1, Lines 10–12)
+
+"Regional food-consumption contrasts persist after adjustment for individual agricultural, irrigation, and access characteristics."
+(Page 2, Lines 33–34)
+
+"System-characteristic interactions test whether agricultural participation, irrigation, crop composition, nonfarm business participation, and access indicators account for the regional contrasts."
+(Page 7, Lines 132–134)
+
+The Results and Discussion distinguish the food-consumption tests from the supporting livelihood contrasts:
+
+"Household system tests retain substantial regional differences. None of the four primary modifiers—agricultural participation, historical road distance, village irrigated-land share, or household irrigable-parcel share—has a food-consumption interaction that meets the Holm-adjusted 5% criterion. The crop-composition and nonfarm-business checks also do not meet this criterion for food consumption (Appendix Tables F3–F4). Total-consumption interactions provide supporting livelihood contrasts: the NPP slope is lower among agricultural participants and higher among nonfarm-business participants. In same-sample comparisons, region-specific food slopes continue to differ after each primary system adjustment (all p<0.002; Appendix Figure F1b–e)."
+(Page 14, Lines 285–293)
+
+"Agricultural participation, irrigation, crop composition, nonfarm business, roads, and market presence are examined here, but none provides a single corrected-test explanation of the food-consumption pattern. The total-consumption interactions with agricultural and nonfarm-business participation instead suggest that the relevant livelihood contrasts can differ across consumption dimensions."
+(Pages 17–18, Lines 367–371)
+
+The Methods specify the controls and the separate interaction comparisons:
+
+"All household models use released survey weights and standard errors clustered at the village level. Composition controls include household size, female share, mean age, child share, older-person share, and the dependency ratio. The expanded specification additionally adjusts for urban residence, agricultural participation, and whether the household head ever attended school. Exact survey-time effects absorb national temporal and questionnaire-regime shifts. Regional models apply the same expanded controls and weights with a single interaction specification."
+(Page 24, Lines 515–521)
+
+"Household models add one NPP interaction at a time with agricultural participation, road distance, village irrigated-land share, or household irrigable-parcel share; crop composition and explicit nonfarm-business participation provide secondary tests. Each extension is compared with its baseline on exactly the same records. Continuous modifiers are centred at their analysis-sample medians, while binary indicators retain 0/1 coding."
+(Pages 29–30, Lines 631–636)
+
+Appendix F defines the household indicators and supported comparisons. The following quotations use the Appendix's own page and line numbering:
+
+"Household agricultural participation follows the harmonised source definition of positive parcel area or a crop-production record; it measures participation rather than the agricultural share of income."
+(Page 5, Lines 103–105)
+
+"Household irrigable-parcel share is the number of valid land records reporting irrigation in either season divided by the number with valid irrigation categories. Supported releases are 2009, 2011–12, 2013, 2014, 2016, 2019, and 2021; 2007 and 2017 are omitted from this measure because their local definitions are not verified. Agriculture-participating households supply this interaction sample."
+(Page 6, Lines 114–118)
+
+"Explicit nonfarm-business participation is the yes/no response for the previous 12 months in these two releases. Permanent-market presence, available in 2011 and 2021, is an exploratory access measure. Neither business participation nor road distance directly measures the household income portfolio or current market travel costs."
+(Page 6, Lines 127–130)
+
+"Household comparisons. Each primary modifier enters a separate expanded-control NPP model and is compared with a baseline fitted on exactly the same households. Region and exact interview-year/month effects, released survey weights, and village-clustered inference are retained. Household irrigation and crop models restrict to agricultural participants. Continuous modifiers are centred at their own model-sample medians; the participation model instead reports its adjusted regional slopes for nonparticipants (0)."
+(Page 7, Lines 141–146)
+
+Appendix F reports the multiplicity-adjusted results for both consumption outcomes:
+
+"Household results. Primary food-interaction Holm p-values are 0.114 for agricultural participation, 0.114 for roads, 0.276 for village irrigation, and 0.181 for household irrigation; the corresponding secondary values are 0.746 for rice composition, 0.746 for dry-paddy composition, and 0.215 for nonfarm business. The food regional slopes remain unequal after each primary adjustment (all p<0.002). Total-consumption interactions are negative for agricultural participation (Holm p=0.006) and positive for nonfarm-business participation (secondary-family Holm p=0.044)."
+(Page 8, Lines 166–172)
+
+Tables F3–F4 and Figure F1 document the model samples, interaction units and regional comparisons:
+
+"Each modifier enters a separate expanded-control regional model on its own complete-case sample, with exact interview-year/month effects, survey weights, and village-clustered inference. Household irrigation restricts to agriculture-participating households. Coefficients are changes in the log-consumption slope per 1 kg C m⁻² higher NPP and one modifier unit (0/1 participation, kilometres of road distance, or a 0–1 irrigation share). They are not percentage-point changes in consumption."
+(Page 31, Lines 35–37)
+
+"Verified 2019 and 2021 releases support these secondary tests. Crop composition refers to planted area in the completed year preceding the actual interview year and uses agriculture-participating households with valid classified crop areas. Nonfarm business is explicit participation during the previous 12 months. Each modifier enters separately with the expanded household controls, region and exact interview-year/month effects, survey weights, and village-clustered inference."
+(Page 32, Lines 41–43)
+
+"Panels b–e compare food-consumption NPP slopes before and after separate adjustment for household agricultural participation, road distance, village irrigation, and household irrigable-parcel share. Within each panel, baseline and adjusted estimates use exactly the same records. Points and horizontal intervals are conditional slopes and pointwise village-clustered 95% confidence intervals. Continuous modifiers are evaluated at their model-sample medians; panel b evaluates agricultural participation at 0 (nonparticipants)."
+(Page 16, Lines 5–8)
 
 ## Comment 3
 
