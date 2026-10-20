@@ -257,10 +257,10 @@ The revised Figure 6 caption states:
 Equation 4 contains formatting/character errors (shown as question marks) and should be corrected.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for pointing this out. Equation 4 in the Methods is reformatted as an editable Word equation. The correction removes hidden placeholder characters and explicitly encodes the mathematical accents while preserving the summation symbols, indices, covariance expression and equation number. The statistical specification and results are unchanged. The corrected equation reads:
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+"$\widehat{V}_{\mathrm{Conley}}(c)=(\widetilde{X}^{\prime}\widetilde{X})^{-1}\left[\sum_{t}\sum_{i\in t}\sum_{j\in t}K\left(\frac{d_{ij}}{c}\right)\widehat{u}_{i}\widehat{u}_{j}\widetilde{x}_{i}\widetilde{x}_{j}^{\prime}\right](\widetilde{X}^{\prime}\widetilde{X})^{-1}.$ (4)"
+(Page 26, Line 549)
 
 ## Comment 6
 
