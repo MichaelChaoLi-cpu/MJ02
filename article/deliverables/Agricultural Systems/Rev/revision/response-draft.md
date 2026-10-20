@@ -240,10 +240,17 @@ Appendix E and Tables E2–E3 document the timing sensitivities and the common-s
 Please provide more complete captions for Figures 5 and 6. For Figure 5, specify the confidence level of the intervals shown. For Figure 6, explain what the horizontal and vertical intervals represent, including the confidence level, and define the national benchmark lines.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for this comment. The revised captions for Figures 5 and 6 specify the confidence level, the meaning and units of the intervals, and the national reference lines. Figure 5 identifies pointwise 95% confidence intervals based on village-clustered inference and explains the model specifications and percentage transformation. In Figure 6, the horizontal intervals describe uncertainty in regional NPP declines over the common dry-spell contrast; the vertical intervals describe uncertainty in regional food-consumption associations per 0.1 kg C m⁻² higher prior-year NPP. Both are pointwise 95% confidence intervals. The vertical national benchmark is a 1.46% NPP decline, and the horizontal benchmark is a 2.14% food-consumption association, each from its corresponding pooled national model.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+The revised Figure 5 caption states:
+
+"Note: Panel a presents the national specification ladder for total consumption. Panel b presents the corresponding ladder for food consumption. Panels c and d report expanded-control region-specific prior-year NPP slopes for total and food consumption, respectively, with pointwise 95% confidence intervals, zero-reference lines, and joint regional slope-equality tests. Intervals use village-clustered inference. Panels a and b distinguish time-only, composition-control, expanded-control, and composition-plus-village-fixed-effect models; the expanded-control food model is the main household reference. All effect scales are percent differences in consumption per 0.1 kg C m-2 higher NPP; point estimates and interval endpoints use 100[exp(0.1β)−1]."
+(Page 37, Lines 40–47)
+
+The revised Figure 6 caption states:
+
+"Note: Horizontal intervals are pointwise 95% confidence intervals for the percentage decline in annual cropland NPP associated with the common dry-spell contrast from 24.23 to 57.90 days, divided by each region's mean NPP. Vertical intervals are pointwise 95% confidence intervals for the percentage difference in real per-capita food consumption per 0.1 kg C m⁻² higher prior-year NPP in the expanded-control regional model. The vertical benchmark line marks the national NPP decline of 1.46%; the horizontal benchmark line marks the national food-consumption association of 2.14%. Each benchmark comes from its corresponding pooled national model. Both sets of regional intervals use village-clustered inference. The two axes show separately estimated associations; they are not multiplied."
+(Page 38, Lines 51–58)
 
 ## Comment 5
 
