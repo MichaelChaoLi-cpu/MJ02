@@ -59,18 +59,18 @@ The Abstract and Introduction make the systems question and analysis explicit:
 The Results report the principal system interactions, and the Discussion connects them to water and crop assessment:
 
 "In the common sample of 41,769 village-years from 2,045 villages, an interquartile-range increase in village agricultural participation shifts the NPP slope by +0.000694 kg C m⁻² per ten dry days (95% CI 0.000363 to 0.001026), whereas the corresponding increase in irrigated-land share shifts it by −0.001046 (−0.001388 to −0.000705); both Holm-adjusted p-values are below 0.001."
-(Page 12, Lines 242–246)
+(Page 23, Lines 494–498)
 
 "The more negative dry-spell slope at higher irrigation coverage makes seasonal water availability and delivery reliability important targets for assessment alongside crop calendars, soil moisture, crop-specific yields, farm income, food prices, and household coping (Mehta et al., 2025; Shively, 2017)."
-(Page 17, Lines 356–359)
+(Page 28, Lines 608–611)
 
-The Methods and Table 5 define the ecological extension and measurement conventions:
+The Methods and Table 1 define the ecological extension and measurement conventions:
 
 "Agricultural-system comparisons use the same frozen regions and distinguish observed system characteristics from annual exposures. Village agricultural participation, reported irrigated-land share, and historical road distance describe the ecological production context. The ecological extension adds their interactions with consecutive dry days jointly while retaining village and year effects and region-specific slopes for all four climate variables."
-(Page 29, Lines 626–631)
+(Page 16, Lines 334–339)
 
 "Stage 1 uses same-year climate and NPP; Stage 2 uses prior-year 5 km NPP. Variables remain in natural units; no standardisation, winsorisation, clipping, or imputation."
-(Page 46, Lines 3–4)
+(Page 41, Lines 4–5)
 
 Appendix F explains the indicators, crop-composition support and same-sample model comparison. The following quotations use the Appendix's own page and line numbering:
 
@@ -126,18 +126,18 @@ The Abstract and Introduction state the systems question and retain the regional
 The Results and Discussion distinguish the food-consumption tests from the supporting livelihood contrasts:
 
 "Household system tests retain substantial regional differences. None of the four primary modifiers—agricultural participation, historical road distance, village irrigated-land share, or household irrigable-parcel share—has a food-consumption interaction that meets the Holm-adjusted 5% criterion. The crop-composition and nonfarm-business checks also do not meet this criterion for food consumption (Appendix Tables F3–F4). Total-consumption interactions provide supporting livelihood contrasts: the NPP slope is lower among agricultural participants and higher among nonfarm-business participants. In same-sample comparisons, region-specific food slopes continue to differ after each primary system adjustment (all p<0.002; Appendix Figure F1b–e)."
-(Page 14, Lines 285–293)
+(Page 25, Lines 537–545)
 
 "Agricultural participation, irrigation, crop composition, nonfarm business, roads, and market presence are examined here, but none provides a single corrected-test explanation of the food-consumption pattern. The total-consumption interactions with agricultural and nonfarm-business participation instead suggest that the relevant livelihood contrasts can differ across consumption dimensions."
-(Pages 17–18, Lines 367–371)
+(Page 29, Lines 619–623)
 
 The Methods specify the controls and the separate interaction comparisons:
 
 "All household models use released survey weights and standard errors clustered at the village level. Composition controls include household size, female share, mean age, child share, older-person share, and the dependency ratio. The expanded specification additionally adjusts for urban residence, agricultural participation, and whether the household head ever attended school. Exact survey-time effects absorb national temporal and questionnaire-regime shifts. Regional models apply the same expanded controls and weights with a single interaction specification."
-(Page 24, Lines 515–521)
+(Page 11, Lines 223–229)
 
 "Household models add one NPP interaction at a time with agricultural participation, road distance, village irrigated-land share, or household irrigable-parcel share; crop composition and explicit nonfarm-business participation provide secondary tests. Each extension is compared with its baseline on exactly the same records. Continuous modifiers are centred at their analysis-sample medians, while binary indicators retain 0/1 coding."
-(Pages 29–30, Lines 631–636)
+(Pages 16–17, Lines 339–344)
 
 Appendix F defines the household indicators and supported comparisons. The following quotations use the Appendix's own page and line numbering:
 
@@ -183,32 +183,32 @@ To address seasonality, the additional models include region-by-interview-quarte
 The Methods clarify the measurement, date assignment and additional timing tests:
 
 "Food consumption is constructed from the seven-day recall value multiplied by 52 for reporting in annualized units. The annualized measure retains the original seven-day reference period."
-(Page 23, Lines 490–492)
+(Page 10, Lines 198–200)
 
 "Household survey-year and survey-month fields determine these assignments where available; the other calendar-year releases use their documented survey year and recorded month. Exact survey-time fixed effects identify each observed combination of interview calendar year and month and absorb common consumption and price conditions at that time. This rule prevents contemporaneous partial-year vegetation conditions from being treated as a completed annual exposure. The completed-year measure provides the recent annual productivity context for the food-consumption snapshot; quarter-specific and annual-lag checks assess whether the relationship depends on interview timing."
-(Page 24, Lines 507–514)
+(Page 11, Lines 215–222)
 
 "Additional timing checks allow consumption levels to vary by region and calendar quarter and NPP slopes to vary by interview quarter nationally and within regions. Joint Wald tests compare quarterly slopes, with Holm adjustment for the six region-level tests. Annual-lag sensitivity compares NPP from one and two calendar years before interview on identical household samples."
-(Page 31, Lines 670–674)
+(Page 18, Lines 378–382)
 
 The Results and Discussion explain the alignment rule and report its regional qualifications:
 
 "The household sample uses the actual interview calendar year and attaches NPP from the preceding completed calendar year, rather than assuming that every release belongs to a single nominal survey year. This timing rule is especially consequential for interviews spread across adjacent years."
-(Page 8, Lines 150–154)
+(Page 19, Lines 402–406)
 
 "National food-consumption slopes do not differ jointly by interview quarter (p=0.156), but the regional quarterly model detects within-region differences overall (p=0.012), with R3 retaining evidence after adjustment across six regional tests (Holm p=0.030). In R4, the food-consumption association is 6.65% for prior-year NPP and 1.21% for NPP two years earlier on identical households; the respective 95% intervals are 2.60–10.86% and −2.35–4.91%. These separate-model intervals describe lag sensitivity rather than a test of the difference between lag coefficients."
-(Pages 14–15, Lines 295–301)
+(Pages 25–26, Lines 547–553)
 
 "Interview-quarter variation in R3 and lag sensitivity in R4 also make interview season and the relevant production year priorities for household follow-up."
-(Page 18, Lines 375–376)
+(Page 29, Lines 627–628)
 
-Figure 1 and Table 5 make the temporal coverage and reporting units explicit:
+Figure 1 and Table 1 make the temporal coverage and reporting units explicit:
 
 "Actual interviews extend to January 2022 and their completed prior-year NPP assignments extend to 2021."
 (Page 33, Lines 10–11)
 
 "Food is annualised from seven-day recall by multiplying by 52; CPI conversion follows the actual interview date."
-(Page 46, Lines 7–8)
+(Page 41, Lines 8–9)
 
 Appendix B, Figure B1 and Table B2 document the survey-calendar and consumption-construction details. The following quotations use the Appendix's own page and line numbering:
 
@@ -260,7 +260,7 @@ Equation 4 contains formatting/character errors (shown as question marks) and sh
 Thank you for pointing this out. Equation 4 in the Methods is reformatted as an editable Word equation. The correction removes hidden placeholder characters and explicitly encodes the mathematical accents while preserving the summation symbols, indices, covariance expression and equation number. The statistical specification and results are unchanged. The corrected equation reads:
 
 "$\widehat{V}_{\mathrm{Conley}}(c)=(\widetilde{X}^{\prime}\widetilde{X})^{-1}\left[\sum_{t}\sum_{i\in t}\sum_{j\in t}K\left(\frac{d_{ij}}{c}\right)\widehat{u}_{i}\widehat{u}_{j}\widetilde{x}_{i}\widetilde{x}_{j}^{\prime}\right](\widetilde{X}^{\prime}\widetilde{X})^{-1}.$ (4)"
-(Page 26, Line 549)
+(Page 13, Lines 257–257)
 
 ## Comment 6
 
@@ -271,26 +271,61 @@ Turner, B. L., 2nd, et al. (2003). "A framework for vulnerability analysis in su
 Thank you for highlighting this distinction and recommending these references. The Introduction now explicitly defines exposure, sensitivity, adaptive capacity and vulnerability, drawing on Turner et al. (2003) and Urruty et al. (2016), and consistently identifies the climate indices as measures of exposure. The Methods clarify how these concepts map onto the empirical analysis: Stage 1 coefficients measure ecological sensitivity, Stage 2 coefficients measure the household economic relevance of productivity, and production and livelihood characteristics can shape sensitivity and adaptive capacity. Vulnerability serves as the overarching conceptual framework. Both recommended references are included in the bibliography. The revised passages are as follows.
 
 "Exposure describes the climatic conditions experienced by an agricultural system, sensitivity describes the magnitude of its response, and adaptive capacity describes its resources and options for adjustment. Vulnerability concerns the system's susceptibility to harm as these dimensions interact (Turner et al., 2003; Urruty et al., 2016). Agricultural climate vulnerability therefore reflects exposure, ecological sensitivity, and the production and livelihood conditions that shape adaptive capacity, rather than a single national exposure statistic (World Bank, 2024)."
-(Page 3, Lines 54–60)
+(Page 4, Lines 61–67)
 
 "None of these indices is equivalent to observed flood damage or agronomic drought loss, but each identifies a distinct dimension of climate exposure (von Gunten et al., 2016)."
-(Page 4, Lines 70–72)
+(Page 5, Lines 77–79)
 
 "Climate indices measure exposure, and the Stage 1 coefficients quantify ecological sensitivity as the NPP response per unit of climate exposure. The Stage 2 NPP coefficients quantify the household economic relevance of local productivity. Irrigation, crop structure, livelihood diversification and market connections are system characteristics that can influence sensitivity and adaptive capacity. Vulnerability provides the conceptual framework; the empirical outputs quantify ecological sensitivity, household economic relevance, and their spatial coincidence."
-(Page 18, Lines 393–399)
+(Page 8, Lines 152–158)
 
 "Turner, B. L., Kasperson, R. E., Matson, P. A., McCarthy, J. J., Corell, R. W., Christensen, L., Eckley, N., Kasperson, J. X., Luers, A., Martello, M. L., Polsky, C., Pulsipher, A., & Schiller, A. (2003). A framework for vulnerability analysis in sustainability science. Proceedings of the National Academy of Sciences, 100(14), 8074-8079. https://doi.org/10.1073/pnas.1231335100"
-(Page 43, Lines 109–113)
+(Page 49, Lines 109–113)
 
 "Urruty, N., Tailliez-Lefebvre, D., & Huyghe, C. (2016). Stability, robustness, vulnerability and resilience of agricultural systems. A review. Agronomy for Sustainable Development, 36(1), 15. https://doi.org/10.1007/s13593-015-0347-5"
-(Page 43, Lines 117–119)
+(Page 49, Lines 117–119)
 
 ## Comment 7
 
 The Methods should precede the Results. Please revise the manuscript structure accordingly, consistent with the journal guidelines. At present, the Results begin on manuscript line 129, whereas the Methods do not begin until line 379.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for this comment. The Methods section now follows the Introduction and precedes the Results and Discussion. The complete section retains its method descriptions, editable equations and references. Tables are renumbered in the order of their first citation, with the analytical-sample and variable dictionary now Table 1; the table order and corresponding main-text and Appendix references follow the same numbering.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+The relocated Methods introduces the study design and analytical measures:
+
+"The analysis separates an ecological stage from a household stage and combines them only at the level of regional evidence."
+(Page 8, Lines 144–145)
+
+"Table 1 defines every analytical sample, measure, timing rule, unit, and linkage status."
+(Page 9, Lines 167–168)
+
+The Results refer to the renumbered national and regional analyses:
+
+"Figure 3 presents evidence on coefficients and functional form, and Table 2 reports the complete national regression ladder."
+(Page 20, Lines 428–430)
+
+"Table 3 reports results from one common interaction model, so regional differences do not arise from estimating unrelated samples or changing the national controls."
+(Page 22, Lines 469–471)
+
+"Table 4 reports the log coefficients, exact percentage translations, model structure, and analytical support."
+(Page 24, Lines 513–514)
+
+"Table 5 reports the natural-unit translations, sample support, and fixed evidence classification."
+(Page 26, Lines 564–565)
+
+The table section begins with the analytical dictionary followed by the national climate model:
+
+"Table 1. Analytical samples, variables, timing, and support"
+(Page 39, Lines 3–3)
+
+"Table 2. National fixed-effect climate-productivity regression results"
+(Page 42, Lines 2–2)
+
+The Appendix references use the revised main-table numbering (Appendix page and line numbers):
+
+"The lower block separates composition-control and expanded-control complete cases; the controls are defined in Table 4."
+(Page 20, Lines 6–7)
+
+"Notes: National values reproduce the expanded-control pooled models in Table 4."
+(Page 25, Lines 3–3)
