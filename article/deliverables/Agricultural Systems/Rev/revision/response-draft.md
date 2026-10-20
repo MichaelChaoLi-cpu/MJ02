@@ -34,10 +34,70 @@ Agricultural Systems
 The manuscript identifies regional differences in sensitivity to dry weather but provides little explanation of how agricultural systems reduce or amplify this sensitivity. Please discuss, and where possible analyse, whether differences in cropping systems, irrigation, crop choice, management or other production-system characteristics explain the regional variation in NPP responses. At present, these mechanisms are mostly deferred to future research rather than examined in the analysis.
 
 **Response:**
-[Response to be completed after this comment is addressed.]
+Thank you for this comment. The revised Methods and Results test how agricultural participation, irrigation coverage, historical road access and crop composition relate to dry-spell sensitivity, with definitions, regional profiles, interaction estimates and sensitivity comparisons in the new Appendix F. The Discussion uses these findings to identify specific production-system conditions for follow-up assessment.
 
-"[Exact revised manuscript text]"
-(Page XX, Lines XX–XX)
+The primary ecological extension jointly interacts consecutive dry days with village agricultural participation, irrigated-land share and historical road distance. Baseline and extended models use the same 41,769 village-year observations from 2,045 villages, retaining village and year fixed effects and region-specific slopes for all four climate variables. The system descriptors summarize observed-period production contexts. Additional specifications allow all climate terms to interact with these descriptors, restrict years to questionnaire releases, or add the crop-composition measures supported by the verified 2019 and 2021 releases.
+
+An interquartile-range higher agricultural participation shifts the NPP response to ten additional dry days by +0.000694 kg C m⁻², whereas an interquartile-range higher irrigated-land share shifts it by −0.001046 kg C m⁻²; both primary interactions have Holm-adjusted p<0.001. Their directions persist when all climate terms interact with the system descriptors, while the road interaction weakens. The crop-composition subset also shows a negative dry-paddy interaction, reported in original units because that share has a zero interquartile range. At common system reference values, R4 and R6 retain negative dry-spell responses, and the six regional slopes remain unequal (p<0.001).
+
+These analyses identify production-system characteristics associated with the spatial variation while retaining the regional contrasts that those characteristics do not fully account for. The Discussion consequently emphasizes seasonal water availability, delivery reliability and crop calendars as concrete assessment priorities, and distinguishes irrigation coverage from the reliability of its buffering performance.
+
+The Abstract and Introduction make the systems question and analysis explicit:
+
+"This study identifies where dry-spell exposure, cropland productivity sensitivity, and household food-consumption relevance coincide across Cambodia and tests whether observed agricultural-system characteristics account for the regional differences."
+(Page 1, Lines 10–12)
+
+"System-characteristic interactions and interview-quarter and annual-lag checks examine regional differences and temporal alignment."
+(Page 1, Lines 19–20)
+
+"Higher village agricultural participation corresponds to a less negative dry-spell slope, whereas greater irrigated-land coverage corresponds to a more negative slope; both interactions remain significant after Holm adjustment."
+(Page 2, Lines 30–33)
+
+"System-characteristic interactions test whether agricultural participation, irrigation, crop composition, nonfarm business participation, and access indicators account for the regional contrasts."
+(Page 7, Lines 132–134)
+
+The Results report the principal system interactions, and the Discussion connects them to water and crop assessment:
+
+"In the common sample of 41,769 village-years from 2,045 villages, an interquartile-range increase in village agricultural participation shifts the NPP slope by +0.000694 kg C m⁻² per ten dry days (95% CI 0.000363 to 0.001026), whereas the corresponding increase in irrigated-land share shifts it by −0.001046 (−0.001388 to −0.000705); both Holm-adjusted p-values are below 0.001."
+(Page 12, Lines 242–246)
+
+"The more negative dry-spell slope at higher irrigation coverage makes seasonal water availability and delivery reliability important targets for assessment alongside crop calendars, soil moisture, crop-specific yields, farm income, food prices, and household coping (Mehta et al., 2025; Shively, 2017)."
+(Page 17, Lines 356–359)
+
+The Methods and Table 5 define the ecological extension and measurement conventions:
+
+"Agricultural-system comparisons use the same frozen regions and distinguish observed system characteristics from annual exposures. Village agricultural participation, reported irrigated-land share, and historical road distance describe the ecological production context. The ecological extension adds their interactions with consecutive dry days jointly while retaining village and year effects and region-specific slopes for all four climate variables."
+(Page 29, Lines 626–631)
+
+"Stage 1 uses same-year climate and NPP; Stage 2 uses prior-year 5 km NPP. Variables remain in natural units; no standardisation, winsorisation, clipping, or imputation."
+(Page 46, Lines 3–4)
+
+Appendix F explains the indicators, crop-composition support and same-sample model comparison. The following quotations use the Appendix's own page and line numbering:
+
+"Village participation is the survey-weighted household share within each observed village-wave, averaged equally across available waves. Village irrigated-land share is reported irrigated area divided by agriculturally usable area; valid questionnaires are averaged within mapped village-waves and then equally across available waves for the ecological descriptor."
+(Page 5, Lines 105–109)
+
+"Prior-year rice and dry-paddy shares use verified crop codes in the 2019 and 2021 releases and the actual preceding interview calendar year. Numerators are planted area in rice codes 101–103 or dry-paddy code 101, divided by all valid classified planted area; nonpositive denominators, invalid areas, or unclassified eligible crop records are excluded. These are planted-area composition measures rather than physical land shares or cropping-intensity indices."
+(Page 6, Lines 122–127)
+
+"The baseline and system extension use the same 41,769 village-years from 2,045 villages. Both retain village and year effects and six-region slopes for all four climate terms; the extension jointly adds consecutive-dry-days interactions with village participation, irrigated-land share, and historical road distance."
+(Page 6, Lines 131–134)
+
+Appendix F also reports the crop-composition result and the regional slopes after adjustment:
+
+"In the 13,305-village-year crop-composition subset, the dry-paddy interaction is −0.003314 kg C m⁻² per ten dry days and unit share (95% CI −0.005274 to −0.001354), while the irrigation interaction is imprecise. Dry-paddy P25 and P75 are both zero, so the original-unit interaction, not a zero interquartile contrast, describes that relationship. On the primary common sample, adjusted R4 and R6 slopes are −0.002370 and −0.005002 kg C m⁻² per ten dry days, respectively, and six-region slope equality is rejected (p<0.001)."
+(Page 8, Lines 159–165)
+
+Tables F1–F2 and Figure F1 document regional profiles, interaction inference and the ecological comparison before and after adjustment:
+
+"Profiles use village-level observed-period descriptors. Agricultural participation is survey-weighted within village-wave and then averaged equally across observed waves; valid village-questionnaire irrigated shares are averaged analogously. Regional profile means give equal weight to valid villages."
+(Page 29, Lines 19–20)
+
+"The three interactions enter jointly in the same 41,769-village-year, 2,045-village model, with village and year effects and six-region slopes for heat days, Rx5day, dry days, and annual rainfall. Interaction coefficients express NPP-slope change per ten additional dry days and one modifier unit; shares range from 0 to 1 and road distance is kilometres. Interquartile contrasts use one record per village. Intervals are pointwise village-clustered 95% intervals; Holm p-values cover the three primary ecological interactions."
+(Page 30, Lines 28–31)
+
+"Note: Panel a compares ecological regional dry-spell slopes before and after simultaneous adjustment for village agricultural participation, irrigated-land share, and historical road distance."
+(Page 16, Lines 4–5)
 
 ## Comment 2
 
